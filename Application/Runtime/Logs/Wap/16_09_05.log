@@ -1,0 +1,8 @@
+[ 2016-09-05T08:57:57+08:00 ] 127.0.0.1 /
+ERR: 1054:Champ 'banner_url' inconnu dans field list
+ [ SQL语句 ] : SELECT `id`,`banner_url`,`banner_filename`,`sort` FROM `sd_banner` ORDER BY sort desc 
+
+[ 2016-09-05T13:52:22+08:00 ] 127.0.0.1 /index.php/Wap/Wap/index.html
+ERR: 1054:Champ 'banner_url' inconnu dans field list
+ [ SQL语句 ] : SELECT `id`,`banner_url`,`banner_filename`,`sort` FROM `sd_banner` ORDER BY sort desc 
+

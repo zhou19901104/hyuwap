@@ -1,0 +1,535 @@
+[ 2016-09-06T09:03:22+08:00 ] 127.0.0.1 /index.php/Admin/Index/left/id/85.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `sd_node` [ RunTime:0.0060s ]
+SQL: SELECT `id`,`data`,`title`
+                FROM `sd_node`
+                WHERE ( `status` =1 AND `display`=2 AND `pid`=85)
+                ORDER BY sort DESC [ RunTime:0.0290s ]
+SQL: SELECT `title` FROM `sd_node` WHERE `id` = 85 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `id`,`data`,`title`
+                FROM `sd_node`
+                WHERE ( `status` =1 AND `display`=2 AND `pid`=86)
+                ORDER BY sort DESC [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant title - assumed 'title' D:\wamp\www\wap\Application\Admin\Controller\IndexController.class.php 第 74 行.
+NOTIC: [8] Use of undefined constant title - assumed 'title' D:\wamp\www\wap\Application\Admin\Controller\IndexController.class.php 第 87 行.
+NOTIC: [8] Use of undefined constant title - assumed 'title' D:\wamp\www\wap\Application\Admin\Controller\IndexController.class.php 第 87 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.066004s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.066004s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-09-06T09:03:26+08:00 ] 127.0.0.1 /index.php/Admin/Index/left/id/85.html?id=340
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `sd_node` [ RunTime:0.0090s ]
+SQL: SELECT `id`,`data`,`title`
+                FROM `sd_node`
+                WHERE ( `status` =1 AND `display`=2 AND `pid`=340)
+                ORDER BY sort DESC [ RunTime:0.0010s ]
+SQL: SELECT `title` FROM `sd_node` WHERE `id` = 340 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `id`,`data`,`title`
+                FROM `sd_node`
+                WHERE ( `status` =1 AND `display`=2 AND `pid`=341)
+                ORDER BY sort DESC [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant title - assumed 'title' D:\wamp\www\wap\Application\Admin\Controller\IndexController.class.php 第 74 行.
+NOTIC: [8] Use of undefined constant title - assumed 'title' D:\wamp\www\wap\Application\Admin\Controller\IndexController.class.php 第 87 行.
+SQL: SELECT `id`,`data`,`title`
+                FROM `sd_node`
+                WHERE ( `status` =1 AND `display`=2 AND `pid`=367)
+                ORDER BY sort DESC [ RunTime:0.0010s ]
+NOTIC: [8] Use of undefined constant title - assumed 'title' D:\wamp\www\wap\Application\Admin\Controller\IndexController.class.php 第 74 行.
+NOTIC: [8] Use of undefined constant title - assumed 'title' D:\wamp\www\wap\Application\Admin\Controller\IndexController.class.php 第 87 行.
+SQL: SELECT `id`,`data`,`title`
+                FROM `sd_node`
+                WHERE ( `status` =1 AND `display`=2 AND `pid`=361)
+                ORDER BY sort DESC [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant title - assumed 'title' D:\wamp\www\wap\Application\Admin\Controller\IndexController.class.php 第 74 行.
+NOTIC: [8] Use of undefined constant title - assumed 'title' D:\wamp\www\wap\Application\Admin\Controller\IndexController.class.php 第 87 行.
+NOTIC: [8] Use of undefined constant title - assumed 'title' D:\wamp\www\wap\Application\Admin\Controller\IndexController.class.php 第 87 行.
+SQL: SELECT `id`,`data`,`title`
+                FROM `sd_node`
+                WHERE ( `status` =1 AND `display`=2 AND `pid`=363)
+                ORDER BY sort DESC [ RunTime:0.0010s ]
+NOTIC: [8] Use of undefined constant title - assumed 'title' D:\wamp\www\wap\Application\Admin\Controller\IndexController.class.php 第 74 行.
+NOTIC: [8] Use of undefined constant title - assumed 'title' D:\wamp\www\wap\Application\Admin\Controller\IndexController.class.php 第 87 行.
+NOTIC: [8] Use of undefined constant title - assumed 'title' D:\wamp\www\wap\Application\Admin\Controller\IndexController.class.php 第 87 行.
+SQL: SELECT `id`,`data`,`title`
+                FROM `sd_node`
+                WHERE ( `status` =1 AND `display`=2 AND `pid`=369)
+                ORDER BY sort DESC [ RunTime:0.0010s ]
+NOTIC: [8] Use of undefined constant title - assumed 'title' D:\wamp\www\wap\Application\Admin\Controller\IndexController.class.php 第 74 行.
+NOTIC: [8] Use of undefined constant title - assumed 'title' D:\wamp\www\wap\Application\Admin\Controller\IndexController.class.php 第 87 行.
+SQL: SELECT `id`,`data`,`title`
+                FROM `sd_node`
+                WHERE ( `status` =1 AND `display`=2 AND `pid`=371)
+                ORDER BY sort DESC [ RunTime:0.0010s ]
+NOTIC: [8] Use of undefined constant title - assumed 'title' D:\wamp\www\wap\Application\Admin\Controller\IndexController.class.php 第 74 行.
+NOTIC: [8] Use of undefined constant title - assumed 'title' D:\wamp\www\wap\Application\Admin\Controller\IndexController.class.php 第 87 行.
+NOTIC: [8] Use of undefined constant title - assumed 'title' D:\wamp\www\wap\Application\Admin\Controller\IndexController.class.php 第 87 行.
+NOTIC: [8] Use of undefined constant title - assumed 'title' D:\wamp\www\wap\Application\Admin\Controller\IndexController.class.php 第 87 行.
+SQL: SELECT `id`,`data`,`title`
+                FROM `sd_node`
+                WHERE ( `status` =1 AND `display`=2 AND `pid`=377)
+                ORDER BY sort DESC [ RunTime:0.0010s ]
+NOTIC: [8] Use of undefined constant title - assumed 'title' D:\wamp\www\wap\Application\Admin\Controller\IndexController.class.php 第 74 行.
+NOTIC: [8] Use of undefined constant title - assumed 'title' D:\wamp\www\wap\Application\Admin\Controller\IndexController.class.php 第 87 行.
+SQL: SELECT `id`,`data`,`title`
+                FROM `sd_node`
+                WHERE ( `status` =1 AND `display`=2 AND `pid`=378)
+                ORDER BY sort DESC [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant title - assumed 'title' D:\wamp\www\wap\Application\Admin\Controller\IndexController.class.php 第 74 行.
+NOTIC: [8] Use of undefined constant title - assumed 'title' D:\wamp\www\wap\Application\Admin\Controller\IndexController.class.php 第 87 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001001s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-09-06T09:05:18+08:00 ] 127.0.0.1 /index.php/Admin/Index/index.html?s=Admin/Setting/first_list
+ERR: 非法操作:first_list
+
+[ 2016-09-06T09:05:22+08:00 ] 127.0.0.1 /index.php/Admin/Index/index.html?s=Admin/Setting/first_list
+ERR: 非法操作:first_list
+
+[ 2016-09-06T09:05:26+08:00 ] 127.0.0.1 /index.php/Admin/Role/role_edit/id/18.html
+ERR: Think\Controller:_get方法不存在！
+
+[ 2016-09-06T09:33:55+08:00 ] 127.0.0.1 /index.php/Admin/Index/left/id/85.html?id=85
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.017001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.026002s ]
+SQL: SHOW COLUMNS FROM `sd_node` [ RunTime:0.0160s ]
+SQL: SELECT `id`,`data`,`title`
+                FROM `sd_node`
+                WHERE ( `status` =1 AND `display`=2 AND `pid`=85)
+                ORDER BY sort DESC [ RunTime:0.1470s ]
+SQL: SELECT `title` FROM `sd_node` WHERE `id` = 85 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `id`,`data`,`title`
+                FROM `sd_node`
+                WHERE ( `status` =1 AND `display`=2 AND `pid`=86)
+                ORDER BY sort DESC [ RunTime:0.0010s ]
+NOTIC: [8] Use of undefined constant title - assumed 'title' D:\wamp\www\wap\Application\Admin\Controller\IndexController.class.php 第 74 行.
+NOTIC: [8] Use of undefined constant title - assumed 'title' D:\wamp\www\wap\Application\Admin\Controller\IndexController.class.php 第 87 行.
+NOTIC: [8] Use of undefined constant title - assumed 'title' D:\wamp\www\wap\Application\Admin\Controller\IndexController.class.php 第 87 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.081005s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.082005s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.010001s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.010001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.013000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.013000s ]
+
+[ 2016-09-06T10:29:27+08:00 ] 127.0.0.1 /index.php/Admin/Index/left/id/85.html?id=340
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.016001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.040003s ]
+SQL: SHOW COLUMNS FROM `sd_node` [ RunTime:0.3070s ]
+SQL: SELECT `id`,`data`,`title`
+                FROM `sd_node`
+                WHERE ( `status` =1 AND `display`=2 AND `pid`=340)
+                ORDER BY sort DESC [ RunTime:0.2930s ]
+SQL: SELECT `title` FROM `sd_node` WHERE `id` = 340 LIMIT 1   [ RunTime:0.0240s ]
+SQL: SELECT `id`,`data`,`title`
+                FROM `sd_node`
+                WHERE ( `status` =1 AND `display`=2 AND `pid`=341)
+                ORDER BY sort DESC [ RunTime:0.0010s ]
+NOTIC: [8] Use of undefined constant title - assumed 'title' D:\wamp\www\wap\Application\Admin\Controller\IndexController.class.php 第 74 行.
+NOTIC: [8] Use of undefined constant title - assumed 'title' D:\wamp\www\wap\Application\Admin\Controller\IndexController.class.php 第 87 行.
+SQL: SELECT `id`,`data`,`title`
+                FROM `sd_node`
+                WHERE ( `status` =1 AND `display`=2 AND `pid`=367)
+                ORDER BY sort DESC [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant title - assumed 'title' D:\wamp\www\wap\Application\Admin\Controller\IndexController.class.php 第 74 行.
+NOTIC: [8] Use of undefined constant title - assumed 'title' D:\wamp\www\wap\Application\Admin\Controller\IndexController.class.php 第 87 行.
+SQL: SELECT `id`,`data`,`title`
+                FROM `sd_node`
+                WHERE ( `status` =1 AND `display`=2 AND `pid`=361)
+                ORDER BY sort DESC [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant title - assumed 'title' D:\wamp\www\wap\Application\Admin\Controller\IndexController.class.php 第 74 行.
+NOTIC: [8] Use of undefined constant title - assumed 'title' D:\wamp\www\wap\Application\Admin\Controller\IndexController.class.php 第 87 行.
+NOTIC: [8] Use of undefined constant title - assumed 'title' D:\wamp\www\wap\Application\Admin\Controller\IndexController.class.php 第 87 行.
+SQL: SELECT `id`,`data`,`title`
+                FROM `sd_node`
+                WHERE ( `status` =1 AND `display`=2 AND `pid`=363)
+                ORDER BY sort DESC [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant title - assumed 'title' D:\wamp\www\wap\Application\Admin\Controller\IndexController.class.php 第 74 行.
+NOTIC: [8] Use of undefined constant title - assumed 'title' D:\wamp\www\wap\Application\Admin\Controller\IndexController.class.php 第 87 行.
+NOTIC: [8] Use of undefined constant title - assumed 'title' D:\wamp\www\wap\Application\Admin\Controller\IndexController.class.php 第 87 行.
+SQL: SELECT `id`,`data`,`title`
+                FROM `sd_node`
+                WHERE ( `status` =1 AND `display`=2 AND `pid`=369)
+                ORDER BY sort DESC [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant title - assumed 'title' D:\wamp\www\wap\Application\Admin\Controller\IndexController.class.php 第 74 行.
+NOTIC: [8] Use of undefined constant title - assumed 'title' D:\wamp\www\wap\Application\Admin\Controller\IndexController.class.php 第 87 行.
+SQL: SELECT `id`,`data`,`title`
+                FROM `sd_node`
+                WHERE ( `status` =1 AND `display`=2 AND `pid`=371)
+                ORDER BY sort DESC [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant title - assumed 'title' D:\wamp\www\wap\Application\Admin\Controller\IndexController.class.php 第 74 行.
+NOTIC: [8] Use of undefined constant title - assumed 'title' D:\wamp\www\wap\Application\Admin\Controller\IndexController.class.php 第 87 行.
+NOTIC: [8] Use of undefined constant title - assumed 'title' D:\wamp\www\wap\Application\Admin\Controller\IndexController.class.php 第 87 行.
+NOTIC: [8] Use of undefined constant title - assumed 'title' D:\wamp\www\wap\Application\Admin\Controller\IndexController.class.php 第 87 行.
+SQL: SELECT `id`,`data`,`title`
+                FROM `sd_node`
+                WHERE ( `status` =1 AND `display`=2 AND `pid`=377)
+                ORDER BY sort DESC [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant title - assumed 'title' D:\wamp\www\wap\Application\Admin\Controller\IndexController.class.php 第 74 行.
+NOTIC: [8] Use of undefined constant title - assumed 'title' D:\wamp\www\wap\Application\Admin\Controller\IndexController.class.php 第 87 行.
+SQL: SELECT `id`,`data`,`title`
+                FROM `sd_node`
+                WHERE ( `status` =1 AND `display`=2 AND `pid`=378)
+                ORDER BY sort DESC [ RunTime:0.0010s ]
+NOTIC: [8] Use of undefined constant title - assumed 'title' D:\wamp\www\wap\Application\Admin\Controller\IndexController.class.php 第 74 行.
+NOTIC: [8] Use of undefined constant title - assumed 'title' D:\wamp\www\wap\Application\Admin\Controller\IndexController.class.php 第 87 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.177011s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.177011s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.012000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.012000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.038002s ]
+INFO: [ app_end ] --END-- [ RunTime:0.038002s ]
+
+[ 2016-09-06T10:29:27+08:00 ] 127.0.0.1 /index.php/Admin/Index/left/id/85.html?id=151
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `sd_node` [ RunTime:0.0450s ]
+SQL: SELECT `id`,`data`,`title`
+                FROM `sd_node`
+                WHERE ( `status` =1 AND `display`=2 AND `pid`=151)
+                ORDER BY sort DESC [ RunTime:0.0000s ]
+SQL: SELECT `title` FROM `sd_node` WHERE `id` = 151 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `id`,`data`,`title`
+                FROM `sd_node`
+                WHERE ( `status` =1 AND `display`=2 AND `pid`=152)
+                ORDER BY sort DESC [ RunTime:0.0010s ]
+NOTIC: [8] Use of undefined constant title - assumed 'title' D:\wamp\www\wap\Application\Admin\Controller\IndexController.class.php 第 74 行.
+NOTIC: [8] Use of undefined constant title - assumed 'title' D:\wamp\www\wap\Application\Admin\Controller\IndexController.class.php 第 87 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-09-06T10:29:27+08:00 ] 127.0.0.1 /index.php/Admin/Index/left/id/85.html?id=340
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `sd_node` [ RunTime:0.0050s ]
+SQL: SELECT `id`,`data`,`title`
+                FROM `sd_node`
+                WHERE ( `status` =1 AND `display`=2 AND `pid`=340)
+                ORDER BY sort DESC [ RunTime:0.0010s ]
+SQL: SELECT `title` FROM `sd_node` WHERE `id` = 340 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `id`,`data`,`title`
+                FROM `sd_node`
+                WHERE ( `status` =1 AND `display`=2 AND `pid`=341)
+                ORDER BY sort DESC [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant title - assumed 'title' D:\wamp\www\wap\Application\Admin\Controller\IndexController.class.php 第 74 行.
+NOTIC: [8] Use of undefined constant title - assumed 'title' D:\wamp\www\wap\Application\Admin\Controller\IndexController.class.php 第 87 行.
+SQL: SELECT `id`,`data`,`title`
+                FROM `sd_node`
+                WHERE ( `status` =1 AND `display`=2 AND `pid`=367)
+                ORDER BY sort DESC [ RunTime:0.0010s ]
+NOTIC: [8] Use of undefined constant title - assumed 'title' D:\wamp\www\wap\Application\Admin\Controller\IndexController.class.php 第 74 行.
+NOTIC: [8] Use of undefined constant title - assumed 'title' D:\wamp\www\wap\Application\Admin\Controller\IndexController.class.php 第 87 行.
+SQL: SELECT `id`,`data`,`title`
+                FROM `sd_node`
+                WHERE ( `status` =1 AND `display`=2 AND `pid`=361)
+                ORDER BY sort DESC [ RunTime:0.0010s ]
+NOTIC: [8] Use of undefined constant title - assumed 'title' D:\wamp\www\wap\Application\Admin\Controller\IndexController.class.php 第 74 行.
+NOTIC: [8] Use of undefined constant title - assumed 'title' D:\wamp\www\wap\Application\Admin\Controller\IndexController.class.php 第 87 行.
+NOTIC: [8] Use of undefined constant title - assumed 'title' D:\wamp\www\wap\Application\Admin\Controller\IndexController.class.php 第 87 行.
+SQL: SELECT `id`,`data`,`title`
+                FROM `sd_node`
+                WHERE ( `status` =1 AND `display`=2 AND `pid`=363)
+                ORDER BY sort DESC [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant title - assumed 'title' D:\wamp\www\wap\Application\Admin\Controller\IndexController.class.php 第 74 行.
+NOTIC: [8] Use of undefined constant title - assumed 'title' D:\wamp\www\wap\Application\Admin\Controller\IndexController.class.php 第 87 行.
+NOTIC: [8] Use of undefined constant title - assumed 'title' D:\wamp\www\wap\Application\Admin\Controller\IndexController.class.php 第 87 行.
+SQL: SELECT `id`,`data`,`title`
+                FROM `sd_node`
+                WHERE ( `status` =1 AND `display`=2 AND `pid`=369)
+                ORDER BY sort DESC [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant title - assumed 'title' D:\wamp\www\wap\Application\Admin\Controller\IndexController.class.php 第 74 行.
+NOTIC: [8] Use of undefined constant title - assumed 'title' D:\wamp\www\wap\Application\Admin\Controller\IndexController.class.php 第 87 行.
+SQL: SELECT `id`,`data`,`title`
+                FROM `sd_node`
+                WHERE ( `status` =1 AND `display`=2 AND `pid`=371)
+                ORDER BY sort DESC [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant title - assumed 'title' D:\wamp\www\wap\Application\Admin\Controller\IndexController.class.php 第 74 行.
+NOTIC: [8] Use of undefined constant title - assumed 'title' D:\wamp\www\wap\Application\Admin\Controller\IndexController.class.php 第 87 行.
+NOTIC: [8] Use of undefined constant title - assumed 'title' D:\wamp\www\wap\Application\Admin\Controller\IndexController.class.php 第 87 行.
+NOTIC: [8] Use of undefined constant title - assumed 'title' D:\wamp\www\wap\Application\Admin\Controller\IndexController.class.php 第 87 行.
+SQL: SELECT `id`,`data`,`title`
+                FROM `sd_node`
+                WHERE ( `status` =1 AND `display`=2 AND `pid`=377)
+                ORDER BY sort DESC [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant title - assumed 'title' D:\wamp\www\wap\Application\Admin\Controller\IndexController.class.php 第 74 行.
+NOTIC: [8] Use of undefined constant title - assumed 'title' D:\wamp\www\wap\Application\Admin\Controller\IndexController.class.php 第 87 行.
+SQL: SELECT `id`,`data`,`title`
+                FROM `sd_node`
+                WHERE ( `status` =1 AND `display`=2 AND `pid`=378)
+                ORDER BY sort DESC [ RunTime:0.0010s ]
+NOTIC: [8] Use of undefined constant title - assumed 'title' D:\wamp\www\wap\Application\Admin\Controller\IndexController.class.php 第 74 行.
+NOTIC: [8] Use of undefined constant title - assumed 'title' D:\wamp\www\wap\Application\Admin\Controller\IndexController.class.php 第 87 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001001s ]
+
+[ 2016-09-06T10:29:29+08:00 ] 127.0.0.1 /index.php/Admin/Index/left/id/85.html?id=151
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `sd_node` [ RunTime:0.0050s ]
+SQL: SELECT `id`,`data`,`title`
+                FROM `sd_node`
+                WHERE ( `status` =1 AND `display`=2 AND `pid`=151)
+                ORDER BY sort DESC [ RunTime:0.0010s ]
+SQL: SELECT `title` FROM `sd_node` WHERE `id` = 151 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `id`,`data`,`title`
+                FROM `sd_node`
+                WHERE ( `status` =1 AND `display`=2 AND `pid`=152)
+                ORDER BY sort DESC [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant title - assumed 'title' D:\wamp\www\wap\Application\Admin\Controller\IndexController.class.php 第 74 行.
+NOTIC: [8] Use of undefined constant title - assumed 'title' D:\wamp\www\wap\Application\Admin\Controller\IndexController.class.php 第 87 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-09-06T10:29:29+08:00 ] 127.0.0.1 /index.php/Admin/Index/left/id/85.html?id=340
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `sd_node` [ RunTime:0.0040s ]
+SQL: SELECT `id`,`data`,`title`
+                FROM `sd_node`
+                WHERE ( `status` =1 AND `display`=2 AND `pid`=340)
+                ORDER BY sort DESC [ RunTime:0.0010s ]
+SQL: SELECT `title` FROM `sd_node` WHERE `id` = 340 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `id`,`data`,`title`
+                FROM `sd_node`
+                WHERE ( `status` =1 AND `display`=2 AND `pid`=341)
+                ORDER BY sort DESC [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant title - assumed 'title' D:\wamp\www\wap\Application\Admin\Controller\IndexController.class.php 第 74 行.
+NOTIC: [8] Use of undefined constant title - assumed 'title' D:\wamp\www\wap\Application\Admin\Controller\IndexController.class.php 第 87 行.
+SQL: SELECT `id`,`data`,`title`
+                FROM `sd_node`
+                WHERE ( `status` =1 AND `display`=2 AND `pid`=367)
+                ORDER BY sort DESC [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant title - assumed 'title' D:\wamp\www\wap\Application\Admin\Controller\IndexController.class.php 第 74 行.
+NOTIC: [8] Use of undefined constant title - assumed 'title' D:\wamp\www\wap\Application\Admin\Controller\IndexController.class.php 第 87 行.
+SQL: SELECT `id`,`data`,`title`
+                FROM `sd_node`
+                WHERE ( `status` =1 AND `display`=2 AND `pid`=361)
+                ORDER BY sort DESC [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant title - assumed 'title' D:\wamp\www\wap\Application\Admin\Controller\IndexController.class.php 第 74 行.
+NOTIC: [8] Use of undefined constant title - assumed 'title' D:\wamp\www\wap\Application\Admin\Controller\IndexController.class.php 第 87 行.
+NOTIC: [8] Use of undefined constant title - assumed 'title' D:\wamp\www\wap\Application\Admin\Controller\IndexController.class.php 第 87 行.
+SQL: SELECT `id`,`data`,`title`
+                FROM `sd_node`
+                WHERE ( `status` =1 AND `display`=2 AND `pid`=363)
+                ORDER BY sort DESC [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant title - assumed 'title' D:\wamp\www\wap\Application\Admin\Controller\IndexController.class.php 第 74 行.
+NOTIC: [8] Use of undefined constant title - assumed 'title' D:\wamp\www\wap\Application\Admin\Controller\IndexController.class.php 第 87 行.
+NOTIC: [8] Use of undefined constant title - assumed 'title' D:\wamp\www\wap\Application\Admin\Controller\IndexController.class.php 第 87 行.
+SQL: SELECT `id`,`data`,`title`
+                FROM `sd_node`
+                WHERE ( `status` =1 AND `display`=2 AND `pid`=369)
+                ORDER BY sort DESC [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant title - assumed 'title' D:\wamp\www\wap\Application\Admin\Controller\IndexController.class.php 第 74 行.
+NOTIC: [8] Use of undefined constant title - assumed 'title' D:\wamp\www\wap\Application\Admin\Controller\IndexController.class.php 第 87 行.
+SQL: SELECT `id`,`data`,`title`
+                FROM `sd_node`
+                WHERE ( `status` =1 AND `display`=2 AND `pid`=371)
+                ORDER BY sort DESC [ RunTime:0.0010s ]
+NOTIC: [8] Use of undefined constant title - assumed 'title' D:\wamp\www\wap\Application\Admin\Controller\IndexController.class.php 第 74 行.
+NOTIC: [8] Use of undefined constant title - assumed 'title' D:\wamp\www\wap\Application\Admin\Controller\IndexController.class.php 第 87 行.
+NOTIC: [8] Use of undefined constant title - assumed 'title' D:\wamp\www\wap\Application\Admin\Controller\IndexController.class.php 第 87 行.
+NOTIC: [8] Use of undefined constant title - assumed 'title' D:\wamp\www\wap\Application\Admin\Controller\IndexController.class.php 第 87 行.
+SQL: SELECT `id`,`data`,`title`
+                FROM `sd_node`
+                WHERE ( `status` =1 AND `display`=2 AND `pid`=377)
+                ORDER BY sort DESC [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant title - assumed 'title' D:\wamp\www\wap\Application\Admin\Controller\IndexController.class.php 第 74 行.
+NOTIC: [8] Use of undefined constant title - assumed 'title' D:\wamp\www\wap\Application\Admin\Controller\IndexController.class.php 第 87 行.
+SQL: SELECT `id`,`data`,`title`
+                FROM `sd_node`
+                WHERE ( `status` =1 AND `display`=2 AND `pid`=378)
+                ORDER BY sort DESC [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant title - assumed 'title' D:\wamp\www\wap\Application\Admin\Controller\IndexController.class.php 第 74 行.
+NOTIC: [8] Use of undefined constant title - assumed 'title' D:\wamp\www\wap\Application\Admin\Controller\IndexController.class.php 第 87 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-09-06T10:34:54+08:00 ] 127.0.0.1 /index.php/Admin/Index/index.html?s=Admin/Setting/first_list
+ERR: 非法操作:first_list
+
+[ 2016-09-06T10:35:28+08:00 ] 127.0.0.1 /index.php/Admin/Index/left/id/85.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `sd_node` [ RunTime:0.0040s ]
+SQL: SELECT `id`,`data`,`title`
+                FROM `sd_node`
+                WHERE ( `status` =1 AND `display`=2 AND `pid`=85)
+                ORDER BY sort DESC [ RunTime:0.0000s ]
+SQL: SELECT `title` FROM `sd_node` WHERE `id` = 85 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `id`,`data`,`title`
+                FROM `sd_node`
+                WHERE ( `status` =1 AND `display`=2 AND `pid`=86)
+                ORDER BY sort DESC [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant title - assumed 'title' D:\wamp\www\wap\Application\Admin\Controller\IndexController.class.php 第 74 行.
+NOTIC: [8] Use of undefined constant title - assumed 'title' D:\wamp\www\wap\Application\Admin\Controller\IndexController.class.php 第 87 行.
+NOTIC: [8] Use of undefined constant title - assumed 'title' D:\wamp\www\wap\Application\Admin\Controller\IndexController.class.php 第 87 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-09-06T10:35:30+08:00 ] 127.0.0.1 /index.php/Admin/Index/left/id/85.html?id=340
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `sd_node` [ RunTime:0.0050s ]
+SQL: SELECT `id`,`data`,`title`
+                FROM `sd_node`
+                WHERE ( `status` =1 AND `display`=2 AND `pid`=340)
+                ORDER BY sort DESC [ RunTime:0.0000s ]
+SQL: SELECT `title` FROM `sd_node` WHERE `id` = 340 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `id`,`data`,`title`
+                FROM `sd_node`
+                WHERE ( `status` =1 AND `display`=2 AND `pid`=341)
+                ORDER BY sort DESC [ RunTime:0.0010s ]
+NOTIC: [8] Use of undefined constant title - assumed 'title' D:\wamp\www\wap\Application\Admin\Controller\IndexController.class.php 第 74 行.
+NOTIC: [8] Use of undefined constant title - assumed 'title' D:\wamp\www\wap\Application\Admin\Controller\IndexController.class.php 第 87 行.
+SQL: SELECT `id`,`data`,`title`
+                FROM `sd_node`
+                WHERE ( `status` =1 AND `display`=2 AND `pid`=367)
+                ORDER BY sort DESC [ RunTime:0.0010s ]
+NOTIC: [8] Use of undefined constant title - assumed 'title' D:\wamp\www\wap\Application\Admin\Controller\IndexController.class.php 第 74 行.
+NOTIC: [8] Use of undefined constant title - assumed 'title' D:\wamp\www\wap\Application\Admin\Controller\IndexController.class.php 第 87 行.
+SQL: SELECT `id`,`data`,`title`
+                FROM `sd_node`
+                WHERE ( `status` =1 AND `display`=2 AND `pid`=361)
+                ORDER BY sort DESC [ RunTime:0.0010s ]
+NOTIC: [8] Use of undefined constant title - assumed 'title' D:\wamp\www\wap\Application\Admin\Controller\IndexController.class.php 第 74 行.
+NOTIC: [8] Use of undefined constant title - assumed 'title' D:\wamp\www\wap\Application\Admin\Controller\IndexController.class.php 第 87 行.
+NOTIC: [8] Use of undefined constant title - assumed 'title' D:\wamp\www\wap\Application\Admin\Controller\IndexController.class.php 第 87 行.
+SQL: SELECT `id`,`data`,`title`
+                FROM `sd_node`
+                WHERE ( `status` =1 AND `display`=2 AND `pid`=363)
+                ORDER BY sort DESC [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant title - assumed 'title' D:\wamp\www\wap\Application\Admin\Controller\IndexController.class.php 第 74 行.
+NOTIC: [8] Use of undefined constant title - assumed 'title' D:\wamp\www\wap\Application\Admin\Controller\IndexController.class.php 第 87 行.
+NOTIC: [8] Use of undefined constant title - assumed 'title' D:\wamp\www\wap\Application\Admin\Controller\IndexController.class.php 第 87 行.
+SQL: SELECT `id`,`data`,`title`
+                FROM `sd_node`
+                WHERE ( `status` =1 AND `display`=2 AND `pid`=369)
+                ORDER BY sort DESC [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant title - assumed 'title' D:\wamp\www\wap\Application\Admin\Controller\IndexController.class.php 第 74 行.
+NOTIC: [8] Use of undefined constant title - assumed 'title' D:\wamp\www\wap\Application\Admin\Controller\IndexController.class.php 第 87 行.
+SQL: SELECT `id`,`data`,`title`
+                FROM `sd_node`
+                WHERE ( `status` =1 AND `display`=2 AND `pid`=371)
+                ORDER BY sort DESC [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant title - assumed 'title' D:\wamp\www\wap\Application\Admin\Controller\IndexController.class.php 第 74 行.
+NOTIC: [8] Use of undefined constant title - assumed 'title' D:\wamp\www\wap\Application\Admin\Controller\IndexController.class.php 第 87 行.
+NOTIC: [8] Use of undefined constant title - assumed 'title' D:\wamp\www\wap\Application\Admin\Controller\IndexController.class.php 第 87 行.
+NOTIC: [8] Use of undefined constant title - assumed 'title' D:\wamp\www\wap\Application\Admin\Controller\IndexController.class.php 第 87 行.
+SQL: SELECT `id`,`data`,`title`
+                FROM `sd_node`
+                WHERE ( `status` =1 AND `display`=2 AND `pid`=377)
+                ORDER BY sort DESC [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant title - assumed 'title' D:\wamp\www\wap\Application\Admin\Controller\IndexController.class.php 第 74 行.
+NOTIC: [8] Use of undefined constant title - assumed 'title' D:\wamp\www\wap\Application\Admin\Controller\IndexController.class.php 第 87 行.
+SQL: SELECT `id`,`data`,`title`
+                FROM `sd_node`
+                WHERE ( `status` =1 AND `display`=2 AND `pid`=378)
+                ORDER BY sort DESC [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant title - assumed 'title' D:\wamp\www\wap\Application\Admin\Controller\IndexController.class.php 第 74 行.
+NOTIC: [8] Use of undefined constant title - assumed 'title' D:\wamp\www\wap\Application\Admin\Controller\IndexController.class.php 第 87 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+

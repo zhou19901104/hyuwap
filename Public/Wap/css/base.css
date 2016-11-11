@@ -1,0 +1,69 @@
+@charset "UTF-8";
+/*css 初始化 */
+*,
+::before,
+::after{ margin: 0;  padding: 0;  /*-webkit-tap-highlight-color: transparent;*//*清除点击默认的高亮效果*/  -webkit-box-sizing: border-box;  box-sizing: border-box; /*以你的border开始计算你的宽度*/  }
+body{ font-size: 14px;  font-family: "Microsoft YaHei",sans-serif;/*第二个是手机的一个默认的字体*/  color: #000;  }
+ul, ol{ list-style: none;  }
+input,textarea{  border: none;  resize: none;  outline: none;/*清除选中效果*/  -webkit-appearance: none;/*清楚浏览器默认的样式*/  }
+fieldset, img,input,button { border:none; padding:0;margin:0;outline-style:none; }
+select, input { vertical-align:middle;}
+select, input, textarea { font-size:12px; margin:0; }
+img {border:0;	vertical-align:middle; }  /*  去掉图片低测默认的3像素空白缝隙*/
+table { border-collapse:collapse; }
+a {color:#666; text-decoration:none; }
+h1,h2,h3,h4,h5,h6 {text-decoration:none;font-weight:normal;font-size:100%;}
+s,i,em{font-style:normal;text-decoration:none;}
+.fl{ float: left; }
+.fr{ float: right; }
+/*清除浮动*/
+.clearfix::before,
+.clearfix::after{ content: ".";  display: block;  height: 0;  line-height: 0;  visibility: hidden;  clear: both; }
+.col-red{color: #C81623!important;}
+/*css初始化完毕*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

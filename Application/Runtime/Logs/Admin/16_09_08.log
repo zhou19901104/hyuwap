@@ -1,0 +1,214 @@
+<<<<<<< HEAD
+[ 2016-09-08T09:20:15+08:00 ] 61.50.106.246 /admin/index/index.html?s=/Admin/Setting/banner_list
+ERR: 1054:Unknown column 'th_img_url' in 'field list'
+ [ SQL语句 ] : SELECT `id`,`th_img_url`,`sort`,`category` FROM `sd_banner` ORDER BY sort desc 
+
+[ 2016-09-08T09:20:20+08:00 ] 61.50.106.246 /admin/index/index.html?s=/Admin/Setting/banner_list
+ERR: 1054:Unknown column 'th_img_url' in 'field list'
+ [ SQL语句 ] : SELECT `id`,`th_img_url`,`sort`,`category` FROM `sd_banner` ORDER BY sort desc 
+
+[ 2016-09-08T09:30:47+08:00 ] 61.50.106.246 /admin/index/index.html?s=/Admin/Setting/banner_list
+ERR: 1054:Unknown column 'th_img_url' in 'field list'
+ [ SQL语句 ] : SELECT `id`,`th_img_url`,`sort`,`category` FROM `sd_banner` ORDER BY sort desc 
+ERR: 1054:Unknown column 'th_img_url' in 'field list'
+ [ SQL语句 ] : SELECT `id`,`th_img_url`,`sort`,`category` FROM `sd_banner` ORDER BY sort desc 
+
+[ 2016-09-08T09:30:48+08:00 ] 61.50.106.246 /admin/index/index.html?s=Admin/Nav/master_list
+ERR: 非法操作:master_list
+
+[ 2016-09-08T09:31:03+08:00 ] 61.50.106.246 /admin/index/index.html?s=Admin/Setting/class_list
+ERR: 1054:Unknown column 'th_img_url' in 'field list'
+ [ SQL语句 ] : SELECT `id`,`pid`,`class_name`,`sort`,`th_img_url` FROM `sd_class` ORDER BY sort desc 
+ERR: 1054:Unknown column 'th_img_url' in 'field list'
+ [ SQL语句 ] : SELECT `id`,`pid`,`class_name`,`sort`,`th_img_url` FROM `sd_class` ORDER BY sort desc 
+
+[ 2016-09-08T09:31:05+08:00 ] 61.50.106.246 /admin/index/index.html?s=Admin/Anli/anli_list
+ERR: 1054:Unknown column 'th_img_url' in 'field list'
+ [ SQL语句 ] : SELECT `id`,`th_img_url`,`sort`,`name` FROM `sd_case` 
+ERR: 1054:Unknown column 'th_img_url' in 'field list'
+ [ SQL语句 ] : SELECT `id`,`th_img_url`,`sort`,`name` FROM `sd_case` 
+
+[ 2016-09-08T09:34:10+08:00 ] 61.50.106.246 /admin/index/index.html?s=/Admin/Setting/banner_list
+ERR: 1054:Unknown column 'th_img_url' in 'field list'
+ [ SQL语句 ] : SELECT `id`,`th_img_url`,`sort`,`category` FROM `sd_banner` ORDER BY sort desc 
+ERR: 1054:Unknown column 'th_img_url' in 'field list'
+ [ SQL语句 ] : SELECT `id`,`th_img_url`,`sort`,`category` FROM `sd_banner` ORDER BY sort desc 
+
+[ 2016-09-08T09:34:12+08:00 ] 61.50.106.246 /admin/index/index.html?s=Admin/Nav/master_list
+ERR: 非法操作:master_list
+
+[ 2016-09-08T09:34:12+08:00 ] 61.50.106.246 /admin/index/index.html?s=Admin/Nav/nav_list
+ERR: 1054:Unknown column 'th_img_url' in 'field list'
+ [ SQL语句 ] : SELECT `id`,`name`,`sort`,`th_img_url` FROM `sd_nav` ORDER BY sort ASC 
+ERR: 1054:Unknown column 'th_img_url' in 'field list'
+ [ SQL语句 ] : SELECT `id`,`name`,`sort`,`th_img_url` FROM `sd_nav` ORDER BY sort ASC 
+
+[ 2016-09-08T09:34:43+08:00 ] 61.50.106.246 /admin/index/index.html?s=/Admin/Setting/banner_list
+ERR: 1054:Unknown column 'th_img_url' in 'field list'
+ [ SQL语句 ] : SELECT `id`,`th_img_url`,`sort`,`category` FROM `sd_banner` ORDER BY sort desc 
+ERR: 1054:Unknown column 'th_img_url' in 'field list'
+ [ SQL语句 ] : SELECT `id`,`th_img_url`,`sort`,`category` FROM `sd_banner` ORDER BY sort desc 
+
+[ 2016-09-08T09:35:02+08:00 ] 61.50.106.246 /admin/index/index.html?s=/Admin/Setting/banner_list
+ERR: 1054:Unknown column 'th_img_url' in 'field list'
+ [ SQL语句 ] : SELECT `id`,`th_img_url`,`sort`,`category` FROM `sd_banner` ORDER BY sort desc 
+ERR: 1054:Unknown column 'th_img_url' in 'field list'
+ [ SQL语句 ] : SELECT `id`,`th_img_url`,`sort`,`category` FROM `sd_banner` ORDER BY sort desc 
+
+[ 2016-09-08T09:35:04+08:00 ] 61.50.106.246 /admin/index/index.html?s=Admin/Nav/master_list
+ERR: 非法操作:master_list
+
+[ 2016-09-08T09:35:14+08:00 ] 61.50.106.246 /index.php/admin/index/index.html?s=/Admin/Setting/banner_list
+ERR: 1054:Unknown column 'th_img_url' in 'field list'
+ [ SQL语句 ] : SELECT `id`,`th_img_url`,`sort`,`category` FROM `sd_banner` ORDER BY sort desc 
+ERR: 1054:Unknown column 'th_img_url' in 'field list'
+ [ SQL语句 ] : SELECT `id`,`th_img_url`,`sort`,`category` FROM `sd_banner` ORDER BY sort desc 
+
+[ 2016-09-08T09:35:14+08:00 ] 61.50.106.246 /index.php/admin/index/index.html?s=Admin/Nav/master_list
+ERR: 非法操作:master_list
+
+[ 2016-09-08T09:35:15+08:00 ] 61.50.106.246 /index.php/admin/index/index.html?s=Admin/Nav/nav_list
+ERR: 1054:Unknown column 'th_img_url' in 'field list'
+ [ SQL语句 ] : SELECT `id`,`name`,`sort`,`th_img_url` FROM `sd_nav` ORDER BY sort ASC 
+ERR: 1054:Unknown column 'th_img_url' in 'field list'
+ [ SQL语句 ] : SELECT `id`,`name`,`sort`,`th_img_url` FROM `sd_nav` ORDER BY sort ASC 
+
+[ 2016-09-08T09:35:16+08:00 ] 61.50.106.246 /index.php/admin/index/index.html?s=/Admin/Setting/banner_list
+ERR: 1054:Unknown column 'th_img_url' in 'field list'
+ [ SQL语句 ] : SELECT `id`,`th_img_url`,`sort`,`category` FROM `sd_banner` ORDER BY sort desc 
+ERR: 1054:Unknown column 'th_img_url' in 'field list'
+ [ SQL语句 ] : SELECT `id`,`th_img_url`,`sort`,`category` FROM `sd_banner` ORDER BY sort desc 
+
+[ 2016-09-08T09:59:17+08:00 ] 61.50.106.246 /admin/index/index.html?s=/Admin/Setting/banner_list
+ERR: 1054:Unknown column 'th_img_url' in 'field list'
+ [ SQL语句 ] : SELECT `id`,`th_img_url`,`sort`,`category` FROM `sd_banner` ORDER BY sort desc 
+ERR: 1054:Unknown column 'th_img_url' in 'field list'
+ [ SQL语句 ] : SELECT `id`,`th_img_url`,`sort`,`category` FROM `sd_banner` ORDER BY sort desc 
+
+[ 2016-09-08T09:59:27+08:00 ] 61.50.106.246 /admin/index/index.html?s=Admin/Nav/nav_list
+ERR: 1054:Unknown column 'th_img_url' in 'field list'
+ [ SQL语句 ] : SELECT `id`,`name`,`sort`,`th_img_url` FROM `sd_nav` ORDER BY sort ASC 
+ERR: 1054:Unknown column 'th_img_url' in 'field list'
+ [ SQL语句 ] : SELECT `id`,`name`,`sort`,`th_img_url` FROM `sd_nav` ORDER BY sort ASC 
+
+[ 2016-09-08T09:59:28+08:00 ] 61.50.106.246 /admin/index/index.html?s=Admin/Nav/master_list
+ERR: 非法操作:master_list
+
+[ 2016-09-08T09:59:33+08:00 ] 61.50.106.246 /admin/index/index.html?s=/Admin/Setting/banner_list
+ERR: 1054:Unknown column 'th_img_url' in 'field list'
+ [ SQL语句 ] : SELECT `id`,`th_img_url`,`sort`,`category` FROM `sd_banner` ORDER BY sort desc 
+ERR: 1054:Unknown column 'th_img_url' in 'field list'
+ [ SQL语句 ] : SELECT `id`,`th_img_url`,`sort`,`category` FROM `sd_banner` ORDER BY sort desc 
+
+[ 2016-09-08T09:59:34+08:00 ] 61.50.106.246 /admin/index/index.html?s=/Admin/Setting/banner_list
+ERR: 1054:Unknown column 'th_img_url' in 'field list'
+ [ SQL语句 ] : SELECT `id`,`th_img_url`,`sort`,`category` FROM `sd_banner` ORDER BY sort desc 
+ERR: 1054:Unknown column 'th_img_url' in 'field list'
+ [ SQL语句 ] : SELECT `id`,`th_img_url`,`sort`,`category` FROM `sd_banner` ORDER BY sort desc 
+
+[ 2016-09-08T09:59:35+08:00 ] 61.50.106.246 /admin/index/index.html?s=Admin/Nav/nav_list
+ERR: 1054:Unknown column 'th_img_url' in 'field list'
+ [ SQL语句 ] : SELECT `id`,`name`,`sort`,`th_img_url` FROM `sd_nav` ORDER BY sort ASC 
+ERR: 1054:Unknown column 'th_img_url' in 'field list'
+ [ SQL语句 ] : SELECT `id`,`name`,`sort`,`th_img_url` FROM `sd_nav` ORDER BY sort ASC 
+
+[ 2016-09-08T09:59:39+08:00 ] 61.50.106.246 /admin/index/index.html?s=Admin/Anli/anli_list
+ERR: 1054:Unknown column 'th_img_url' in 'field list'
+ [ SQL语句 ] : SELECT `id`,`th_img_url`,`sort`,`name` FROM `sd_case` 
+ERR: 1054:Unknown column 'th_img_url' in 'field list'
+ [ SQL语句 ] : SELECT `id`,`th_img_url`,`sort`,`name` FROM `sd_case` 
+
+[ 2016-09-08T09:59:41+08:00 ] 61.50.106.246 /admin/index/index.html?s=Admin/Setting/first_list
+ERR: 非法操作:first_list
+
+[ 2016-09-08T09:59:45+08:00 ] 61.50.106.246 /admin/index/index.html?s=Admin/Anli/anli_list
+ERR: 1054:Unknown column 'th_img_url' in 'field list'
+ [ SQL语句 ] : SELECT `id`,`th_img_url`,`sort`,`name` FROM `sd_case` 
+ERR: 1054:Unknown column 'th_img_url' in 'field list'
+ [ SQL语句 ] : SELECT `id`,`th_img_url`,`sort`,`name` FROM `sd_case` 
+
+[ 2016-09-08T09:59:47+08:00 ] 61.50.106.246 /admin/index/index.html?s=Admin/Anli/anli_list
+ERR: 1054:Unknown column 'th_img_url' in 'field list'
+ [ SQL语句 ] : SELECT `id`,`th_img_url`,`sort`,`name` FROM `sd_case` 
+ERR: 1054:Unknown column 'th_img_url' in 'field list'
+ [ SQL语句 ] : SELECT `id`,`th_img_url`,`sort`,`name` FROM `sd_case` 
+=======
+[ 2016-09-08T09:09:12+08:00 ] 127.0.0.1 /index.php/Admin/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.079005s ]
+
+[ 2016-09-08T09:09:22+08:00 ] 127.0.0.1 /index.php/Admin/Login/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-09-08T09:09:23+08:00 ] 127.0.0.1 /index.php/Admin/Login/captcha/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-09-08T09:09:30+08:00 ] 127.0.0.1 /index.php/Admin/Login/checkLogin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-09-08T09:09:33+08:00 ] 127.0.0.1 /index.php/Admin/Login/captcha/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-09-08T09:09:35+08:00 ] 127.0.0.1 /index.php/Admin/Login/captcha/&0.5394417782487989
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-09-08T09:09:39+08:00 ] 127.0.0.1 /index.php/Admin/Login/checkLogin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-09-08T09:09:39+08:00 ] 127.0.0.1 /index.php/Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-09-08T09:09:40+08:00 ] 127.0.0.1 /index.php/Admin/Index/main.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-09-08T09:09:40+08:00 ] 127.0.0.1 /index.php/Admin/Index/left/id/85.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `sd_node` [ RunTime:0.0040s ]
+SQL: SELECT `id`,`data`,`title`
+                FROM `sd_node`
+                WHERE ( `status` =1 AND `display`=2 AND `pid`=85)
+                ORDER BY sort DESC [ RunTime:0.0000s ]
+SQL: SELECT `title` FROM `sd_node` WHERE `id` = 85 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `id`,`data`,`title`
+                FROM `sd_node`
+                WHERE ( `status` =1 AND `display`=2 AND `pid`=86)
+                ORDER BY sort DESC [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant title - assumed 'title' D:\wamp\www\wap\Application\Admin\Controller\IndexController.class.php 第 74 行.
+NOTIC: [8] Use of undefined constant title - assumed 'title' D:\wamp\www\wap\Application\Admin\Controller\IndexController.class.php 第 87 行.
+NOTIC: [8] Use of undefined constant title - assumed 'title' D:\wamp\www\wap\Application\Admin\Controller\IndexController.class.php 第 87 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.043002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.043002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+>>>>>>> 65e98ab341391aca570a9c0590e1df57c8a71c68
+

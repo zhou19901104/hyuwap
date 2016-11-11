@@ -1,0 +1,3367 @@
+[ 2016-09-18T15:35:23+08:00 ] 61.50.106.246 /Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000977s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-09-18T15:35:46+08:00 ] 61.50.106.246 /Admin/Login/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000976s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006836s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006836s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-09-18T15:35:46+08:00 ] 61.50.106.246 /Admin/Login/captcha/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-09-18T15:35:54+08:00 ] 61.50.106.246 /Admin/Login/captcha/&0.534732263279526
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000976s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000977s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000977s ]
+
+[ 2016-09-18T15:35:55+08:00 ] 61.50.106.246 /Admin/Login/captcha/&0.534732263279526&0.03301274125756609
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000976s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-09-18T15:36:00+08:00 ] 61.50.106.246 /Admin/Login/checkLogin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000976s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+SQL: SHOW COLUMNS FROM `sd_users` [ RunTime:0.0039s ]
+SQL: SELECT `uid`,`role_id`,`username`,`password`,`status`,`remark` FROM `sd_users` WHERE ( username='administrator' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `uid`,`role_id`,`username` FROM `sd_users` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [2] fopen(C:\www\ThinkPHP\Library\Org\Net/UTFWry.dat): failed to open stream: No such file or directory C:\www\ThinkPHP\Library\Org\Net\IpLocation.class.php 第 54 行.
+SQL: UPDATE `sd_users` SET `last_login`='1474184160',`last_login_ip`='61.50.106.246' WHERE `uid` = 1 [ RunTime:0.0000s ]
+
+[ 2016-09-18T15:36:00+08:00 ] 61.50.106.246 /Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000976s ]
+SQL: SELECT `id`,`title`,name
+                       FROM `sd_node`
+                       WHERE( `status` =1 AND `display`=1)
+                       ORDER BY sort DESC [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000976s ]
+NOTIC: [8] Undefined variable: sub_menu_html C:\www\wap\Application\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 96 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007813s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007813s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000977s ]
+
+[ 2016-09-18T15:36:00+08:00 ] 61.50.106.246 /Admin/Index/main.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+NOTIC: [8] Use of undefined constant gd_info - assumed 'gd_info' C:\www\wap\Application\Admin\Controller\IndexController.class.php 第 161 行.
+NOTIC: [8] Undefined index: SERVER_ADDR C:\www\wap\Application\Admin\Controller\IndexController.class.php 第 168 行.
+NOTIC: [8] Use of undefined constant WEB_ROOT - assumed 'WEB_ROOT' C:\www\wap\Application\Admin\Controller\IndexController.class.php 第 171 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000976s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000976s ]
+NOTIC: [8] Undefined variable: ikphp C:\www\wap\Application\Runtime\Cache\Admin\b0f0b709690a72033d17719e8059053c.php 第 5 行.
+NOTIC: [8] Undefined variable: caches C:\www\wap\Application\Runtime\Cache\Admin\b0f0b709690a72033d17719e8059053c.php 第 36 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008790s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008790s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000976s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000976s ]
+
+[ 2016-09-18T15:36:00+08:00 ] 61.50.106.246 /Admin/Index/left/id/85.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000976s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+SQL: SHOW COLUMNS FROM `sd_node` [ RunTime:0.0029s ]
+SQL: SELECT `id`,`data`,`title`
+                FROM `sd_node`
+                WHERE ( `status` =1 AND `display`=2 AND `pid`=85)
+                ORDER BY sort DESC [ RunTime:0.0000s ]
+SQL: SELECT `title` FROM `sd_node` WHERE `id` = 85 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `id`,`data`,`title`
+                FROM `sd_node`
+                WHERE ( `status` =1 AND `display`=2 AND `pid`=86)
+                ORDER BY sort DESC [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant title - assumed 'title' C:\www\wap\Application\Admin\Controller\IndexController.class.php 第 74 行.
+NOTIC: [8] Use of undefined constant title - assumed 'title' C:\www\wap\Application\Admin\Controller\IndexController.class.php 第 87 行.
+NOTIC: [8] Use of undefined constant title - assumed 'title' C:\www\wap\Application\Admin\Controller\IndexController.class.php 第 87 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004883s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004883s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000977s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000977s ]
+
+[ 2016-09-18T15:36:04+08:00 ] 61.50.106.246 /Admin/Index/left/id/85.html?id=340
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000977s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `sd_node` [ RunTime:0.0039s ]
+SQL: SELECT `id`,`data`,`title`
+                FROM `sd_node`
+                WHERE ( `status` =1 AND `display`=2 AND `pid`=340)
+                ORDER BY sort DESC [ RunTime:0.0010s ]
+SQL: SELECT `title` FROM `sd_node` WHERE `id` = 340 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `id`,`data`,`title`
+                FROM `sd_node`
+                WHERE ( `status` =1 AND `display`=2 AND `pid`=341)
+                ORDER BY sort DESC [ RunTime:0.0010s ]
+NOTIC: [8] Use of undefined constant title - assumed 'title' C:\www\wap\Application\Admin\Controller\IndexController.class.php 第 74 行.
+NOTIC: [8] Use of undefined constant title - assumed 'title' C:\www\wap\Application\Admin\Controller\IndexController.class.php 第 87 行.
+SQL: SELECT `id`,`data`,`title`
+                FROM `sd_node`
+                WHERE ( `status` =1 AND `display`=2 AND `pid`=367)
+                ORDER BY sort DESC [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant title - assumed 'title' C:\www\wap\Application\Admin\Controller\IndexController.class.php 第 74 行.
+NOTIC: [8] Use of undefined constant title - assumed 'title' C:\www\wap\Application\Admin\Controller\IndexController.class.php 第 87 行.
+SQL: SELECT `id`,`data`,`title`
+                FROM `sd_node`
+                WHERE ( `status` =1 AND `display`=2 AND `pid`=361)
+                ORDER BY sort DESC [ RunTime:0.0010s ]
+NOTIC: [8] Use of undefined constant title - assumed 'title' C:\www\wap\Application\Admin\Controller\IndexController.class.php 第 74 行.
+NOTIC: [8] Use of undefined constant title - assumed 'title' C:\www\wap\Application\Admin\Controller\IndexController.class.php 第 87 行.
+NOTIC: [8] Use of undefined constant title - assumed 'title' C:\www\wap\Application\Admin\Controller\IndexController.class.php 第 87 行.
+SQL: SELECT `id`,`data`,`title`
+                FROM `sd_node`
+                WHERE ( `status` =1 AND `display`=2 AND `pid`=363)
+                ORDER BY sort DESC [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant title - assumed 'title' C:\www\wap\Application\Admin\Controller\IndexController.class.php 第 74 行.
+NOTIC: [8] Use of undefined constant title - assumed 'title' C:\www\wap\Application\Admin\Controller\IndexController.class.php 第 87 行.
+NOTIC: [8] Use of undefined constant title - assumed 'title' C:\www\wap\Application\Admin\Controller\IndexController.class.php 第 87 行.
+SQL: SELECT `id`,`data`,`title`
+                FROM `sd_node`
+                WHERE ( `status` =1 AND `display`=2 AND `pid`=369)
+                ORDER BY sort DESC [ RunTime:0.0010s ]
+NOTIC: [8] Use of undefined constant title - assumed 'title' C:\www\wap\Application\Admin\Controller\IndexController.class.php 第 74 行.
+NOTIC: [8] Use of undefined constant title - assumed 'title' C:\www\wap\Application\Admin\Controller\IndexController.class.php 第 87 行.
+SQL: SELECT `id`,`data`,`title`
+                FROM `sd_node`
+                WHERE ( `status` =1 AND `display`=2 AND `pid`=371)
+                ORDER BY sort DESC [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant title - assumed 'title' C:\www\wap\Application\Admin\Controller\IndexController.class.php 第 74 行.
+NOTIC: [8] Use of undefined constant title - assumed 'title' C:\www\wap\Application\Admin\Controller\IndexController.class.php 第 87 行.
+NOTIC: [8] Use of undefined constant title - assumed 'title' C:\www\wap\Application\Admin\Controller\IndexController.class.php 第 87 行.
+NOTIC: [8] Use of undefined constant title - assumed 'title' C:\www\wap\Application\Admin\Controller\IndexController.class.php 第 87 行.
+SQL: SELECT `id`,`data`,`title`
+                FROM `sd_node`
+                WHERE ( `status` =1 AND `display`=2 AND `pid`=377)
+                ORDER BY sort DESC [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant title - assumed 'title' C:\www\wap\Application\Admin\Controller\IndexController.class.php 第 74 行.
+NOTIC: [8] Use of undefined constant title - assumed 'title' C:\www\wap\Application\Admin\Controller\IndexController.class.php 第 87 行.
+SQL: SELECT `id`,`data`,`title`
+                FROM `sd_node`
+                WHERE ( `status` =1 AND `display`=2 AND `pid`=378)
+                ORDER BY sort DESC [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant title - assumed 'title' C:\www\wap\Application\Admin\Controller\IndexController.class.php 第 74 行.
+NOTIC: [8] Use of undefined constant title - assumed 'title' C:\www\wap\Application\Admin\Controller\IndexController.class.php 第 87 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004883s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004883s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000977s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000977s ]
+
+[ 2016-09-18T15:36:04+08:00 ] 61.50.106.246 /Admin/Index/index.html?s=/Admin/Setting/banner_list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000977s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000976s ]
+SQL: SHOW COLUMNS FROM `sd_banner` [ RunTime:0.0029s ]
+SQL: SELECT `id`,`sort`,`category`,`th_img_url` FROM `sd_banner` ORDER BY sort desc  [ RunTime:0.0000s ]
+
+[ 2016-09-18T15:36:07+08:00 ] 61.50.106.246 /Admin/Index/index.html?s=Admin/Anli/anli_list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000976s ]
+SQL: SHOW COLUMNS FROM `sd_case` [ RunTime:0.0039s ]
+SQL: SELECT `id`,`th_img_url`,`sort`,`name` FROM `sd_case`  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006836s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007813s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-09-18T15:36:10+08:00 ] 61.50.106.246 /Admin/Anli/anli_edit/id/28.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000976s ]
+SQL: SHOW COLUMNS FROM `sd_case` [ RunTime:0.0029s ]
+SQL: SELECT * FROM `sd_case` WHERE ( id = "28" ) LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005859s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005859s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000977s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000977s ]
+
+[ 2016-09-18T15:36:30+08:00 ] 61.50.106.246 /Admin/Index/index.html?s=Admin/Anli/anli_list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000977s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000976s ]
+SQL: SHOW COLUMNS FROM `sd_case` [ RunTime:0.0029s ]
+SQL: SELECT `id`,`th_img_url`,`sort`,`name` FROM `sd_case`  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006836s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006836s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-09-18T15:36:33+08:00 ] 61.50.106.246 /Admin/Anli/anli_del/id/28.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+SQL: SHOW COLUMNS FROM `sd_case` [ RunTime:0.0020s ]
+SQL: SELECT `th_img_url`,`bg_img_url`,`id` FROM `sd_case` WHERE ( id = "28" ) LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [2] unlink(57b55e6faa92f.jpg): No such file or directory C:\www\wap\Application\Admin\Controller\AnliController.class.php 第 101 行.
+NOTIC: [2] unlink(0): No such file or directory C:\www\wap\Application\Admin\Controller\AnliController.class.php 第 102 行.
+SQL: DELETE FROM `sd_case` WHERE ( id = "28" ) [ RunTime:0.0146s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015626s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015626s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-09-18T15:36:34+08:00 ] 61.50.106.246 /Admin/Anli/anli_list.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+SQL: SHOW COLUMNS FROM `sd_case` [ RunTime:0.0029s ]
+SQL: SELECT `id`,`th_img_url`,`sort`,`name` FROM `sd_case`  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007812s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007812s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000977s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000977s ]
+
+[ 2016-09-18T15:36:36+08:00 ] 61.50.106.246 /Admin/Anli/anli_del/id/29.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+SQL: SHOW COLUMNS FROM `sd_case` [ RunTime:0.0029s ]
+SQL: SELECT `th_img_url`,`bg_img_url`,`id` FROM `sd_case` WHERE ( id = "29" ) LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [2] unlink(57b55e84502b1.jpg): No such file or directory C:\www\wap\Application\Admin\Controller\AnliController.class.php 第 101 行.
+NOTIC: [2] unlink(0): No such file or directory C:\www\wap\Application\Admin\Controller\AnliController.class.php 第 102 行.
+SQL: DELETE FROM `sd_case` WHERE ( id = "29" ) [ RunTime:0.0117s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004883s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004883s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-09-18T15:36:37+08:00 ] 61.50.106.246 /Admin/Anli/anli_list.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000976s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000976s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+SQL: SHOW COLUMNS FROM `sd_case` [ RunTime:0.0020s ]
+SQL: SELECT `id`,`th_img_url`,`sort`,`name` FROM `sd_case`  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006836s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006836s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000977s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000976s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000976s ]
+
+[ 2016-09-18T15:36:40+08:00 ] 61.50.106.246 /Admin/Anli/anli_del/id/30.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000976s ]
+SQL: SHOW COLUMNS FROM `sd_case` [ RunTime:0.0039s ]
+SQL: SELECT `th_img_url`,`bg_img_url`,`id` FROM `sd_case` WHERE ( id = "30" ) LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [2] unlink(57b55e91d184a.jpg): No such file or directory C:\www\wap\Application\Admin\Controller\AnliController.class.php 第 101 行.
+NOTIC: [2] unlink(0): No such file or directory C:\www\wap\Application\Admin\Controller\AnliController.class.php 第 102 行.
+SQL: DELETE FROM `sd_case` WHERE ( id = "30" ) [ RunTime:0.0068s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004883s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005859s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000977s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-09-18T15:36:41+08:00 ] 61.50.106.246 /Admin/Anli/anli_list.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000977s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `sd_case` [ RunTime:0.0039s ]
+SQL: SELECT `id`,`th_img_url`,`sort`,`name` FROM `sd_case`  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007812s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007812s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000977s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000977s ]
+
+[ 2016-09-18T15:38:19+08:00 ] 180.153.81.203 /Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000977s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+
+[ 2016-09-18T15:39:00+08:00 ] 101.226.51.228 /Admin/Index/main.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+
+[ 2016-09-18T15:39:07+08:00 ] 180.163.2.117 /Admin/Login/checkLogin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: verify C:\www\wap\Application\Admin\Controller\LoginController.class.php 第 49 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004883s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004883s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000976s ]
+
+[ 2016-09-18T15:39:09+08:00 ] 140.207.185.111 /Admin/Anli/anli_edit/id/28.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000977s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000976s ]
+
+[ 2016-09-18T15:39:11+08:00 ] 101.226.99.196 /Admin/Index/index.html?s=/Admin/Setting/banner_list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+
+[ 2016-09-18T15:39:16+08:00 ] 101.226.125.103 /Admin/Index/index.html?s=Admin/Anli/anli_list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+
+[ 2016-09-18T15:39:40+08:00 ] 101.226.33.218 /Admin/Anli/anli_del/id/30.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000977s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000976s ]
+
+[ 2016-09-18T15:39:41+08:00 ] 101.226.85.67 /Admin/Anli/anli_list.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-09-18T15:39:42+08:00 ] 101.226.65.104 /Admin/Anli/anli_del/id/28.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000976s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-09-18T15:39:42+08:00 ] 101.226.66.181 /Admin/Anli/anli_del/id/29.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000976s ]
+
+[ 2016-09-18T15:40:50+08:00 ] 61.50.106.246 /Admin/Anli/anli_add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000977s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `sd_case` [ RunTime:0.0029s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005860s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005860s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000976s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-09-18T15:41:12+08:00 ] 61.50.106.246 /Admin/Anli/anli_add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000976s ]
+SQL: SHOW COLUMNS FROM `sd_case` [ RunTime:0.0029s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given C:\www\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+SQL: INSERT INTO `sd_case` (`name`,`resume`,`sort`,`bg_img_url`,`th_img_url`) VALUES ('王利民','','0','./Public/Uploads/anli/2016-09-18/57de45187de62.jpg','./Public/Uploads/anli/2016-09-18/th_57de45187de62.jpg') [ RunTime:0.0068s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000977s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000977s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006836s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006836s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000977s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000977s ]
+
+[ 2016-09-18T15:41:13+08:00 ] 61.50.106.246 /Admin/Anli/anli_list.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000977s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `sd_case` [ RunTime:0.0029s ]
+SQL: SELECT `id`,`th_img_url`,`sort`,`name` FROM `sd_case`  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007812s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007812s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-09-18T15:52:02+08:00 ] 61.50.106.246 /Admin/Anli/anli_add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000977s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `sd_case` [ RunTime:0.0029s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005859s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006836s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000976s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000976s ]
+
+[ 2016-09-18T15:52:29+08:00 ] 61.50.106.246 /Admin/Anli/anli_add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+SQL: SHOW COLUMNS FROM `sd_case` [ RunTime:0.0039s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given C:\www\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+SQL: INSERT INTO `sd_case` (`name`,`resume`,`sort`,`bg_img_url`,`th_img_url`) VALUES ('许文风','','0','./Public/Uploads/anli/2016-09-18/57de47bd34d97.jpg','./Public/Uploads/anli/2016-09-18/th_57de47bd34d97.jpg') [ RunTime:0.0088s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004883s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005859s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000977s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-09-18T15:52:30+08:00 ] 61.50.106.246 /Admin/Anli/anli_list.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000976s ]
+SQL: SHOW COLUMNS FROM `sd_case` [ RunTime:0.0029s ]
+SQL: SELECT `id`,`th_img_url`,`sort`,`name` FROM `sd_case`  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007813s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007813s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000977s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000977s ]
+
+[ 2016-09-18T15:52:31+08:00 ] 61.50.106.246 /Admin/Anli/anli_add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+SQL: SHOW COLUMNS FROM `sd_case` [ RunTime:0.0029s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006837s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006837s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000976s ]
+
+[ 2016-09-18T15:52:47+08:00 ] 61.50.106.246 /Admin/Anli/anli_add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+SQL: SHOW COLUMNS FROM `sd_case` [ RunTime:0.0029s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given C:\www\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+SQL: INSERT INTO `sd_case` (`name`,`resume`,`sort`,`bg_img_url`,`th_img_url`) VALUES ('李浩楠','','0','./Public/Uploads/anli/2016-09-18/57de47cfa58e5.jpg','./Public/Uploads/anli/2016-09-18/th_57de47cfa58e5.jpg') [ RunTime:0.0059s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004883s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004883s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000977s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-09-18T15:52:48+08:00 ] 61.50.106.246 /Admin/Anli/anli_list.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000977s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000976s ]
+SQL: SHOW COLUMNS FROM `sd_case` [ RunTime:0.0020s ]
+SQL: SELECT `id`,`th_img_url`,`sort`,`name` FROM `sd_case`  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007813s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007813s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000977s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000977s ]
+
+[ 2016-09-18T15:52:53+08:00 ] 61.50.106.246 /Admin/Anli/anli_add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `sd_case` [ RunTime:0.0029s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006836s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006836s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000977s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000977s ]
+
+[ 2016-09-18T15:53:05+08:00 ] 61.50.106.246 /Admin/Anli/anli_add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `sd_case` [ RunTime:0.0039s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given C:\www\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+SQL: INSERT INTO `sd_case` (`name`,`resume`,`sort`,`bg_img_url`,`th_img_url`) VALUES ('王艳菊','','0','./Public/Uploads/anli/2016-09-18/57de47e1cf361.jpg','./Public/Uploads/anli/2016-09-18/th_57de47e1cf361.jpg') [ RunTime:0.0078s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004883s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004883s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000976s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-09-18T15:53:07+08:00 ] 61.50.106.246 /Admin/Anli/anli_list.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000976s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+SQL: SHOW COLUMNS FROM `sd_case` [ RunTime:0.0029s ]
+SQL: SELECT `id`,`th_img_url`,`sort`,`name` FROM `sd_case`  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006836s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006836s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000977s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-09-18T16:25:56+08:00 ] 61.50.106.246 /Admin/Index/index.html?s=Admin/Special/sp_list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000977s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `sd_special` [ RunTime:0.0029s ]
+SQL: SELECT s.id,s.pid,s.name,s.active,a.sp_img,a.sp_show,a.sp_id FROM sd_special s INNER JOIN sd_spcontent as a on s.id = a.sp_id  WHERE s.pid <> 0  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_special`  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000977s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000977s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017579s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017579s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000976s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-09-18T16:25:57+08:00 ] 61.50.106.246 /Admin/Index/index.html?s=Admin/Special/sp_class
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000977s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+SQL: SHOW COLUMNS FROM `sd_special` [ RunTime:0.0029s ]
+SQL: SELECT * FROM `sd_special` WHERE `active` = 1  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007813s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007813s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-09-18T16:25:58+08:00 ] 61.50.106.246 /Admin/Index/index.html?s=Admin/Setting/first_list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+ERR: 非法操作:first_list
+
+[ 2016-09-18T16:26:00+08:00 ] 61.50.106.246 /Admin/Index/index.html?s=Admin/Special/sp_class
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+SQL: SHOW COLUMNS FROM `sd_special` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `sd_special` WHERE `active` = 1  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017579s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017579s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000977s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000977s ]
+
+[ 2016-09-18T16:26:04+08:00 ] 61.50.106.246 /Admin/Special/class_edit/id/26.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+SQL: SHOW COLUMNS FROM `sd_special` [ RunTime:0.0029s ]
+SQL: SELECT * FROM `sd_special` WHERE `active` = 1  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `sd_special` WHERE `id` = 26 LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007813s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007813s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000976s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000977s ]
+
+[ 2016-09-18T16:27:17+08:00 ] 61.50.106.246 /Admin/Special/class_edit.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000976s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-09-18T16:27:18+08:00 ] 61.50.106.246 /Admin/Index/index.html?s=Admin/Special/sp_class
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `sd_special` [ RunTime:0.0029s ]
+SQL: SELECT * FROM `sd_special` WHERE `active` = 1  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000977s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007813s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007813s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000976s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-09-18T16:27:58+08:00 ] 61.50.106.246 /Admin/Index/index.html?s=Admin/Special/sp_list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000977s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000976s ]
+SQL: SHOW COLUMNS FROM `sd_special` [ RunTime:0.0029s ]
+SQL: SELECT s.id,s.pid,s.name,s.active,a.sp_img,a.sp_show,a.sp_id FROM sd_special s INNER JOIN sd_spcontent as a on s.id = a.sp_id  WHERE s.pid <> 0  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `sd_special`  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008790s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008790s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000976s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000976s ]
+
+[ 2016-09-18T16:28:01+08:00 ] 61.50.106.246 /Admin/Special/sp_edit/id/17.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000976s ]
+SQL: SHOW COLUMNS FROM `sd_spcontent` [ RunTime:0.0029s ]
+SQL: SELECT s.id as sid,s.sp_id,s.sp_img,c.id,c.name,c.pid FROM sd_spcontent s INNER JOIN sd_special as c on s.sp_id = c.id  WHERE s.sp_id = '17' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sd_special` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `sd_special`  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: sp_content C:\www\wap\Application\Runtime\Cache\Admin\606feb19839782e3ca75f9d054c97e39.php 第 59 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007812s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007812s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000977s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000977s ]
+
+[ 2016-09-18T16:28:05+08:00 ] 61.50.106.246 /Admin/Index/index.html?s=Admin/Setting/first_list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+ERR: 非法操作:first_list
+
+[ 2016-09-18T16:28:05+08:00 ] 61.50.106.246 /Admin/Index/index.html?s=Admin/Special/sp_class
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+SQL: SHOW COLUMNS FROM `sd_special` [ RunTime:0.0029s ]
+SQL: SELECT * FROM `sd_special` WHERE `active` = 1  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017579s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017579s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000977s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000977s ]
+
+[ 2016-09-18T16:29:03+08:00 ] 101.226.66.177 /Admin/Index/index.html?s=Admin/Special/sp_class
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-09-18T16:29:03+08:00 ] 180.153.211.172 /Admin/Index/index.html?s=Admin/Special/sp_list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000977s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+
+[ 2016-09-18T16:29:04+08:00 ] 140.207.185.109 /Admin/Special/class_edit/id/26.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+
+[ 2016-09-18T16:29:06+08:00 ] 101.226.66.187 /Admin/Index/index.html?s=Admin/Setting/first_list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000977s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000976s ]
+
+[ 2016-09-18T16:30:25+08:00 ] 101.226.66.192 /Admin/Special/class_edit.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000977s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-09-18T16:31:10+08:00 ] 101.226.33.218 /Admin/Special/sp_edit/id/17.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-09-18T16:50:04+08:00 ] 61.50.106.246 /Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000977s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000976s ]
+SQL: SELECT `id`,`title`,name
+                       FROM `sd_node`
+                       WHERE( `status` =1 AND `display`=1)
+                       ORDER BY sort DESC [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: sub_menu_html C:\www\wap\Application\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 96 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017579s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018556s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000976s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000976s ]
+
+[ 2016-09-18T16:50:06+08:00 ] 61.50.106.246 /Admin/Index/main.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+NOTIC: [8] Use of undefined constant gd_info - assumed 'gd_info' C:\www\wap\Application\Admin\Controller\IndexController.class.php 第 161 行.
+NOTIC: [8] Undefined index: SERVER_ADDR C:\www\wap\Application\Admin\Controller\IndexController.class.php 第 168 行.
+NOTIC: [8] Use of undefined constant WEB_ROOT - assumed 'WEB_ROOT' C:\www\wap\Application\Admin\Controller\IndexController.class.php 第 171 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000977s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000977s ]
+NOTIC: [8] Undefined variable: ikphp C:\www\wap\Application\Runtime\Cache\Admin\b0f0b709690a72033d17719e8059053c.php 第 5 行.
+NOTIC: [8] Undefined variable: caches C:\www\wap\Application\Runtime\Cache\Admin\b0f0b709690a72033d17719e8059053c.php 第 36 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007813s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007813s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000977s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-09-18T16:50:06+08:00 ] 61.50.106.246 /Admin/Index/left/id/85.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000977s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000976s ]
+SQL: SHOW COLUMNS FROM `sd_node` [ RunTime:0.0029s ]
+SQL: SELECT `id`,`data`,`title`
+                FROM `sd_node`
+                WHERE ( `status` =1 AND `display`=2 AND `pid`=85)
+                ORDER BY sort DESC [ RunTime:0.0010s ]
+SQL: SELECT `title` FROM `sd_node` WHERE `id` = 85 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `id`,`data`,`title`
+                FROM `sd_node`
+                WHERE ( `status` =1 AND `display`=2 AND `pid`=86)
+                ORDER BY sort DESC [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant title - assumed 'title' C:\www\wap\Application\Admin\Controller\IndexController.class.php 第 74 行.
+NOTIC: [8] Use of undefined constant title - assumed 'title' C:\www\wap\Application\Admin\Controller\IndexController.class.php 第 87 行.
+NOTIC: [8] Use of undefined constant title - assumed 'title' C:\www\wap\Application\Admin\Controller\IndexController.class.php 第 87 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004883s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004883s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000976s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000976s ]
+
+[ 2016-09-18T16:50:07+08:00 ] 61.50.106.246 /Admin/Index/left/id/85.html?id=151
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+SQL: SHOW COLUMNS FROM `sd_node` [ RunTime:0.0029s ]
+SQL: SELECT `id`,`data`,`title`
+                FROM `sd_node`
+                WHERE ( `status` =1 AND `display`=2 AND `pid`=151)
+                ORDER BY sort DESC [ RunTime:0.0010s ]
+SQL: SELECT `title` FROM `sd_node` WHERE `id` = 151 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `id`,`data`,`title`
+                FROM `sd_node`
+                WHERE ( `status` =1 AND `display`=2 AND `pid`=152)
+                ORDER BY sort DESC [ RunTime:0.0010s ]
+NOTIC: [8] Use of undefined constant title - assumed 'title' C:\www\wap\Application\Admin\Controller\IndexController.class.php 第 74 行.
+NOTIC: [8] Use of undefined constant title - assumed 'title' C:\www\wap\Application\Admin\Controller\IndexController.class.php 第 87 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004883s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004883s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000977s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000977s ]
+
+[ 2016-09-18T16:50:07+08:00 ] 61.50.106.246 /Admin/Index/index.html?s=/Admin/User/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+SQL: SHOW COLUMNS FROM `sd_users` [ RunTime:0.0029s ]
+SQL: SELECT u.uid,u.role_id,u.username,u.status,r.id,r.name FROM sd_users u INNER JOIN sd_role as r on u.uid=r.id  WHERE ( 2>1 )  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: roles C:\www\wap\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 38 行.
+NOTIC: [8] Use of undefined constant hlbs - assumed 'hlbs' C:\www\wap\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 55 行.
+NOTIC: [8] Undefined variable: page C:\www\wap\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 75 行.
+NOTIC: [8] Undefined variable: pageUrl C:\www\wap\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 79 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009766s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009766s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000976s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000976s ]
+
+[ 2016-09-18T16:50:07+08:00 ] 61.50.106.246 /Admin/Index/left/id/85.html?id=340
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000976s ]
+SQL: SHOW COLUMNS FROM `sd_node` [ RunTime:0.0039s ]
+SQL: SELECT `id`,`data`,`title`
+                FROM `sd_node`
+                WHERE ( `status` =1 AND `display`=2 AND `pid`=340)
+                ORDER BY sort DESC [ RunTime:0.0010s ]
+SQL: SELECT `title` FROM `sd_node` WHERE `id` = 340 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `id`,`data`,`title`
+                FROM `sd_node`
+                WHERE ( `status` =1 AND `display`=2 AND `pid`=341)
+                ORDER BY sort DESC [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant title - assumed 'title' C:\www\wap\Application\Admin\Controller\IndexController.class.php 第 74 行.
+NOTIC: [8] Use of undefined constant title - assumed 'title' C:\www\wap\Application\Admin\Controller\IndexController.class.php 第 87 行.
+SQL: SELECT `id`,`data`,`title`
+                FROM `sd_node`
+                WHERE ( `status` =1 AND `display`=2 AND `pid`=367)
+                ORDER BY sort DESC [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant title - assumed 'title' C:\www\wap\Application\Admin\Controller\IndexController.class.php 第 74 行.
+NOTIC: [8] Use of undefined constant title - assumed 'title' C:\www\wap\Application\Admin\Controller\IndexController.class.php 第 87 行.
+SQL: SELECT `id`,`data`,`title`
+                FROM `sd_node`
+                WHERE ( `status` =1 AND `display`=2 AND `pid`=361)
+                ORDER BY sort DESC [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant title - assumed 'title' C:\www\wap\Application\Admin\Controller\IndexController.class.php 第 74 行.
+NOTIC: [8] Use of undefined constant title - assumed 'title' C:\www\wap\Application\Admin\Controller\IndexController.class.php 第 87 行.
+NOTIC: [8] Use of undefined constant title - assumed 'title' C:\www\wap\Application\Admin\Controller\IndexController.class.php 第 87 行.
+SQL: SELECT `id`,`data`,`title`
+                FROM `sd_node`
+                WHERE ( `status` =1 AND `display`=2 AND `pid`=363)
+                ORDER BY sort DESC [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant title - assumed 'title' C:\www\wap\Application\Admin\Controller\IndexController.class.php 第 74 行.
+NOTIC: [8] Use of undefined constant title - assumed 'title' C:\www\wap\Application\Admin\Controller\IndexController.class.php 第 87 行.
+NOTIC: [8] Use of undefined constant title - assumed 'title' C:\www\wap\Application\Admin\Controller\IndexController.class.php 第 87 行.
+SQL: SELECT `id`,`data`,`title`
+                FROM `sd_node`
+                WHERE ( `status` =1 AND `display`=2 AND `pid`=369)
+                ORDER BY sort DESC [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant title - assumed 'title' C:\www\wap\Application\Admin\Controller\IndexController.class.php 第 74 行.
+NOTIC: [8] Use of undefined constant title - assumed 'title' C:\www\wap\Application\Admin\Controller\IndexController.class.php 第 87 行.
+SQL: SELECT `id`,`data`,`title`
+                FROM `sd_node`
+                WHERE ( `status` =1 AND `display`=2 AND `pid`=371)
+                ORDER BY sort DESC [ RunTime:0.0010s ]
+NOTIC: [8] Use of undefined constant title - assumed 'title' C:\www\wap\Application\Admin\Controller\IndexController.class.php 第 74 行.
+NOTIC: [8] Use of undefined constant title - assumed 'title' C:\www\wap\Application\Admin\Controller\IndexController.class.php 第 87 行.
+NOTIC: [8] Use of undefined constant title - assumed 'title' C:\www\wap\Application\Admin\Controller\IndexController.class.php 第 87 行.
+NOTIC: [8] Use of undefined constant title - assumed 'title' C:\www\wap\Application\Admin\Controller\IndexController.class.php 第 87 行.
+SQL: SELECT `id`,`data`,`title`
+                FROM `sd_node`
+                WHERE ( `status` =1 AND `display`=2 AND `pid`=377)
+                ORDER BY sort DESC [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant title - assumed 'title' C:\www\wap\Application\Admin\Controller\IndexController.class.php 第 74 行.
+NOTIC: [8] Use of undefined constant title - assumed 'title' C:\www\wap\Application\Admin\Controller\IndexController.class.php 第 87 行.
+SQL: SELECT `id`,`data`,`title`
+                FROM `sd_node`
+                WHERE ( `status` =1 AND `display`=2 AND `pid`=378)
+                ORDER BY sort DESC [ RunTime:0.0010s ]
+NOTIC: [8] Use of undefined constant title - assumed 'title' C:\www\wap\Application\Admin\Controller\IndexController.class.php 第 74 行.
+NOTIC: [8] Use of undefined constant title - assumed 'title' C:\www\wap\Application\Admin\Controller\IndexController.class.php 第 87 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003906s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003906s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-09-18T16:50:08+08:00 ] 61.50.106.246 /Admin/Index/index.html?s=/Admin/Setting/banner_list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000976s ]
+SQL: SHOW COLUMNS FROM `sd_banner` [ RunTime:0.0020s ]
+SQL: SELECT `id`,`sort`,`category`,`th_img_url` FROM `sd_banner` ORDER BY sort desc  [ RunTime:0.0010s ]
+
+[ 2016-09-18T16:50:09+08:00 ] 61.50.106.246 /Admin/Index/index.html?s=Admin/Special/sp_list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+SQL: SHOW COLUMNS FROM `sd_special` [ RunTime:0.0029s ]
+SQL: SELECT s.id,s.pid,s.name,s.active,a.sp_img,a.sp_show,a.sp_id FROM sd_special s INNER JOIN sd_spcontent as a on s.id = a.sp_id  WHERE s.pid <> 0  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_special`  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007813s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007813s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-09-18T16:50:11+08:00 ] 61.50.106.246 /Admin/Index/index.html?s=Admin/Special/sp_class
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `sd_special` [ RunTime:0.0039s ]
+SQL: SELECT * FROM `sd_special` WHERE `active` = 1  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000977s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006837s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007813s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-09-18T16:50:12+08:00 ] 61.50.106.246 /Admin/Special/class_edit/id/26.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000976s ]
+SQL: SHOW COLUMNS FROM `sd_special` [ RunTime:0.0029s ]
+SQL: SELECT * FROM `sd_special` WHERE `active` = 1  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_special` WHERE `id` = 26 LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006837s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006837s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000976s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000976s ]
+
+[ 2016-09-18T16:50:19+08:00 ] 61.50.106.246 /Admin/Special/class_edit.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000977s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000976s ]
+SQL: SHOW COLUMNS FROM `sd_special` [ RunTime:0.0029s ]
+NOTIC: [8] Undefined index: validate C:\www\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto C:\www\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: SELECT * FROM `sd_special` WHERE `id` = 26 LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given C:\www\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+NOTIC: [2] unlink(57bac935c0936.jpg): No such file or directory C:\www\wap\Application\Admin\Controller\SpecialController.class.php 第 137 行.
+SQL: UPDATE `sd_special` SET `name`='皮肤美容科',`pid`='0',`sort`='0',`sp_img_url`='./Public/Uploads/special/2016-09-18/th_57de554b8998a.jpg' WHERE `id` = 26 [ RunTime:0.0313s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005860s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005860s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000977s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-09-18T16:50:20+08:00 ] 61.50.106.246 /Admin/Special/sp_class.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000977s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `sd_special` [ RunTime:0.0029s ]
+SQL: SELECT * FROM `sd_special` WHERE `active` = 1  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006836s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007812s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000977s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-09-18T16:52:43+08:00 ] 61.50.106.246 /Admin/Special/class_edit/id/27.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000977s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000976s ]
+SQL: SHOW COLUMNS FROM `sd_special` [ RunTime:0.0029s ]
+SQL: SELECT * FROM `sd_special` WHERE `active` = 1  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `sd_special` WHERE `id` = 27 LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007813s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007813s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000976s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-09-18T16:52:54+08:00 ] 61.50.106.246 /Admin/Special/class_edit.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000976s ]
+SQL: SHOW COLUMNS FROM `sd_special` [ RunTime:0.0029s ]
+NOTIC: [8] Undefined index: validate C:\www\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto C:\www\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: SELECT * FROM `sd_special` WHERE `id` = 27 LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given C:\www\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+NOTIC: [2] unlink(57bba16e6cfab.jpg): No such file or directory C:\www\wap\Application\Admin\Controller\SpecialController.class.php 第 137 行.
+SQL: UPDATE `sd_special` SET `name`='美容外科',`pid`='0',`sort`='0',`sp_img_url`='./Public/Uploads/special/2016-09-18/th_57de55e64feb6.jpg' WHERE `id` = 27 [ RunTime:0.0068s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005860s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005860s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-09-18T16:52:55+08:00 ] 61.50.106.246 /Admin/Special/sp_class.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000977s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000976s ]
+SQL: SHOW COLUMNS FROM `sd_special` [ RunTime:0.0029s ]
+SQL: SELECT * FROM `sd_special` WHERE `active` = 1  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007812s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007812s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000977s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000977s ]
+
+[ 2016-09-18T16:52:57+08:00 ] 61.50.106.246 /Admin/Special/class_edit/id/28.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `sd_special` [ RunTime:0.0029s ]
+SQL: SELECT * FROM `sd_special` WHERE `active` = 1  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `sd_special` WHERE `id` = 28 LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007812s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007812s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-09-18T16:53:06+08:00 ] 61.50.106.246 /Admin/Special/class_edit.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+SQL: SHOW COLUMNS FROM `sd_special` [ RunTime:0.0029s ]
+NOTIC: [8] Undefined index: validate C:\www\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto C:\www\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: SELECT * FROM `sd_special` WHERE `id` = 28 LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given C:\www\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+NOTIC: [2] unlink(57be64434a68e.jpg): No such file or directory C:\www\wap\Application\Admin\Controller\SpecialController.class.php 第 137 行.
+SQL: UPDATE `sd_special` SET `name`='注射微整形',`pid`='0',`sort`='0',`sp_img_url`='./Public/Uploads/special/2016-09-18/th_57de55f224a35.jpg' WHERE `id` = 28 [ RunTime:0.0088s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005860s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005860s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000976s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000976s ]
+
+[ 2016-09-18T16:53:07+08:00 ] 61.50.106.246 /Admin/Special/sp_class.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000977s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000977s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000976s ]
+SQL: SHOW COLUMNS FROM `sd_special` [ RunTime:0.0029s ]
+SQL: SELECT * FROM `sd_special` WHERE `active` = 1  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006837s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006837s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000976s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000976s ]
+
+[ 2016-09-18T16:53:12+08:00 ] 180.153.214.197 /Admin/Index/index.html?s=/Admin/User/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000977s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-09-18T16:53:29+08:00 ] 101.226.33.238 /Admin/Special/sp_class.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000976s ]
+
+[ 2016-09-18T16:55:49+08:00 ] 180.153.205.253 /Admin/Special/class_edit/id/27.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+
+[ 2016-09-18T16:56:03+08:00 ] 101.226.65.104 /Admin/Special/class_edit/id/28.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+
+[ 2016-09-18T16:58:01+08:00 ] 61.50.106.246 /Admin/Index/index.html?s=Admin/Setting/first_list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+ERR: 非法操作:first_list
+
+[ 2016-09-18T16:58:02+08:00 ] 61.50.106.246 /Admin/Index/index.html?s=Admin/Special/sp_list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+SQL: SHOW COLUMNS FROM `sd_special` [ RunTime:0.0039s ]
+SQL: SELECT s.id,s.pid,s.name,s.active,a.sp_img,a.sp_show,a.sp_id FROM sd_special s INNER JOIN sd_spcontent as a on s.id = a.sp_id  WHERE s.pid <> 0  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `sd_special`  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008789s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008789s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000977s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000977s ]
+
+[ 2016-09-18T16:58:06+08:00 ] 61.50.106.246 /Admin/Special/down_active/id/24.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+SQL: SHOW COLUMNS FROM `sd_special` [ RunTime:0.0029s ]
+SQL: UPDATE `sd_special` SET `active`='0' WHERE `id` = 24 [ RunTime:0.0078s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014649s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014649s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000977s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000977s ]
+
+[ 2016-09-18T16:58:07+08:00 ] 61.50.106.246 /Admin/Special/sp_list.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000976s ]
+SQL: SHOW COLUMNS FROM `sd_special` [ RunTime:0.0039s ]
+SQL: SELECT s.id,s.pid,s.name,s.active,a.sp_img,a.sp_show,a.sp_id FROM sd_special s INNER JOIN sd_spcontent as a on s.id = a.sp_id  WHERE s.pid <> 0  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_special`  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007813s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007813s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000977s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000976s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000976s ]
+
+[ 2016-09-18T16:58:22+08:00 ] 61.50.106.246 /Admin/Special/up_active/id/24.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000976s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `sd_special` [ RunTime:0.0029s ]
+SQL: UPDATE `sd_special` SET `active`='1' WHERE `id` = 24 [ RunTime:0.0049s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014649s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014649s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000977s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000977s ]
+
+[ 2016-09-18T16:58:23+08:00 ] 61.50.106.246 /Admin/Special/sp_list.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000977s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000976s ]
+SQL: SHOW COLUMNS FROM `sd_special` [ RunTime:0.0020s ]
+SQL: SELECT s.id,s.pid,s.name,s.active,a.sp_img,a.sp_show,a.sp_id FROM sd_special s INNER JOIN sd_spcontent as a on s.id = a.sp_id  WHERE s.pid <> 0  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `sd_special`  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000977s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010742s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011719s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-09-18T16:58:33+08:00 ] 61.50.106.246 /Admin/Special/down_active/id/24.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+SQL: SHOW COLUMNS FROM `sd_special` [ RunTime:0.0029s ]
+SQL: UPDATE `sd_special` SET `active`='0' WHERE `id` = 24 [ RunTime:0.0059s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000977s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000977s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015625s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015625s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000977s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000977s ]
+
+[ 2016-09-18T16:58:34+08:00 ] 61.50.106.246 /Admin/Special/sp_list.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000976s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+SQL: SHOW COLUMNS FROM `sd_special` [ RunTime:0.0039s ]
+SQL: SELECT s.id,s.pid,s.name,s.active,a.sp_img,a.sp_show,a.sp_id FROM sd_special s INNER JOIN sd_spcontent as a on s.id = a.sp_id  WHERE s.pid <> 0  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `sd_special`  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008790s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008790s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000976s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000976s ]
+
+[ 2016-09-18T17:01:12+08:00 ] 180.153.214.180 /Admin/Special/down_active/id/24.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000976s ]
+
+[ 2016-09-18T17:01:16+08:00 ] 101.226.61.207 /Admin/Special/sp_list.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-09-18T17:01:28+08:00 ] 101.226.65.108 /Admin/Special/up_active/id/24.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-09-18T17:25:21+08:00 ] 61.50.106.246 /Admin/Index/index.html?s=Admin/Nav/nav_list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `sd_nav` [ RunTime:0.0039s ]
+SQL: SELECT `id`,`name`,`sort`,`th_img_url` FROM `sd_nav` ORDER BY sort ASC  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007813s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007813s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000976s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-09-18T17:27:34+08:00 ] 61.50.106.246 /Admin/Index/index.html?s=Admin/Nav/nav_list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000976s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `sd_nav` [ RunTime:0.0029s ]
+SQL: SELECT `id`,`name`,`sort`,`th_img_url` FROM `sd_nav` ORDER BY sort ASC  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007813s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008790s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000976s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000976s ]
+
+[ 2016-09-18T17:36:38+08:00 ] 61.50.106.246 /Admin/Nav/nav_edit/id/19.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+SQL: SHOW COLUMNS FROM `sd_nav` [ RunTime:0.0039s ]
+SQL: SELECT * FROM `sd_nav` WHERE `id` = 19 LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019532s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019532s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000976s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-09-18T17:36:51+08:00 ] 61.50.106.246 /Admin/Nav/nav_edit.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000976s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `sd_nav` [ RunTime:0.0029s ]
+SQL: SHOW COLUMNS FROM `sd_banner` [ RunTime:0.0029s ]
+SQL: SELECT `th_img_url`,`bg_img_url` FROM `sd_banner` WHERE `id` = 19 LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [2] unlink(): No such file or directory C:\www\wap\Application\Admin\Controller\NavController.class.php 第 135 行.
+NOTIC: [2] unlink(): No such file or directory C:\www\wap\Application\Admin\Controller\NavController.class.php 第 136 行.
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given C:\www\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+SQL: UPDATE `sd_nav` SET `sort`='1',`id`='19',`link`='index',`bg_img_url`='./Public/Uploads/nav/2016-09-18/57de60332ae37.jpg',`th_img_url`='./Public/Uploads/nav/2016-09-18/th_57de60332ae37.jpg' WHERE `id` = 19 [ RunTime:0.0098s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005859s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005859s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000977s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000977s ]
+
+[ 2016-09-18T17:36:52+08:00 ] 61.50.106.246 /Admin/Nav/nav_list.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000976s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `sd_nav` [ RunTime:0.0039s ]
+SQL: SELECT `id`,`name`,`sort`,`th_img_url` FROM `sd_nav` ORDER BY sort ASC  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007813s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008790s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-09-18T17:37:00+08:00 ] 61.50.106.246 /Admin/Nav/nav_edit/id/21.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+SQL: SHOW COLUMNS FROM `sd_nav` [ RunTime:0.0029s ]
+SQL: SELECT * FROM `sd_nav` WHERE `id` = 21 LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006836s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006836s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000977s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000977s ]
+
+[ 2016-09-18T17:37:09+08:00 ] 61.50.106.246 /Admin/Nav/nav_edit.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+SQL: SHOW COLUMNS FROM `sd_nav` [ RunTime:0.0029s ]
+SQL: SHOW COLUMNS FROM `sd_banner` [ RunTime:0.0029s ]
+SQL: SELECT `th_img_url`,`bg_img_url` FROM `sd_banner` WHERE `id` = 21 LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [2] unlink(): No such file or directory C:\www\wap\Application\Admin\Controller\NavController.class.php 第 135 行.
+NOTIC: [2] unlink(): No such file or directory C:\www\wap\Application\Admin\Controller\NavController.class.php 第 136 行.
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given C:\www\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+SQL: UPDATE `sd_nav` SET `sort`='3',`id`='21',`link`='project_list',`bg_img_url`='./Public/Uploads/nav/2016-09-18/57de60455e14b.jpg',`th_img_url`='./Public/Uploads/nav/2016-09-18/th_57de60455e14b.jpg' WHERE `id` = 21 [ RunTime:0.0127s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004883s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005860s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-09-18T17:37:10+08:00 ] 61.50.106.246 /Admin/Nav/nav_list.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000976s ]
+SQL: SHOW COLUMNS FROM `sd_nav` [ RunTime:0.0039s ]
+SQL: SELECT `id`,`name`,`sort`,`th_img_url` FROM `sd_nav` ORDER BY sort ASC  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007812s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007812s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000977s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000977s ]
+
+[ 2016-09-18T17:37:15+08:00 ] 61.50.106.246 /Admin/Nav/nav_edit/id/22.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000976s ]
+SQL: SHOW COLUMNS FROM `sd_nav` [ RunTime:0.0039s ]
+SQL: SELECT * FROM `sd_nav` WHERE `id` = 22 LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006837s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006837s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000976s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000976s ]
+
+[ 2016-09-18T17:37:22+08:00 ] 61.50.106.246 /Admin/Nav/nav_edit.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+SQL: SHOW COLUMNS FROM `sd_nav` [ RunTime:0.0029s ]
+SQL: SHOW COLUMNS FROM `sd_banner` [ RunTime:0.0020s ]
+SQL: SELECT `th_img_url`,`bg_img_url` FROM `sd_banner` WHERE `id` = 22 LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [2] unlink(): No such file or directory C:\www\wap\Application\Admin\Controller\NavController.class.php 第 135 行.
+NOTIC: [2] unlink(): No such file or directory C:\www\wap\Application\Admin\Controller\NavController.class.php 第 136 行.
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given C:\www\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+SQL: UPDATE `sd_nav` SET `sort`='4',`id`='22',`link`='project_list',`bg_img_url`='./Public/Uploads/nav/2016-09-18/57de60528e9a8.jpg',`th_img_url`='./Public/Uploads/nav/2016-09-18/th_57de60528e9a8.jpg' WHERE `id` = 22 [ RunTime:0.0068s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000976s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004883s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004883s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000977s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-09-18T17:37:23+08:00 ] 61.50.106.246 /Admin/Nav/nav_list.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+SQL: SHOW COLUMNS FROM `sd_nav` [ RunTime:0.0039s ]
+SQL: SELECT `id`,`name`,`sort`,`th_img_url` FROM `sd_nav` ORDER BY sort ASC  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000977s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000977s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007813s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007813s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000977s ]
+
+[ 2016-09-18T17:37:26+08:00 ] 61.50.106.246 /Admin/Nav/nav_edit/id/24.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000977s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+SQL: SHOW COLUMNS FROM `sd_nav` [ RunTime:0.0039s ]
+SQL: SELECT * FROM `sd_nav` WHERE `id` = 24 LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000977s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000977s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007813s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007813s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000976s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000976s ]
+
+[ 2016-09-18T17:37:34+08:00 ] 61.50.106.246 /Admin/Nav/nav_edit.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000976s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `sd_nav` [ RunTime:0.0029s ]
+SQL: SHOW COLUMNS FROM `sd_banner` [ RunTime:0.0029s ]
+SQL: SELECT `th_img_url`,`bg_img_url` FROM `sd_banner` WHERE `id` = 24 LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [2] unlink(): No such file or directory C:\www\wap\Application\Admin\Controller\NavController.class.php 第 135 行.
+NOTIC: [2] unlink(): No such file or directory C:\www\wap\Application\Admin\Controller\NavController.class.php 第 136 行.
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given C:\www\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+SQL: UPDATE `sd_nav` SET `sort`='5',`id`='24',`link`='case_list',`bg_img_url`='./Public/Uploads/nav/2016-09-18/57de605deffc3.jpg',`th_img_url`='./Public/Uploads/nav/2016-09-18/th_57de605deffc3.jpg' WHERE `id` = 24 [ RunTime:0.0078s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005860s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005860s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000976s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000976s ]
+
+[ 2016-09-18T17:37:35+08:00 ] 61.50.106.246 /Admin/Nav/nav_list.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000977s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `sd_nav` [ RunTime:0.0029s ]
+SQL: SELECT `id`,`name`,`sort`,`th_img_url` FROM `sd_nav` ORDER BY sort ASC  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007813s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007813s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000977s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000977s ]
+
+[ 2016-09-18T17:37:37+08:00 ] 61.50.106.246 /Admin/Nav/nav_edit/id/23.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000976s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000976s ]
+SQL: SHOW COLUMNS FROM `sd_nav` [ RunTime:0.0029s ]
+SQL: SELECT * FROM `sd_nav` WHERE `id` = 23 LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006836s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006836s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000977s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000977s ]
+
+[ 2016-09-18T17:37:45+08:00 ] 61.50.106.246 /Admin/Nav/nav_edit.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+SQL: SHOW COLUMNS FROM `sd_nav` [ RunTime:0.0029s ]
+SQL: SHOW COLUMNS FROM `sd_banner` [ RunTime:0.0029s ]
+SQL: SELECT `th_img_url`,`bg_img_url` FROM `sd_banner` WHERE `id` = 23 LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [2] unlink(): No such file or directory C:\www\wap\Application\Admin\Controller\NavController.class.php 第 135 行.
+NOTIC: [2] unlink(): No such file or directory C:\www\wap\Application\Admin\Controller\NavController.class.php 第 136 行.
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given C:\www\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+SQL: UPDATE `sd_nav` SET `sort`='6',`id`='23',`link`='doctor_list',`bg_img_url`='./Public/Uploads/nav/2016-09-18/57de60693e781.jpg',`th_img_url`='./Public/Uploads/nav/2016-09-18/th_57de60693e781.jpg' WHERE `id` = 23 [ RunTime:0.0098s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005860s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005860s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000976s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000976s ]
+
+[ 2016-09-18T17:37:46+08:00 ] 61.50.106.246 /Admin/Nav/nav_list.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000977s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `sd_nav` [ RunTime:0.0029s ]
+SQL: SELECT `id`,`name`,`sort`,`th_img_url` FROM `sd_nav` ORDER BY sort ASC  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006837s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006837s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000976s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-09-18T17:37:47+08:00 ] 61.50.106.246 /Admin/Nav/nav_edit/id/25.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000977s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000976s ]
+SQL: SHOW COLUMNS FROM `sd_nav` [ RunTime:0.0029s ]
+SQL: SELECT * FROM `sd_nav` WHERE `id` = 25 LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006836s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006836s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000977s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000977s ]
+
+[ 2016-09-18T17:37:54+08:00 ] 61.50.106.246 /Admin/Nav/nav_edit.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000976s ]
+SQL: SHOW COLUMNS FROM `sd_nav` [ RunTime:0.0029s ]
+SQL: SHOW COLUMNS FROM `sd_banner` [ RunTime:0.0020s ]
+SQL: SELECT `th_img_url`,`bg_img_url` FROM `sd_banner` WHERE `id` = 25 LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [2] unlink(): No such file or directory C:\www\wap\Application\Admin\Controller\NavController.class.php 第 135 行.
+NOTIC: [2] unlink(): No such file or directory C:\www\wap\Application\Admin\Controller\NavController.class.php 第 136 行.
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given C:\www\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+SQL: UPDATE `sd_nav` SET `sort`='7',`id`='25',`link`='wap',`bg_img_url`='./Public/Uploads/nav/2016-09-18/57de607251a0a.jpg',`th_img_url`='./Public/Uploads/nav/2016-09-18/th_57de607251a0a.jpg' WHERE `id` = 25 [ RunTime:0.0068s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005859s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005859s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000977s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000977s ]
+
+[ 2016-09-18T17:37:55+08:00 ] 61.50.106.246 /Admin/Nav/nav_list.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000976s ]
+SQL: SHOW COLUMNS FROM `sd_nav` [ RunTime:0.0029s ]
+SQL: SELECT `id`,`name`,`sort`,`th_img_url` FROM `sd_nav` ORDER BY sort ASC  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007813s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007813s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000977s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000977s ]
+
+[ 2016-09-18T17:39:45+08:00 ] 61.151.228.22 /Admin/Nav/nav_edit/id/19.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000977s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000976s ]
+
+[ 2016-09-18T17:40:00+08:00 ] 61.151.226.199 /Admin/Nav/nav_edit.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000976s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-09-18T17:40:08+08:00 ] 101.226.33.223 /Admin/Nav/nav_edit/id/21.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000976s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+
+[ 2016-09-18T17:40:14+08:00 ] 180.163.1.46 /Admin/Nav/nav_edit/id/22.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+
+[ 2016-09-18T17:40:32+08:00 ] 180.153.214.180 /Admin/Nav/nav_edit/id/24.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000976s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-09-18T17:40:42+08:00 ] 101.226.51.230 /Admin/Nav/nav_edit/id/23.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+
+[ 2016-09-18T17:42:14+08:00 ] 61.50.106.246 /Admin/Nav/nav_edit/id/14.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+SQL: SHOW COLUMNS FROM `sd_nav` [ RunTime:0.0029s ]
+SQL: SELECT * FROM `sd_nav` WHERE `id` = 14 LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000977s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006836s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006836s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000977s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000977s ]
+
+[ 2016-09-18T17:42:26+08:00 ] 61.50.106.246 /Admin/Nav/nav_edit.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000977s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+SQL: SHOW COLUMNS FROM `sd_nav` [ RunTime:0.0029s ]
+SQL: SHOW COLUMNS FROM `sd_banner` [ RunTime:0.0029s ]
+SQL: SELECT `th_img_url`,`bg_img_url` FROM `sd_banner` WHERE `id` = 14 LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [2] unlink(): No such file or directory C:\www\wap\Application\Admin\Controller\NavController.class.php 第 135 行.
+NOTIC: [2] unlink(): No such file or directory C:\www\wap\Application\Admin\Controller\NavController.class.php 第 136 行.
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given C:\www\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+SQL: UPDATE `sd_nav` SET `sort`='0',`id`='14',`link`='index',`bg_img_url`='./Public/Uploads/nav/2016-09-18/57de6182c84ab.jpg',`th_img_url`='./Public/Uploads/nav/2016-09-18/th_57de6182c84ab.jpg' WHERE `id` = 14 [ RunTime:0.0078s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005860s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005860s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000976s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000976s ]
+
+[ 2016-09-18T17:42:27+08:00 ] 61.50.106.246 /Admin/Nav/nav_list.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+SQL: SHOW COLUMNS FROM `sd_nav` [ RunTime:0.0039s ]
+SQL: SELECT `id`,`name`,`sort`,`th_img_url` FROM `sd_nav` ORDER BY sort ASC  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007813s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007813s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000976s ]
+
+[ 2016-09-18T17:43:46+08:00 ] 61.50.106.246 /Admin/Nav/nav_edit/id/14.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000977s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+SQL: SHOW COLUMNS FROM `sd_nav` [ RunTime:0.0039s ]
+SQL: SELECT * FROM `sd_nav` WHERE `id` = 14 LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005859s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006836s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000977s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000977s ]
+
+[ 2016-09-18T17:43:52+08:00 ] 61.50.106.246 /Admin/Nav/nav_edit.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000976s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `sd_nav` [ RunTime:0.0029s ]
+SQL: SHOW COLUMNS FROM `sd_banner` [ RunTime:0.0020s ]
+SQL: SELECT `th_img_url`,`bg_img_url` FROM `sd_banner` WHERE `id` = 14 LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [2] unlink(): No such file or directory C:\www\wap\Application\Admin\Controller\NavController.class.php 第 135 行.
+NOTIC: [2] unlink(): No such file or directory C:\www\wap\Application\Admin\Controller\NavController.class.php 第 136 行.
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given C:\www\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+SQL: UPDATE `sd_nav` SET `sort`='0',`id`='14',`link`='index',`bg_img_url`='./Public/Uploads/nav/2016-09-18/57de61d81d311.jpg',`th_img_url`='./Public/Uploads/nav/2016-09-18/th_57de61d81d311.jpg' WHERE `id` = 14 [ RunTime:0.0059s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004883s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004883s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000977s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-09-18T17:43:53+08:00 ] 61.50.106.246 /Admin/Nav/nav_list.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000976s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+SQL: SHOW COLUMNS FROM `sd_nav` [ RunTime:0.0029s ]
+SQL: SELECT `id`,`name`,`sort`,`th_img_url` FROM `sd_nav` ORDER BY sort ASC  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006836s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007813s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-09-18T17:44:11+08:00 ] 61.50.106.246 /Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000976s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+SQL: SELECT `id`,`title`,name
+                       FROM `sd_node`
+                       WHERE( `status` =1 AND `display`=1)
+                       ORDER BY sort DESC [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: sub_menu_html C:\www\wap\Application\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 96 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008790s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008790s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000976s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000976s ]
+
+[ 2016-09-18T17:44:12+08:00 ] 61.50.106.246 /Admin/Index/main.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant gd_info - assumed 'gd_info' C:\www\wap\Application\Admin\Controller\IndexController.class.php 第 161 行.
+NOTIC: [8] Undefined index: SERVER_ADDR C:\www\wap\Application\Admin\Controller\IndexController.class.php 第 168 行.
+NOTIC: [8] Use of undefined constant WEB_ROOT - assumed 'WEB_ROOT' C:\www\wap\Application\Admin\Controller\IndexController.class.php 第 171 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000977s ]
+NOTIC: [8] Undefined variable: ikphp C:\www\wap\Application\Runtime\Cache\Admin\b0f0b709690a72033d17719e8059053c.php 第 5 行.
+NOTIC: [8] Undefined variable: caches C:\www\wap\Application\Runtime\Cache\Admin\b0f0b709690a72033d17719e8059053c.php 第 36 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008789s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008789s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000977s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000977s ]
+
+[ 2016-09-18T17:44:12+08:00 ] 61.50.106.246 /Admin/Index/left/id/85.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000976s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `sd_node` [ RunTime:0.0029s ]
+SQL: SELECT `id`,`data`,`title`
+                FROM `sd_node`
+                WHERE ( `status` =1 AND `display`=2 AND `pid`=85)
+                ORDER BY sort DESC [ RunTime:0.0000s ]
+SQL: SELECT `title` FROM `sd_node` WHERE `id` = 85 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `id`,`data`,`title`
+                FROM `sd_node`
+                WHERE ( `status` =1 AND `display`=2 AND `pid`=86)
+                ORDER BY sort DESC [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant title - assumed 'title' C:\www\wap\Application\Admin\Controller\IndexController.class.php 第 74 行.
+NOTIC: [8] Use of undefined constant title - assumed 'title' C:\www\wap\Application\Admin\Controller\IndexController.class.php 第 87 行.
+NOTIC: [8] Use of undefined constant title - assumed 'title' C:\www\wap\Application\Admin\Controller\IndexController.class.php 第 87 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004883s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004883s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000977s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000977s ]
+
+[ 2016-09-18T17:45:20+08:00 ] 180.153.206.20 /Admin/Nav/nav_edit/id/14.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000977s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000976s ]
+
+[ 2016-09-18T18:06:32+08:00 ] 61.50.106.246 /Admin/Index/left/id/85.html?id=340
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+SQL: SHOW COLUMNS FROM `sd_node` [ RunTime:0.0039s ]
+SQL: SELECT `id`,`data`,`title`
+                FROM `sd_node`
+                WHERE ( `status` =1 AND `display`=2 AND `pid`=340)
+                ORDER BY sort DESC [ RunTime:0.0000s ]
+SQL: SELECT `title` FROM `sd_node` WHERE `id` = 340 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `id`,`data`,`title`
+                FROM `sd_node`
+                WHERE ( `status` =1 AND `display`=2 AND `pid`=341)
+                ORDER BY sort DESC [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant title - assumed 'title' C:\www\wap\Application\Admin\Controller\IndexController.class.php 第 74 行.
+NOTIC: [8] Use of undefined constant title - assumed 'title' C:\www\wap\Application\Admin\Controller\IndexController.class.php 第 87 行.
+SQL: SELECT `id`,`data`,`title`
+                FROM `sd_node`
+                WHERE ( `status` =1 AND `display`=2 AND `pid`=367)
+                ORDER BY sort DESC [ RunTime:0.0010s ]
+NOTIC: [8] Use of undefined constant title - assumed 'title' C:\www\wap\Application\Admin\Controller\IndexController.class.php 第 74 行.
+NOTIC: [8] Use of undefined constant title - assumed 'title' C:\www\wap\Application\Admin\Controller\IndexController.class.php 第 87 行.
+SQL: SELECT `id`,`data`,`title`
+                FROM `sd_node`
+                WHERE ( `status` =1 AND `display`=2 AND `pid`=361)
+                ORDER BY sort DESC [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant title - assumed 'title' C:\www\wap\Application\Admin\Controller\IndexController.class.php 第 74 行.
+NOTIC: [8] Use of undefined constant title - assumed 'title' C:\www\wap\Application\Admin\Controller\IndexController.class.php 第 87 行.
+NOTIC: [8] Use of undefined constant title - assumed 'title' C:\www\wap\Application\Admin\Controller\IndexController.class.php 第 87 行.
+SQL: SELECT `id`,`data`,`title`
+                FROM `sd_node`
+                WHERE ( `status` =1 AND `display`=2 AND `pid`=363)
+                ORDER BY sort DESC [ RunTime:0.0010s ]
+NOTIC: [8] Use of undefined constant title - assumed 'title' C:\www\wap\Application\Admin\Controller\IndexController.class.php 第 74 行.
+NOTIC: [8] Use of undefined constant title - assumed 'title' C:\www\wap\Application\Admin\Controller\IndexController.class.php 第 87 行.
+NOTIC: [8] Use of undefined constant title - assumed 'title' C:\www\wap\Application\Admin\Controller\IndexController.class.php 第 87 行.
+SQL: SELECT `id`,`data`,`title`
+                FROM `sd_node`
+                WHERE ( `status` =1 AND `display`=2 AND `pid`=369)
+                ORDER BY sort DESC [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant title - assumed 'title' C:\www\wap\Application\Admin\Controller\IndexController.class.php 第 74 行.
+NOTIC: [8] Use of undefined constant title - assumed 'title' C:\www\wap\Application\Admin\Controller\IndexController.class.php 第 87 行.
+SQL: SELECT `id`,`data`,`title`
+                FROM `sd_node`
+                WHERE ( `status` =1 AND `display`=2 AND `pid`=371)
+                ORDER BY sort DESC [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant title - assumed 'title' C:\www\wap\Application\Admin\Controller\IndexController.class.php 第 74 行.
+NOTIC: [8] Use of undefined constant title - assumed 'title' C:\www\wap\Application\Admin\Controller\IndexController.class.php 第 87 行.
+NOTIC: [8] Use of undefined constant title - assumed 'title' C:\www\wap\Application\Admin\Controller\IndexController.class.php 第 87 行.
+NOTIC: [8] Use of undefined constant title - assumed 'title' C:\www\wap\Application\Admin\Controller\IndexController.class.php 第 87 行.
+SQL: SELECT `id`,`data`,`title`
+                FROM `sd_node`
+                WHERE ( `status` =1 AND `display`=2 AND `pid`=377)
+                ORDER BY sort DESC [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant title - assumed 'title' C:\www\wap\Application\Admin\Controller\IndexController.class.php 第 74 行.
+NOTIC: [8] Use of undefined constant title - assumed 'title' C:\www\wap\Application\Admin\Controller\IndexController.class.php 第 87 行.
+SQL: SELECT `id`,`data`,`title`
+                FROM `sd_node`
+                WHERE ( `status` =1 AND `display`=2 AND `pid`=378)
+                ORDER BY sort DESC [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant title - assumed 'title' C:\www\wap\Application\Admin\Controller\IndexController.class.php 第 74 行.
+NOTIC: [8] Use of undefined constant title - assumed 'title' C:\www\wap\Application\Admin\Controller\IndexController.class.php 第 87 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004883s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004883s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000977s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-09-18T18:06:32+08:00 ] 61.50.106.246 /Admin/Index/index.html?s=/Admin/Setting/banner_list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `sd_banner` [ RunTime:0.0029s ]
+SQL: SELECT `id`,`sort`,`category`,`th_img_url` FROM `sd_banner` ORDER BY sort desc  [ RunTime:0.0000s ]
+
+[ 2016-09-18T18:06:33+08:00 ] 61.50.106.246 /Admin/Index/left/id/85.html?id=340
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000977s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000976s ]
+SQL: SHOW COLUMNS FROM `sd_node` [ RunTime:0.0029s ]
+SQL: SELECT `id`,`data`,`title`
+                FROM `sd_node`
+                WHERE ( `status` =1 AND `display`=2 AND `pid`=340)
+                ORDER BY sort DESC [ RunTime:0.0000s ]
+SQL: SELECT `title` FROM `sd_node` WHERE `id` = 340 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `id`,`data`,`title`
+                FROM `sd_node`
+                WHERE ( `status` =1 AND `display`=2 AND `pid`=341)
+                ORDER BY sort DESC [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant title - assumed 'title' C:\www\wap\Application\Admin\Controller\IndexController.class.php 第 74 行.
+NOTIC: [8] Use of undefined constant title - assumed 'title' C:\www\wap\Application\Admin\Controller\IndexController.class.php 第 87 行.
+SQL: SELECT `id`,`data`,`title`
+                FROM `sd_node`
+                WHERE ( `status` =1 AND `display`=2 AND `pid`=367)
+                ORDER BY sort DESC [ RunTime:0.0010s ]
+NOTIC: [8] Use of undefined constant title - assumed 'title' C:\www\wap\Application\Admin\Controller\IndexController.class.php 第 74 行.
+NOTIC: [8] Use of undefined constant title - assumed 'title' C:\www\wap\Application\Admin\Controller\IndexController.class.php 第 87 行.
+SQL: SELECT `id`,`data`,`title`
+                FROM `sd_node`
+                WHERE ( `status` =1 AND `display`=2 AND `pid`=361)
+                ORDER BY sort DESC [ RunTime:0.0010s ]
+NOTIC: [8] Use of undefined constant title - assumed 'title' C:\www\wap\Application\Admin\Controller\IndexController.class.php 第 74 行.
+NOTIC: [8] Use of undefined constant title - assumed 'title' C:\www\wap\Application\Admin\Controller\IndexController.class.php 第 87 行.
+NOTIC: [8] Use of undefined constant title - assumed 'title' C:\www\wap\Application\Admin\Controller\IndexController.class.php 第 87 行.
+SQL: SELECT `id`,`data`,`title`
+                FROM `sd_node`
+                WHERE ( `status` =1 AND `display`=2 AND `pid`=363)
+                ORDER BY sort DESC [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant title - assumed 'title' C:\www\wap\Application\Admin\Controller\IndexController.class.php 第 74 行.
+NOTIC: [8] Use of undefined constant title - assumed 'title' C:\www\wap\Application\Admin\Controller\IndexController.class.php 第 87 行.
+NOTIC: [8] Use of undefined constant title - assumed 'title' C:\www\wap\Application\Admin\Controller\IndexController.class.php 第 87 行.
+SQL: SELECT `id`,`data`,`title`
+                FROM `sd_node`
+                WHERE ( `status` =1 AND `display`=2 AND `pid`=369)
+                ORDER BY sort DESC [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant title - assumed 'title' C:\www\wap\Application\Admin\Controller\IndexController.class.php 第 74 行.
+NOTIC: [8] Use of undefined constant title - assumed 'title' C:\www\wap\Application\Admin\Controller\IndexController.class.php 第 87 行.
+SQL: SELECT `id`,`data`,`title`
+                FROM `sd_node`
+                WHERE ( `status` =1 AND `display`=2 AND `pid`=371)
+                ORDER BY sort DESC [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant title - assumed 'title' C:\www\wap\Application\Admin\Controller\IndexController.class.php 第 74 行.
+NOTIC: [8] Use of undefined constant title - assumed 'title' C:\www\wap\Application\Admin\Controller\IndexController.class.php 第 87 行.
+NOTIC: [8] Use of undefined constant title - assumed 'title' C:\www\wap\Application\Admin\Controller\IndexController.class.php 第 87 行.
+NOTIC: [8] Use of undefined constant title - assumed 'title' C:\www\wap\Application\Admin\Controller\IndexController.class.php 第 87 行.
+SQL: SELECT `id`,`data`,`title`
+                FROM `sd_node`
+                WHERE ( `status` =1 AND `display`=2 AND `pid`=377)
+                ORDER BY sort DESC [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant title - assumed 'title' C:\www\wap\Application\Admin\Controller\IndexController.class.php 第 74 行.
+NOTIC: [8] Use of undefined constant title - assumed 'title' C:\www\wap\Application\Admin\Controller\IndexController.class.php 第 87 行.
+SQL: SELECT `id`,`data`,`title`
+                FROM `sd_node`
+                WHERE ( `status` =1 AND `display`=2 AND `pid`=378)
+                ORDER BY sort DESC [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant title - assumed 'title' C:\www\wap\Application\Admin\Controller\IndexController.class.php 第 74 行.
+NOTIC: [8] Use of undefined constant title - assumed 'title' C:\www\wap\Application\Admin\Controller\IndexController.class.php 第 87 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004883s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004883s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000977s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-09-18T18:06:33+08:00 ] 61.50.106.246 /Admin/Index/index.html?s=/Admin/Setting/banner_list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+SQL: SHOW COLUMNS FROM `sd_banner` [ RunTime:0.0029s ]
+SQL: SELECT `id`,`sort`,`category`,`th_img_url` FROM `sd_banner` ORDER BY sort desc  [ RunTime:0.0010s ]
+
+[ 2016-09-18T18:06:34+08:00 ] 61.50.106.246 /Admin/Index/left/id/85.html?id=151
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+SQL: SHOW COLUMNS FROM `sd_node` [ RunTime:0.0029s ]
+SQL: SELECT `id`,`data`,`title`
+                FROM `sd_node`
+                WHERE ( `status` =1 AND `display`=2 AND `pid`=151)
+                ORDER BY sort DESC [ RunTime:0.0000s ]
+SQL: SELECT `title` FROM `sd_node` WHERE `id` = 151 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `id`,`data`,`title`
+                FROM `sd_node`
+                WHERE ( `status` =1 AND `display`=2 AND `pid`=152)
+                ORDER BY sort DESC [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant title - assumed 'title' C:\www\wap\Application\Admin\Controller\IndexController.class.php 第 74 行.
+NOTIC: [8] Use of undefined constant title - assumed 'title' C:\www\wap\Application\Admin\Controller\IndexController.class.php 第 87 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004883s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004883s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000977s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-09-18T18:06:34+08:00 ] 61.50.106.246 /Admin/Index/index.html?s=/Admin/User/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000977s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000976s ]
+SQL: SHOW COLUMNS FROM `sd_users` [ RunTime:0.0029s ]
+SQL: SELECT u.uid,u.role_id,u.username,u.status,r.id,r.name FROM sd_users u INNER JOIN sd_role as r on u.uid=r.id  WHERE ( 2>1 )  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000977s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000977s ]
+NOTIC: [8] Undefined variable: roles C:\www\wap\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 38 行.
+NOTIC: [8] Use of undefined constant hlbs - assumed 'hlbs' C:\www\wap\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 55 行.
+NOTIC: [8] Undefined variable: page C:\www\wap\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 75 行.
+NOTIC: [8] Undefined variable: pageUrl C:\www\wap\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 79 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009766s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009766s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000977s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-09-18T18:06:35+08:00 ] 61.50.106.246 /Admin/Index/left/id/85.html?id=340
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000977s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `sd_node` [ RunTime:0.0029s ]
+SQL: SELECT `id`,`data`,`title`
+                FROM `sd_node`
+                WHERE ( `status` =1 AND `display`=2 AND `pid`=340)
+                ORDER BY sort DESC [ RunTime:0.0010s ]
+SQL: SELECT `title` FROM `sd_node` WHERE `id` = 340 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `id`,`data`,`title`
+                FROM `sd_node`
+                WHERE ( `status` =1 AND `display`=2 AND `pid`=341)
+                ORDER BY sort DESC [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant title - assumed 'title' C:\www\wap\Application\Admin\Controller\IndexController.class.php 第 74 行.
+NOTIC: [8] Use of undefined constant title - assumed 'title' C:\www\wap\Application\Admin\Controller\IndexController.class.php 第 87 行.
+SQL: SELECT `id`,`data`,`title`
+                FROM `sd_node`
+                WHERE ( `status` =1 AND `display`=2 AND `pid`=367)
+                ORDER BY sort DESC [ RunTime:0.0010s ]
+NOTIC: [8] Use of undefined constant title - assumed 'title' C:\www\wap\Application\Admin\Controller\IndexController.class.php 第 74 行.
+NOTIC: [8] Use of undefined constant title - assumed 'title' C:\www\wap\Application\Admin\Controller\IndexController.class.php 第 87 行.
+SQL: SELECT `id`,`data`,`title`
+                FROM `sd_node`
+                WHERE ( `status` =1 AND `display`=2 AND `pid`=361)
+                ORDER BY sort DESC [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant title - assumed 'title' C:\www\wap\Application\Admin\Controller\IndexController.class.php 第 74 行.
+NOTIC: [8] Use of undefined constant title - assumed 'title' C:\www\wap\Application\Admin\Controller\IndexController.class.php 第 87 行.
+NOTIC: [8] Use of undefined constant title - assumed 'title' C:\www\wap\Application\Admin\Controller\IndexController.class.php 第 87 行.
+SQL: SELECT `id`,`data`,`title`
+                FROM `sd_node`
+                WHERE ( `status` =1 AND `display`=2 AND `pid`=363)
+                ORDER BY sort DESC [ RunTime:0.0010s ]
+NOTIC: [8] Use of undefined constant title - assumed 'title' C:\www\wap\Application\Admin\Controller\IndexController.class.php 第 74 行.
+NOTIC: [8] Use of undefined constant title - assumed 'title' C:\www\wap\Application\Admin\Controller\IndexController.class.php 第 87 行.
+NOTIC: [8] Use of undefined constant title - assumed 'title' C:\www\wap\Application\Admin\Controller\IndexController.class.php 第 87 行.
+SQL: SELECT `id`,`data`,`title`
+                FROM `sd_node`
+                WHERE ( `status` =1 AND `display`=2 AND `pid`=369)
+                ORDER BY sort DESC [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant title - assumed 'title' C:\www\wap\Application\Admin\Controller\IndexController.class.php 第 74 行.
+NOTIC: [8] Use of undefined constant title - assumed 'title' C:\www\wap\Application\Admin\Controller\IndexController.class.php 第 87 行.
+SQL: SELECT `id`,`data`,`title`
+                FROM `sd_node`
+                WHERE ( `status` =1 AND `display`=2 AND `pid`=371)
+                ORDER BY sort DESC [ RunTime:0.0010s ]
+NOTIC: [8] Use of undefined constant title - assumed 'title' C:\www\wap\Application\Admin\Controller\IndexController.class.php 第 74 行.
+NOTIC: [8] Use of undefined constant title - assumed 'title' C:\www\wap\Application\Admin\Controller\IndexController.class.php 第 87 行.
+NOTIC: [8] Use of undefined constant title - assumed 'title' C:\www\wap\Application\Admin\Controller\IndexController.class.php 第 87 行.
+NOTIC: [8] Use of undefined constant title - assumed 'title' C:\www\wap\Application\Admin\Controller\IndexController.class.php 第 87 行.
+SQL: SELECT `id`,`data`,`title`
+                FROM `sd_node`
+                WHERE ( `status` =1 AND `display`=2 AND `pid`=377)
+                ORDER BY sort DESC [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant title - assumed 'title' C:\www\wap\Application\Admin\Controller\IndexController.class.php 第 74 行.
+NOTIC: [8] Use of undefined constant title - assumed 'title' C:\www\wap\Application\Admin\Controller\IndexController.class.php 第 87 行.
+SQL: SELECT `id`,`data`,`title`
+                FROM `sd_node`
+                WHERE ( `status` =1 AND `display`=2 AND `pid`=378)
+                ORDER BY sort DESC [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant title - assumed 'title' C:\www\wap\Application\Admin\Controller\IndexController.class.php 第 74 行.
+NOTIC: [8] Use of undefined constant title - assumed 'title' C:\www\wap\Application\Admin\Controller\IndexController.class.php 第 87 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004883s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004883s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000977s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000977s ]
+
+[ 2016-09-18T18:06:35+08:00 ] 61.50.106.246 /Admin/Index/index.html?s=/Admin/Setting/banner_list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `sd_banner` [ RunTime:0.0039s ]
+SQL: SELECT `id`,`sort`,`category`,`th_img_url` FROM `sd_banner` ORDER BY sort desc  [ RunTime:0.0000s ]
+
+[ 2016-09-18T18:06:59+08:00 ] 61.50.106.246 /Admin/Index/index.html?s=Admin/Doctor/doctor_dept
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000976s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `sd_doctor_class` [ RunTime:0.0029s ]
+SQL: SELECT * FROM `sd_doctor_class`  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007812s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007812s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000977s ]
+
+[ 2016-09-18T18:07:00+08:00 ] 61.50.106.246 /Admin/Index/index.html?s=Admin/Doctor/doctor_list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `sd_doctor` [ RunTime:0.0039s ]
+SQL: SELECT d.*,c.id as claid,c.class_name FROM sd_doctor d LEFT JOIN sd_doctor_class as c on d.cid = c.id   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007812s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007812s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000977s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000977s ]
+
+[ 2016-09-18T18:07:01+08:00 ] 61.50.106.246 /Admin/Index/index.html?s=Admin/Nav/nav_list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000977s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000976s ]
+SQL: SHOW COLUMNS FROM `sd_nav` [ RunTime:0.0029s ]
+SQL: SELECT `id`,`name`,`sort`,`th_img_url` FROM `sd_nav` ORDER BY sort ASC  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006837s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006837s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000976s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-09-18T18:07:03+08:00 ] 61.50.106.246 /Admin/Index/index.html?s=/Admin/Setting/banner_list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000976s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+SQL: SHOW COLUMNS FROM `sd_banner` [ RunTime:0.0029s ]
+SQL: SELECT `id`,`sort`,`category`,`th_img_url` FROM `sd_banner` ORDER BY sort desc  [ RunTime:0.0010s ]
+
+[ 2016-09-18T18:07:04+08:00 ] 61.50.106.246 /Admin/Index/index.html?s=/Admin/Setting/banner_list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `sd_banner` [ RunTime:0.0029s ]
+SQL: SELECT `id`,`sort`,`category`,`th_img_url` FROM `sd_banner` ORDER BY sort desc  [ RunTime:0.0010s ]
+
+[ 2016-09-18T18:07:35+08:00 ] 61.50.106.246 /Admin/Index/index.html?s=/Admin/Setting/banner_list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000977s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000976s ]
+SQL: SHOW COLUMNS FROM `sd_banner` [ RunTime:0.0039s ]
+SQL: SELECT `id`,`sort`,`category`,`th_img_url` FROM `sd_banner` ORDER BY sort desc  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007813s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007813s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000977s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-09-18T18:08:42+08:00 ] 61.50.106.246 /Admin/Index/index.html?s=/Admin/Setting/banner_list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000977s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000977s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `sd_banner` [ RunTime:0.0029s ]
+SQL: SELECT `id`,`sort`,`category`,`th_img_url` FROM `sd_banner` ORDER BY sort desc  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007812s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007812s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000977s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-09-18T18:08:43+08:00 ] 61.50.106.246 /Admin/Index/index.html?s=Admin/Setting/class_list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `sd_class` [ RunTime:0.0029s ]
+SQL: SELECT `id`,`pid`,`class_name`,`sort`,`th_img_url` FROM `sd_class` ORDER BY sort desc  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010743s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011719s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000977s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000977s ]
+
+[ 2016-09-18T18:08:49+08:00 ] 61.50.106.246 /Admin/Setting/class_edit/id/248.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+SQL: SHOW COLUMNS FROM `sd_class` [ RunTime:0.0029s ]
+SQL: SHOW COLUMNS FROM `sd_class` [ RunTime:0.0029s ]
+SQL: SELECT * FROM `sd_class` WHERE ( id = "248" ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `id`,`pid`,`class_name` FROM `sd_class`  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006837s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006837s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000976s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-09-18T18:08:51+08:00 ] 61.50.106.246 /Admin/Index/index.html?s=Admin/Setting/content_list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000976s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+SQL: SHOW COLUMNS FROM `sd_content` [ RunTime:0.0039s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sd_content` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT c.id as con_id,c.cid,c.title,c.createtime,a.id,a.class_name FROM sd_content c INNER JOIN sd_class as a on c.cid=a.id  LIMIT 0,20   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007813s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008789s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000977s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-09-18T18:09:00+08:00 ] 61.50.106.246 /Admin/Setting/content_list/p/2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000976s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `sd_content` [ RunTime:0.0039s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sd_content` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT c.id as con_id,c.cid,c.title,c.createtime,a.id,a.class_name FROM sd_content c INNER JOIN sd_class as a on c.cid=a.id  LIMIT 20,20   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007813s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007813s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000977s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000977s ]
+
+[ 2016-09-18T18:09:07+08:00 ] 61.50.106.246 /Admin/Setting/content_list/p/3.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `sd_content` [ RunTime:0.0039s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sd_content` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT c.id as con_id,c.cid,c.title,c.createtime,a.id,a.class_name FROM sd_content c INNER JOIN sd_class as a on c.cid=a.id  LIMIT 40,20   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008789s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008789s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000977s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000976s ]
+
+[ 2016-09-18T18:09:14+08:00 ] 61.50.106.246 /Admin/Setting/content_list/p/4.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000976s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+SQL: SHOW COLUMNS FROM `sd_content` [ RunTime:0.0029s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sd_content` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT c.id as con_id,c.cid,c.title,c.createtime,a.id,a.class_name FROM sd_content c INNER JOIN sd_class as a on c.cid=a.id  LIMIT 60,20   [ RunTime:0.0020s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007812s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008789s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000977s ]
+
+[ 2016-09-18T18:09:27+08:00 ] 61.50.106.246 /Admin/Setting/content_list/p/5.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000976s ]
+SQL: SHOW COLUMNS FROM `sd_content` [ RunTime:0.0029s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sd_content` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT c.id as con_id,c.cid,c.title,c.createtime,a.id,a.class_name FROM sd_content c INNER JOIN sd_class as a on c.cid=a.id  LIMIT 80,20   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006836s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006836s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000977s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-09-18T18:09:35+08:00 ] 61.50.106.246 /Admin/Setting/content_list/p/4.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+SQL: SHOW COLUMNS FROM `sd_content` [ RunTime:0.0039s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sd_content` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT c.id as con_id,c.cid,c.title,c.createtime,a.id,a.class_name FROM sd_content c INNER JOIN sd_class as a on c.cid=a.id  LIMIT 60,20   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007813s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007813s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-09-18T18:09:37+08:00 ] 101.226.51.227 /Admin/Setting/content_list/p/5.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-09-18T18:09:43+08:00 ] 61.50.106.246 /Admin/Setting/content_list/p/2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000976s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+SQL: SHOW COLUMNS FROM `sd_content` [ RunTime:0.0029s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sd_content` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT c.id as con_id,c.cid,c.title,c.createtime,a.id,a.class_name FROM sd_content c INNER JOIN sd_class as a on c.cid=a.id  LIMIT 20,20   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008789s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008789s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000977s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000977s ]
+
+[ 2016-09-18T18:09:47+08:00 ] 61.50.106.246 /Admin/Setting/content_edit/id/206.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000977s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000976s ]
+SQL: SHOW COLUMNS FROM `sd_content` [ RunTime:0.0029s ]
+SQL: SELECT `id`,`title`,`content`,`cid` FROM `sd_content` WHERE ( id = "206" ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sd_class` [ RunTime:0.0029s ]
+SQL: SELECT `id`,`pid`,`class_name` FROM `sd_class`  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000977s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000977s ]
+NOTIC: [8] Undefined index: sort C:\www\wap\Application\Runtime\Cache\Admin\8a01e5439e10d40d76c0d58522c76449.php 第 63 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007812s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007812s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-09-18T18:09:59+08:00 ] 101.226.33.237 /Admin/Index/index.html?s=Admin/Doctor/doctor_dept
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000976s ]
+
+[ 2016-09-18T18:10:09+08:00 ] 61.50.106.246 /Admin/Setting/content_edit.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+SQL: SHOW COLUMNS FROM `sd_content` [ RunTime:0.0029s ]
+SQL: UPDATE `sd_content` SET `title`='注射丰面颊介绍',`cid`='248',`content`='<p style=\"text-align: center;\"><span style=\"color: rgb(73, 68, 41);\"><strong>效果对比</strong></span></p><p style=\"text-align: center;\"><img title=\"1474183899133519.jpg\" src=\"/ueditor/php/upload/image/20160918/1474183899133519.jpg\"/></p><p style=\"text-align: center;\"><span style=\"color: rgb(147, 137, 83); text-decoration: underline;\"><a style=\"color: rgb(147, 137, 83); text-decoration: underline;\" href=\"http://pkt.zoosnet.net/LR/Chatpre.aspx?id=PKT67204838&cid=1469000068684805339274&lng=cn&sid=1469000068684805339274&p=http%3A//hyuzx.com/&rf1=&rf2=&e=%25u6765%25u81EA%25u9996%25u9875%25u7684%25u5BF9%25u8BDD&bid=&d=1469000257113\">&gt;&gt;注射丰面颊效果维持多久？&gt;&gt;</a></span></p><p><strong><span style=\"color: rgb(73, 68, 41);\"></span></strong></p><hr/><p><strong><span style=\"color: rgb(73, 68, 41);\">　　项目介绍</span></strong><br/></p><p>　　脸颊凹陷，容易给人脸颊不对称、下垂”苦瓜脸&quot;之印象。通过注射无创填充剂材料丰面颊后，脸部圆润饱满，即刻恢复青春光彩，容颜焕发。</p><p>　　适应症：因先天或后天衰老所致的面颊松弛凹陷。</p><hr/><p><strong><span style=\"color: rgb(73, 68, 41);\">　　应用项目：</span></strong></p><p>　　注射玻尿酸丰面颊：玻尿酸效果全面，除皱、保湿、塑形三合一，任何年龄都适用，锁紧肌肤水分，持久弹性光泽。自然被自身吸收降解，无过敏等副反应，效果一般维持6-12个月，因个人体质的不同而存在差异。</p><p>　　注射胶原蛋白丰面颊：胶原蛋白的植入对蛋白酶具有适度抗力，不会马上被分解，分散的胶原蛋白会形成一个柔软且具粘性的纤维状结构，可停留于植入部位，效果可保持一段时间。</p><hr/><p><strong><span style=\"color: rgb(73, 68, 41);\">　　注射材料</span></strong>：玻尿酸、胶原蛋白。</p><hr/><p><strong><span style=\"color: rgb(73, 68, 41);\">　　特点优势</span></strong></p><p>　　1、材料：焕誉严格管理针剂的来源渠道、操作规范、保存条件，确保使用通过国家SFDA认证的注射美容产品。</p><p>　　2、技术：焕誉独到审美从正面、侧面、切面三维立体，多点注射、分层次、可重复多次塑形，以确保效果满意。</p><p>　　3、医生：焕誉注射均选择通过严格资质认证的指定注射美容医师，对注射层次、剂量的操作把握更精准，术后效果更有保证。</p><p>　　4、效果：根据个人面部情况，进行综合容貌设计，确保注射后效果自然，不会出现假脸、僵硬等问题，放心选择。</p><p>　　5、服务：焕誉具有完善的客服回访体系，术后定期跟踪了解恢复经过及状态，并根据个人情况及需求，定期做注射修复。</p><hr/><p><strong><span style=\"color: rgb(73, 68, 41);\">　　注意事项</span></strong></p><p>　　术前</p><p>　　在注射的前两周，禁用含有阿司匹林的药物。</p><p>　　女性要避开月经期，注射时不要化妆。</p><p>　　术后</p><p>　　术后6小时内保持注射部位干燥；</p><p>　　术后24小时内不要按摩注射部位。</p><hr/><p><strong><span style=\"color: rgb(73, 68, 41);\">　　医生推荐</span></strong><br/></p>',`sort`='0',`id`='206' WHERE `id` = 206 [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005860s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005860s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000976s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000976s ]
+
+[ 2016-09-18T18:10:11+08:00 ] 61.50.106.246 /Admin/Setting/content_list.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000976s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+SQL: SHOW COLUMNS FROM `sd_content` [ RunTime:0.0029s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sd_content` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT c.id as con_id,c.cid,c.title,c.createtime,a.id,a.class_name FROM sd_content c INNER JOIN sd_class as a on c.cid=a.id  LIMIT 0,20   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007813s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007813s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000976s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000976s ]
+
+[ 2016-09-18T18:11:48+08:00 ] 180.153.214.190 /Admin/Setting/class_edit/id/248.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+
+[ 2016-09-18T18:11:52+08:00 ] 101.226.89.121 /Admin/Index/index.html?s=Admin/Setting/class_list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-09-18T18:11:56+08:00 ] 180.153.206.18 /Admin/Index/index.html?s=Admin/Setting/content_list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-09-18T18:12:08+08:00 ] 101.226.51.228 /Admin/Setting/content_list/p/2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-09-18T18:12:14+08:00 ] 101.226.33.238 /Admin/Setting/content_list/p/4.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000977s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000976s ]
+
+[ 2016-09-18T18:12:14+08:00 ] 101.226.125.103 /Admin/Setting/content_list/p/3.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+
+[ 2016-09-18T18:12:27+08:00 ] 140.207.185.107 /Admin/Setting/content_list/p/5.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000977s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000977s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000976s ]
+
+[ 2016-09-18T18:12:32+08:00 ] 101.226.33.218 /Admin/Setting/content_list/p/5.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000977s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000976s ]
+
+[ 2016-09-18T18:12:33+08:00 ] 101.226.89.115 /Admin/Setting/content_list/p/5.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-09-18T18:12:52+08:00 ] 180.163.2.117 /Admin/Setting/content_edit/id/206.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-09-18T18:13:11+08:00 ] 180.153.214.180 /Admin/Setting/content_list.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+
+[ 2016-09-18T18:13:16+08:00 ] 61.151.226.199 /Admin/Setting/content_edit.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+

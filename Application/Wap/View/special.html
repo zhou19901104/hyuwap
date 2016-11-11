@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>{$data.title}</title>
+    <link rel="stylesheet" type="text/css" href="{:C('SITE_URL')}/Public/Wap/css/all.css"></head>
+    <style>
+    .mainnav {
+        margin: 0 auto;
+        overflow: hidden;
+        height: 60px;
+        padding: 20px 0;
+        border-bottom: 0px solid #e0e0e0;
+    }
+        html, body, ul, li, ol, dl, dd, dt, p, h1, h2, h3, h4, h5, h6, form, fieldset, legend, img { margin:0; padding:0; }
+        .clearfix:before,.clearfix:after {
+             content:".";
+             display:table;
+         }
+        .clearfix:after{clear:both;}
+
+        .clearfix{
+            *zoom:1;/*IE/7/6*/
+        }
+        .bottom-nav{
+            width: 100%;
+            height: 12%;
+            background: #000000;
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            z-index: 1000;
+            opacity: 0.9;
+        }
+    .bottom-nav .foot-left {
+        margin: -4% 0;
+        float: left;
+        width: 40%;
+        text-align: center;
+    }
+
+    .bottom-nav .foot-left a  {
+        display: block;
+        float: left;
+        width: 50%;
+        text-align: center;
+    }
+    .bottom-nav .foot-right{
+          margin: -4% 0;
+        float: right;
+          width: 40%;
+    }
+        .bottom-nav .foot-right a  {
+        display: block;
+        float: left;
+        width: 50%;
+        text-align: center;
+    }
+
+    .bottom-nav img{
+            display: block;
+              width: 70%;
+                  padding-left: 15%;
+    }
+    .foot-center{
+        width: 35%;
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            z-index: 1000;
+            margin-left: 33%;
+    }
+
+
+</style>
+<body>
+    <div class="wrap">
+        <div class="nav-wrap">
+            <span class="logo"><img src="{:C('SITE_URL')}/Public/Uploads/comm/logo.jpg" alt=""></span>
+            <span class="navbtn"><img src="{:C('SITE_URL')}/Public/Uploads/comm/daohang.jpg" alt=""></span>
+        </div>
+        <!-- 侧边导航 -->
+        <div class="cover"></div>
+
+        <ul class="indexmenu">
+            <foreach name="nav_list" item="nav_val">
+                <li><a href="{:C('SITE_URL')}/Wap/Wap/{$nav_val['link']}"><img src="{:C('SITE_URL')}/{$nav_val['th_img_url']|substr=2}" alt=""></a></li>
+            </foreach>
+        </ul>
+        <!-- 主页展示 -->
+        <div class="mainnav">
+            <ul class="nav-list">
+                <li><a href="/"><img src="{:C('IMG_URL')}/shouye.gif" alt=""></a></li>
+                <li><a href="{:U('Wap/Wap/company')}"><img src="{:C('IMG_URL')}/guanyu.gif" alt=""></a></li>
+                <li><a href="{:C('SITE_URL')}/xm/list"><img src="{:C('IMG_URL')}/xiangmu.gif" alt=""></a></li>
+                <li><a href="{:U('Wap/Wap/case_list')}"><img src="{:C('IMG_URL')}/anli.gif" alt=""></a></li>
+                <li><a href="{:C('SITE_URL')}/dc/list"><img src="{:C('IMG_URL')}/yisheng.gif" alt=""></a></li>
+            </ul>
+        </div>
+
+        {__CONTENT__}
+
+        <p class="hotline">
+            <img src="{:C('SITE_URL')}/Public/Wap/images/minlogo.jpg" alt=""></p>
+
+        <p class="ad">
+            <a>
+                <img src="{:C('SITE_URL')}/Public/Wap/images/ad.jpg" alt=""></a>
+        </p>
+
+        <!-- 联系电话 -->
+        <p class="hotline">
+            <a href="{:C('TEL')}">
+                <img src="{:C('SITE_URL')}/Public/Wap/images/phone.jpg" alt=""></a>
+        </p>
+
+    <div class="bottom-nav clearfix">
+<!--         <ul>
+            <li class="li-1"><a href="{:C('SITE_URL')}"><img src="{:C('SITE_URL')}/Public/Uploads/comm/01.jpg" alt=""></a></li>
+            <li class="li-2"><a href="{:C('TEL')}"><img src="{:C('SITE_URL')}/Public/Uploads/comm/02.jpg" alt=""></a></li>
+            <li class="li-3"><a href="{:C('SHANG_WU')}"><img src="{:C('SITE_URL')}/Public/Uploads/comm/03.jpg" alt=""></a></li>
+        </ul> -->
+                <div class="foot-left">
+            <a href="{:C('SITE_URL')}">
+                <img src="{:C('IMG_URL')}/sy.png" />
+                   <span>焕誉首页</span>
+            </a>
+                 <a href="{:C('TEL')}">
+                <img src="{:C('IMG_URL')}/dh.png" />
+                       <span>拨打电话</span>
+            </a>
+        </div>
+
+        <div class="foot-center">
+        <a href="{:C('SHANG_WU')}"><img src="{:C('IMG_URL')}/fqmx.png" /></a>
+        </div>
+
+          <div class="foot-right">
+               <a href="{:C('SHANG_WU')}">
+                <img src="{:C('IMG_URL')}/lx.png" />
+                   <span>在线客服</span>
+            </a>
+                 <a href="{:U('Wap/Wap/wap')}">
+                <img src="{:C('IMG_URL')}/dt.png" />
+                       <span>来院路线</span>
+            </a>
+        </div>
+    </div>
+
+        <!-- 底部导航 -->
+        <ul class="srollTop">
+            <li>
+                <a href="{:C('TEL')}">
+                    <img src="{:C('SITE_URL')}/Public/Wap/images/phonea.png" alt=""></a>
+            </li>
+            <li class="top">
+                <a href="javascript:void(0);">
+                    <img src="{:C('SITE_URL')}/Public/Wap/images/top.png" alt=""></a>
+            </li>
+        </ul>
+    </div>
+    <style>
+        .img_1
+        {
+            position:fixed;
+            right:10px;
+            bottom:35%;
+        }
+    </style>
+    <li>
+        <a href="{:C('SITE_URL')}/zt/list">
+        <span class="img_1">
+            <img src="{:C('IMG_URL')}/chakan.png"></span>
+        </a>
+    </li>
+</body>
+
+    <script type="text/javascript" src="{:C('SITE_URL')}/Public/Wap/js/jquery-1.10.1.min.js"></script>
+    <script type="text/javascript">
+    $(function() {
+        $('.slider8').bxSlider({
+            slideWidth: 600,
+            auto:true,
+            adaptiveHeight: true,
+            startSlides: 0,
+            slideMargin: 0,
+            infiniteLoop:true,
+
+        });
+    });
+
+</script>
+    <script type="text/javascript" src="{:C('SITE_URL')}/Public/Wap/js/jquery.bxslider.js"></script>
+    <script type="text/javascript" src="{:C('SITE_URL')}/Public/Wap/js/all.js"></script>
+</html>

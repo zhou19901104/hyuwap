@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="shortcut icon" href="__PUBLIC__/index/images/favicon.ico" type="image/x-icon" />
+  <title>北京焕誉医疗美容官方网站_北京医疗整形_北京医疗美容</title>
+  <meta content="整形美容,北京焕誉,北京焕誉医疗美容,北京整形美容" name="keywords" />
+  <meta content="北京焕誉医疗美容以“良心、诚心、精心”为核心价值观，遵循“用科技与美丽邂逅，以信誉让生命焕彩”的服务宗旨，开设美容皮肤科、美容外科、注射微整形、美容牙科四大整形美容项目，全方位打造中国整形美容旗舰品牌。美丽热线 : 010-57290660 400-7667-000" name="description" />
+  <meta name="renderer" content="webkit" />
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" >
+  <link rel="stylesheet" type="text/css" href="__PUBLIC__/index/css/all.css">
+  <link rel="stylesheet" type="text/css" href="__PUBLIC__/index/css/style.css">
+  <link rel="stylesheet"  href="__PUBLIC__/index/css/zoom.css" media="all" />
+  <script type="text/javascript" src="__PUBLIC__/index/js/jquery-1.10.2.min.js"></script>
+  <script type="text/javascript" src="__PUBLIC__/index/js/all.js"></script>
+  <script type="text/javascript" src="__PUBLIC__/index/js/zoom.min.js"></script>
+</head>
+<body>
+<!-- 在线联系 -->
+<!-- 浮动 -->
+<div class="talk">
+  <div class="online">
+    <ul>
+      <li class="li-1">在线咨询<span class="close"></span></li>
+      <li class="li-2"><a href="javascript:void(0)">xxxxxxxx</a></li>
+      <li class="li-3"><a href="javascript:void(0)">010-57290660</a></li>
+    </ul>
+  </div>
+  <div class="ewm"></div>
+  <ul class="flo-list">
+    <li><a target='_blank' href="http://pkt.zoosnet.net/LR/Chatpre.aspx?id=PKT67204838&cid=1469000068684805339274&lng=cn&sid=1469000068684805339274&p=http%3A//hyuzx.com/&rf1=&rf2=&e=%25u6765%25u81EA%25u9996%25u9875%25u7684%25u5BF9%25u8BDD&bid=&d=1469000257113"><img src="__PUBLIC__/index/images/serve-img.png" alt=""></a></li>
+    <li id="online"><a href="javascript:void(0)"><img src="__PUBLIC__/index/images/talk-img.png" alt=""></a></li>
+    <li class="vip" style="cursor: pointer;"><a href="javascript:void(0)"><img src="__PUBLIC__/index/images/VIP-img.png" alt=""></a></li>
+    <li class="top"><img src="__PUBLIC__/index/images/top-img.png" alt=""></li>
+  </ul>
+</div>
+<!-- nav -->
+<div class="nav-wrap">
+  <div class="nav">
+    <div class="logo"><img src="__PUBLIC__/index/images/logo.png" alt=""></div>
+    <div class="nav-list">
+      <ul class="nav-li">
+        <li class="n-li">
+          <a href="/"><span class="s-1">焕誉首页</span><span class="s-2">HOME</span></a>
+        </li>
+        <volist name='class_list' id='p_class'>
+          <li class="n-li">
+            <if condition="$p_class['class_name'] eq '医疗团队'">
+              <a href="{:U('Index/Index/doctor_list')}"><span class="s-1">{$p_class.class_name}</span><span class="s-2">{$p_class.class_e_name}</span></a>
+              <elseif condition="$p_class['class_name'] eq '新闻动态'"/>
+              <a href="{:U('Index/Index/band_info',array('id'=>157))}"><span class="s-1">{$p_class.class_name}</span><span class="s-2">{$p_class.class_e_name}</span></a>
+              <elseif condition="$p_class['class_name'] eq '品牌中心'"/>
+              <a href=""><span class="s-1">{$p_class.class_name}</span><span class="s-2">{$p_class.class_e_name}</span></a>
+              <elseif condition="$p_class['class_name'] eq '焕誉案例'"/>
+              <a href="{:U('Index/Index/case_info')}"><span class="s-1">{$p_class.class_name}</span><span class="s-2">{$p_class.class_e_name}</span></a>
+              <else />
+              <a href=""><span class="s-1">{$p_class.class_name}</span><span class="s-2">{$p_class.class_e_name}</span></a>
+            </if>
+
+            <if condition="$p_class['class_name'] eq '品牌中心'">
+              <div class="list">
+                <ul class="li-ul">
+                  <volist name='p_class.p_class' id='k_class'>
+                    <li class="nav-list-li">
+                      <if condition="$k_class['id'] eq 113">
+                        <a href="{:U('Index/Index/band_info',array('id'=>155))}" class="li-a">{$k_class.class_name}</a>
+                        <else />
+                        <a href="{:U('Index/Index/come')}" class="li-a">{$k_class.class_name}</a>
+                      </if>
+                    </li>
+                  </volist>
+                </ul>
+              </div>
+            </if>
+
+            <if condition="$p_class['class_name'] eq '项目系列'">
+              <div class="list">
+                <ul class="li-ul">
+                  <volist name='p_class.p_class' id='k_class'>
+                    <if condition="$k_class['id'] neq '98'">
+                      <li class="nav-list-li">
+                        <a class="li-a">{$k_class.class_name}</a>
+                        <div class="guide-li">
+                          <div class="f-l">
+                            <volist name='k_class.k_class' id='c_class'>
+                              <dl>
+                                <if condition="$c_class['tid'] neq NULL">
+                                  <a href="{:U('Index/Index/new_info',array('id'=>$c_class['tid']['id']))}"><dt>{$c_class.class_name}</dt></a>
+                                  <else />
+                                  <dt>{$c_class.class_name}</dt>
+                                </if>
+                                <foreach name="c_class['c_class']" item="c_vo">
+                                  <if condition="$key eq 0">
+                                    <dd class="dd-bg"><a href="{:U('Index/Index/new_info',array('id'=>$c_vo['id']))}">{$c_vo.class_name}</a></dd>
+                                    <else />
+                                    <dd><a href="{:U('Index/Index/new_info',array('id'=>$c_vo['id']))}">{$c_vo.class_name}</a></dd>
+                                  </if>
+                                </foreach>
+                              </dl>
+                            </volist>
+                          </div>
+                          <ul class="hot">
+                            <li>热门项目</li>
+                            <li><a href="{:U('Index/Index/new_info',array('id'=>$hot_info['id']))}"><img src="{$hot_info.img_url}" alt=""></a></li>
+                          </ul>
+                        </div>
+                      </li>
+                      <else />
+
+                    </if>
+                  </volist>
+                </ul>
+              </div>
+            </if>
+          </li>
+        </volist>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<!-- banner -->
+<div class="box-wrap">
+  <div class="box">
+    <ul class="slide-wrap">
+      <li style="z-index:10;" class="b-l-1">
+        <div class="b-box">
+          <img src="__PUBLIC__/index/images/b1-font1.png" alt="" class="img-1">
+          <img src="__PUBLIC__/index/images/b1-font2.png" alt="" class="img-2">
+        </div>
+      </li>
+      <li class="b-l-2">
+        <div class="b-box">
+          <img src="__PUBLIC__/index/images/b2-font.png" alt="" class="img-3">
+        </div>
+      </li>
+    </ul>
+    <ol>
+      <li class="current"></li>
+      <li></li>
+    </ol>
+    <span class="prev"></span>
+    <span class="next"></span>
+  </div>
+</div>
+<!-- 项目列表 -->
+<div class="project-wrap">
+  <p class="pro-tit"><img src="__PUBLIC__/index/images/pro-tit.png" alt=""></p>
+  <div class="pro-list">
+    <div class="prolist">
+      <ul class="prslide">
+        <volist name='p_list' id='p_l'>
+          <if condition="$p_l['id'] neq 98">
+            <li>
+              <img src="__PUBLIC__/index/images/p-{$key}.png" alt="">
+              <p class="p-1">{$p_l.class_name}</p>
+              <p class="p-2">{$p_l.class_e_name}</p>
+              <div class="none">
+                <p class="p-3">{$p_l.introduction}</p>
+                <p class="p-4"><a href="{:U('Index/Index/new_list',array('id'=>$p_l['id']))}">更多</a></p>
+              </div>
+            </li>
+            <else />
+            <!--<li>
+              <img src="__PUBLIC__/index/images/p-{$key}.png" alt="">
+              <p class="p-1">{$p_l.class_name}</p>
+              <p class="p-2">{$p_l.class_e_name}</p>
+              <div class="none">
+                <p class="p-3">{$p_l.introduction}</p>
+                <p class="p-4"><a href="/">更多</a></p>
+              </div>
+            </li>-->
+          </if>
+        </volist>
+      </ul>
+    </div>
+    <!--<span class="s-s-l"></span>
+    <span class="s-s-r"></span>-->
+  </div>
+</div>
+
+<!-- 专家团队 -->
+<div class="doctor-wrap">
+  <div class="doctor">
+    <p class="zj-tit"><img src="__PUBLIC__/index/images/zj-tit.png" alt=""></p>
+    <div class="zj-list">
+      <div class="zj-l">
+        <volist name='doctor_list' id="img_list">
+          <if condition="$key eq 0">
+            <div class="big-img"><img src="__PUBLIC__/Uploads/doctor/index_{$img_list.index_url}" alt=""></div>
+            <else />
+            <div class="big-img" style="display:none;"><img src="__PUBLIC__/Uploads/doctor/index_{$img_list.index_url}" alt=""></div>
+          </if>
+        </volist>
+      </div>
+      <div class="zj-r">
+        <div class="r-t">
+          <volist name='doctor_list' id="d_list">
+            <if condition="$key eq 0">
+              <div class="cont cy-none">
+                <else />
+                <div class="cont">
+            </if>
+            <p class="name">{$d_list.name}/<span class="job">{$d_list.zhicheng}</span></p>
+            <p class="lan">{$d_list.index_message}</p>
+            <p class="p-3">{$d_list.jianjie}</p>
+            <p class="cy-tit">主打方向 Main Direction</p>
+            <ul class="cy-list">
+              <volist name='d_list["jingli"]' id="j_list">
+                <li>{$j_list}</li>
+              </volist>
+            </ul>
+        </div>
+        </volist>
+      </div>
+      <div class="r-b-wrap">
+        <div class="r-b">
+          <ul class="zjslide">
+
+            <li><a href="javascript:void(0);"><img src="__PUBLIC__/index/images/z-4.png" alt=""></a></li>
+            <li><a href="javascript:void(0);"><img src="__PUBLIC__/index/images/z-0.png" alt=""></a></li>
+            <!--<li><a href="javascript:void(0);"><img src="__PUBLIC__/index/images/z-1.png" alt=""></a></li>-->
+            <li><a href="javascript:void(0);"><img src="__PUBLIC__/index/images/z-6.png" alt=""></a></li>
+            <li><a href="javascript:void(0);"><img src="__PUBLIC__/index/images/z-2.png" alt=""></a></li>
+            <!--<li><a href="javascript:void(0);"><img src="__PUBLIC__/index/images/z-3.png" alt=""></a></li>-->
+            <li><a href="javascript:void(0);"><img src="__PUBLIC__/index/images/z-12.png" alt=""></a></li>
+            <li><a href="javascript:void(0);"><img src="__PUBLIC__/index/images/z-5.png" alt=""></a></li>
+            <!--<li><a href="javascript:void(0);"><img src="__PUBLIC__/index/images/z-7.png" alt=""></a></li>
+            <li><a href="javascript:void(0);"><img src="__PUBLIC__/index/images/z-8.png" alt=""></a></li>
+            <li><a href="javascript:void(0);"><img src="__PUBLIC__/index/images/z-9.png" alt=""></a></li>
+            <li><a href="javascript:void(0);"><img src="__PUBLIC__/index/images/z-10.png" alt=""></a></li>
+            <li><a href="javascript:void(0);"><img src="__PUBLIC__/index/images/z-11.png" alt=""></a></li>-->
+          </ul>
+        </div>
+        <span class="s-s-l"></span>
+        <span class="s-s-r"></span>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+<!-- 成功案例 -->
+<div class="case-wrap">
+  <p class="case-tit"><img src="__PUBLIC__/index/images/case-tit.png" alt=""></p>
+  <div class="ca-list">
+    <div class="calist">
+      <ul class="caslide">
+        <volist name='anli_list' id="a_list">
+          <li class="li-1">
+            <a href="{:U('Index/Index/case_info',array('id'=>$a_list['id']))}" class="jump">
+              <img src="__PUBLIC__/Uploads/anli/info_{$a_list.img_url}" alt="">
+            </a>
+            <p class="btn"><a target='_blank' href="http://pkt.zoosnet.net/LR/Chatpre.aspx?id=PKT67204838&cid=1469000068684805339274&lng=cn&sid=1469000068684805339274&p=http%3A//hyuzx.com/&rf1=&rf2=&e=%25u6765%25u81EA%25u9996%25u9875%25u7684%25u5BF9%25u8BDD&bid=&d=1469000257113">在线了解体验过程&nbsp;>></a></p>
+          </li>
+        </volist>
+      </ul>
+    </div>
+    <span class="s-s-l"></span>
+    <span class="s-s-r"></span>
+  </div>
+</div>
+<!-- 环境设备 -->
+<div class="huan-wrap">
+  <div class="huanjing">
+    <p class="huan-tit"><img src="__PUBLIC__/index/images/hj-tit.png" alt=""></p>
+    <div class="j-1">
+      <p class="j-1-l"><img src="__PUBLIC__/index/images/j-1.jpg" alt=""></p>
+      <div class="j-1-r">
+        <p><img src="__PUBLIC__/index/images/j-tit1.png" alt=""></p>
+        <p class="j-text">焕誉本着一切为客户服务的初心，按照人性化尊贵定制设计标准，医院整体氛围高贵、典雅、舒适，把权威的医学团队和个性化的审美理念相结合。医院除了主流的医美设备供给顾客，同时也设有多间豪华VIP套房，色彩温馨，装修华丽，雅致的环境让您有"家"的感觉。焕誉一切从客户出发，一切为客户服务，争当行业服务标杆，为一切求美者提供完善专业的医美服务。</p>
+      </div>
+    </div>
+    <div class="j-2">
+      <div class="j-2-l">
+        <p><img src="__PUBLIC__/index/images/j-tit2.png" alt=""></p>
+        <p class="j-text">北京焕誉医疗美容是由威高集团牵头注资倾力打造的专业整形美容医院，拥有经验丰富的整形专家和多样的医美设备。医院以“良心、诚心、精心”为核心价值观，遵循“用科技与美丽邂逅，以信誉让生命焕彩”的服务宗旨，倡导科学美容、规范美容、个性美容理念；始终以医学和美学原理为指导，致力于美学精髓与现代医疗美容技术的完美融合，开创适合中国人的东方式医学美学理念。医院严格按照国家的手术室建设标准，以高标准、高要求，追求精益求精的专业医疗技术与优质服务，可为求美者实施各类美容整形手术及治疗，实现安全、快速塑美。</p>
+      </div>
+      <p class="j-2-r"><img src="__PUBLIC__/index/images/j-2.jpg" alt=""></p>
+    </div>
+  </div>
+  <div class="huan-list">
+    <div class="gallery">
+      <ul class="hjslide ">
+        <li><a href="__PUBLIC__/index/images/hj-1-b.png"><img src="__PUBLIC__/index/images/hj-1.png" alt=""></a></li>
+        <li><a href="__PUBLIC__/index/images/hj-2-b.png"><img src="__PUBLIC__/index/images/hj-2.png" alt=""></a></li>
+        <li><a href="__PUBLIC__/index/images/hj-3-b.png"><img src="__PUBLIC__/index/images/hj-3.png" alt=""></a></li>
+        <li><a href="__PUBLIC__/index/images/hj-4-b.png"><img src="__PUBLIC__/index/images/hj-4.png" alt=""></a></li>
+        <li><a href="__PUBLIC__/index/images/hj-5-b.png"><img src="__PUBLIC__/index/images/hj-5.png" alt=""></a></li>
+      </ul>
+      <div class="clear"></div>
+    </div>
+    <span class="s-s-l"></span>
+    <span class="s-s-r"></span>
+  </div>
+
+</div>
+<!-- 视频 -->
+<div class='video-wrap'>
+  <p class="vi-tit"><img src="__PUBLIC__/index/images/video-tit.png" alt=""></p>
+  <div class="video-list">
+    <div class="wrap">
+      <div class="w_l">
+        <ul>
+          <li id='videoa'>
+            <video id='dd' poster="__PUBLIC__/index/images/v-1-3.jpg" style='height:100%;width:100;%' controls="controls">
+              <source id="big_pic" src="__PUBLIC__/video/video_2.mp4" type="video/mp4" />
+            </video>
+            <!--<img id="big_pic" src="__PUBLIC__/index/images/v-1.png" alt="">-->
+
+          </li>
+        </ul>
+      </div>
+      <div class="w_r">
+        <span class="s-prev"><img src="__PUBLIC__/index/images/prev_page.png"></span>
+        <div class="w_r_w">
+          <ul class="show_off">
+
+            <!--<li><img rel='__PUBLIC__/video/video_1.mp4' src="__PUBLIC__/index/images/v-1-1.jpg" alt=""></li>-->
+            <li><img rel='__PUBLIC__/video/video_2.mp4' src="__PUBLIC__/index/images/v-1-3.jpg" alt=""></li>
+            <li><img rel='__PUBLIC__/video/video_3.mp4' src="__PUBLIC__/index/images/v-1-2.jpg" alt=""></li>
+            <li><img rel='__PUBLIC__/video/video_4.mp4' src="__PUBLIC__/index/images/v-1-4.jpg" alt=""></li>
+
+          </ul>
+        </div>
+        <span class="s-next"><img src="__PUBLIC__/index/images/next_page.png" style="margin:0 auto;"alt=""></span>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- footer -->
+<div class="footer-wrap">
+  <div class="footer">
+    <div class="f-l">
+      <p><img src="__PUBLIC__/index/images/fot-logo.jpg" alt=""></p>
+    </div>
+    <div class="f-m">
+      <ul class="f-nav">
+        <volist name='foot_list' id='f_list'>
+          <li>
+            <dl class="f-n-list">
+              <dt>{$f_list.class_name}</dt>
+              <volist name='f_list["zi_list"]' id='z_list'>
+                <if condition="$z_list['id'] eq 60 or $z_list['id'] eq 61 or $z_list['id'] eq 62 or $z_list['id'] eq 63 or $z_list['id'] eq 77 or $z_list['id'] eq 78 or $z_list['id'] eq 79 or $z_list['id'] eq 80">
+                  <dd><a href="{:U('Index/Index/new_info',array('id'=>$z_list['id']))}">{$z_list.class_name}</a></dd>
+                  <else />
+                  <dd><a href="{:U('Index/Index/new_list',array('id'=>$z_list['id']))}">{$z_list.class_name}</a></dd>
+                </if>
+              </volist>
+            </dl>
+          </li>
+        </volist>
+      </ul>
+    </div>
+    <div class="f-r">
+      <dl>
+        <dt><img src="__PUBLIC__/index/images/f-ewm.jpg" alt=""></dt>
+        <dd>
+          <p class="p-y">焕誉美容官方微信</p>
+          <p class="p-w">公众号：bjhyylzx</p>
+          <p class="p-w">北京焕誉医疗美容</p>
+        </dd>
+      </dl>
+      <p class="site">ADD : 北京市海淀区远大路22号院11号楼一层二层</p>
+      <p class="f-phone">美丽热线 : 010-57290660</p>
+      <p class="f-phone">美丽专线 : 400-7667-000</p>
+    </div>
+  </div>
+  <div class="reg" style='height:20px;'><p style='height:20px;line-height:20px;'>copyright &#169; 2016-2026 huanyuzhengxing 北京焕誉医疗美容门诊部有限公司</p></div>
+  <div style='text-align:center;background:#1d1d1d;font-size:12px;'><p>京ICP备16017287号-1   （京）医广【2016】第07-01-0355号</p></div>
+</div>
+</body>
+<script language=javascript>
+  var LiveAutoInvite0='您好，来自%IP%的朋友';
+  var LiveAutoInvite1='来自首页的对话';
+  var LiveAutoInvite2=' 网站商务通 主要功能：<br>1、主动邀请<br>2、即时沟通<br>3、查看即时访问动态<br>4、访问轨迹跟踪<br>5、内部对话<br>6、不安装任何插件也实现双向文件传输<br><br><b>如果您有任何问题请接受此邀请以开始即时沟通</b>';
+</script>
+<script language="javascript" src="http://pkt.zoosnet.net/JS/LsJS.aspx?siteid=PKT67204838&float=1&lng=cn"></script>
+</html>

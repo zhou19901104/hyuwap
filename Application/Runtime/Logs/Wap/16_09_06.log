@@ -1,0 +1,102 @@
+<<<<<<< HEAD
+[ 2016-09-06T11:23:33+08:00 ] 61.50.106.246 /
+ERR: SQLSTATE[HY000] [2002] ”…”⁄ƒø±Íº∆À„ª˙ª˝º´æ‹æ¯£¨Œﬁ∑®¡¨Ω”°£
+
+
+[ 2016-09-06T11:24:35+08:00 ] 61.50.106.246 /
+ERR: _STORAGE_WRITE_ERROR_:./Application/Runtime/Cache/Wap/e46e21c24dded43ad6fb5f956cc5082f.php
+
+[ 2016-09-06T11:24:36+08:00 ] 61.50.106.246 /
+ERR: _STORAGE_WRITE_ERROR_:./Application/Runtime/Cache/Wap/e46e21c24dded43ad6fb5f956cc5082f.php
+
+[ 2016-09-06T11:25:28+08:00 ] 61.50.106.246 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `sd_class` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_class` WHERE ( pid = 0 ) ORDER BY sort DESC  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sd_nav` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_nav`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sd_banner` [ RunTime:0.0000s ]
+SQL: SELECT `id`,`banner_url`,`banner_filename`,`sort` FROM `sd_banner` ORDER BY sort desc  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sd_spcontent` [ RunTime:0.0000s ]
+SQL: SELECT `sp_img`,`sp_link`,`sp_show`,`sp_sort` FROM `sd_spcontent` WHERE `sp_show` = 1 ORDER BY sp_sort DESC  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] file_put_contents(./Application/Runtime/Cache/Wap/e46e21c24dded43ad6fb5f956cc5082f.php): failed to open stream: Permission denied C:\www\ThinkPHP\Library\Think\Storage\Driver\File.class.php Á¨¨ 47 Ë°å.
+ERR: _STORAGE_WRITE_ERROR_:./Application/Runtime/Cache/Wap/e46e21c24dded43ad6fb5f956cc5082f.php
+
+[ 2016-09-06T11:25:29+08:00 ] 61.50.106.246 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `sd_class` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_class` WHERE ( pid = 0 ) ORDER BY sort DESC  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sd_nav` [ RunTime:0.0156s ]
+SQL: SELECT * FROM `sd_nav`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sd_banner` [ RunTime:0.0000s ]
+SQL: SELECT `id`,`banner_url`,`banner_filename`,`sort` FROM `sd_banner` ORDER BY sort desc  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sd_spcontent` [ RunTime:0.0000s ]
+SQL: SELECT `sp_img`,`sp_link`,`sp_show`,`sp_sort` FROM `sd_spcontent` WHERE `sp_show` = 1 ORDER BY sp_sort DESC  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] file_put_contents(./Application/Runtime/Cache/Wap/e46e21c24dded43ad6fb5f956cc5082f.php): failed to open stream: Permission denied C:\www\ThinkPHP\Library\Think\Storage\Driver\File.class.php Á¨¨ 47 Ë°å.
+ERR: _STORAGE_WRITE_ERROR_:./Application/Runtime/Cache/Wap/e46e21c24dded43ad6fb5f956cc5082f.php
+
+[ 2016-09-06T11:25:30+08:00 ] 61.50.106.246 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `sd_class` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_class` WHERE ( pid = 0 ) ORDER BY sort DESC  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sd_nav` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_nav`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sd_banner` [ RunTime:0.0000s ]
+SQL: SELECT `id`,`banner_url`,`banner_filename`,`sort` FROM `sd_banner` ORDER BY sort desc  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sd_spcontent` [ RunTime:0.0000s ]
+SQL: SELECT `sp_img`,`sp_link`,`sp_show`,`sp_sort` FROM `sd_spcontent` WHERE `sp_show` = 1 ORDER BY sp_sort DESC  [ RunTime:0.0156s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] file_put_contents(./Application/Runtime/Cache/Wap/e46e21c24dded43ad6fb5f956cc5082f.php): failed to open stream: Permission denied C:\www\ThinkPHP\Library\Think\Storage\Driver\File.class.php Á¨¨ 47 Ë°å.
+ERR: _STORAGE_WRITE_ERROR_:./Application/Runtime/Cache/Wap/e46e21c24dded43ad6fb5f956cc5082f.php
+=======
+[ 2016-09-06T10:33:09+08:00 ] 127.0.0.1 /
+ERR: 1054:Champ 'banner_url' inconnu dans field list
+ [ SQLËØ≠Âè• ] : SELECT `id`,`banner_url`,`banner_filename`,`sort` FROM `sd_banner` ORDER BY sort desc 
+>>>>>>> b1c42331ed2e420551be45664386881fab3582c6
+
+[ 2016-09-06T13:51:05+08:00 ] 127.0.0.1 /
+ERR: 1054:Champ 'banner_url' inconnu dans field list
+ [ SQLËØ≠Âè• ] : SELECT `id`,`banner_url`,`banner_filename`,`sort` FROM `sd_banner` ORDER BY sort desc 
+
+[ 2016-09-06T13:51:22+08:00 ] 127.0.0.1 /
+ERR: 1054:Champ 'banner_url' inconnu dans field list
+ [ SQLËØ≠Âè• ] : SELECT `id`,`banner_url`,`banner_filename`,`sort` FROM `sd_banner` ORDER BY sort desc 
+
+[ 2016-09-06T14:03:03+08:00 ] 127.0.0.1 /index.php/Wap/Wap/project_list.html
+ERR: 1054:Champ 'nav_img_url' inconnu dans field list
+ [ SQLËØ≠Âè• ] : SELECT `class_name`,`id`,`nav_img_url`,`sort` FROM `sd_class` WHERE ( pid = "117" ) ORDER BY sort DESC 
+
+[ 2016-09-06T14:04:33+08:00 ] 127.0.0.1 /index.php/Wap/Wap/project_list.html
+ERR: 1054:Champ 'nav_img_url' inconnu dans field list
+ [ SQLËØ≠Âè• ] : SELECT `class_name`,`id`,`nav_img_url`,`sort` FROM `sd_class` WHERE ( pid = "117" ) ORDER BY sort DESC 
+
+[ 2016-09-06T17:03:03+08:00 ] 127.0.0.1 /index.php/Wap/Wap/project_list.html
+ERR: 1054:Champ 'nav_img_url' inconnu dans field list
+ [ SQLËØ≠Âè• ] : SELECT `class_name`,`id`,`nav_img_url`,`sort` FROM `sd_class` WHERE ( pid = "117" ) ORDER BY sort DESC 
+

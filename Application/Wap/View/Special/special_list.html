@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>{$data.title}</title>
+    <link rel="stylesheet" type="text/css" href="{:C('SITE_URL')}/Public/Wap/css/all.css"></head>
+<style>
+    .img_1
+    {
+        position:fixed;
+        right:0px;
+        bottom:0px;
+    }
+    .mainnav {
+        margin: 0 auto;
+        overflow: hidden;
+        height: 60px;
+        padding: 20px 0;
+        border-bottom: 0px solid #e0e0e0;
+    }
+    a {
+             color: #D0D0D0;
+    }
+</style>
+<body>
+<div class="wrap">
+    <div class="nav-wrap">
+        <span class="logo"><img src="{:C('SITE_URL')}/Public/Uploads/comm/logo.jpg" alt=""></span>
+        <span class="navbtn"><img src="{:C('SITE_URL')}/Public/Uploads/comm/daohang.jpg" alt=""></span>
+    </div>
+    <!-- 侧边导航 -->
+    <div class="cover"></div>
+
+    <ul class="indexmenu">
+        <foreach name="special_info" item="nav_val">
+            <li><a href="{:C('SITE_URL')}/Wap/Wap/{$nav_val['link']}"><img src="{:C('SITE_URL')}/{$nav_val['th_img_url']|substr=2}" alt=""></a></li>
+            <li><a href="{:C('SITE_URL')}/Wap/Wap/{$nav_val['link']}"><img src="{:C('SITE_URL')}/{$nav_val['th_img_url']|substr=2}" alt=""></a></li>
+        </foreach>
+    </ul>
+
+    <!-- 主页展示 -->
+    <div class="mainnav">
+        <ul class="nav-list">
+            <li><a href="/"><img src="{:C('IMG_URL')}/shouye.gif" alt=""></a></li>
+            <li><a href="{:U('Wap/Wap/company')}"><img src="{:C('IMG_URL')}/guanyu.gif" alt=""></a></li>
+            <li><a href="{:C('SITE_URL')}/xm/list"><img src="{:C('IMG_URL')}/xiangmu.gif" alt=""></a></li>
+            <li><a href="{:U('Wap/Wap/case_list')}"><img src="{:C('IMG_URL')}/anli.gif" alt=""></a></li>
+            <li><a href="{:C('SITE_URL')}/dc/list"><img src="{:C('IMG_URL')}/yisheng.gif" alt=""></a></li>
+        </ul>
+    </div>
+
+<!--项目列表 -->
+<div class="project">
+
+    <div class="pro-l">
+        <ul class="projectul" style="background-color:#a6afb6;">
+            <volist name="special_info" id="sp_list">
+                <li class="current" style="margin-bottom:5px;"><a href="javascript:void(0);" onclick="spacial_li({$sp_list['id']})"><img src="{:C('SITE_URL')}{$sp_list['sp_img_url']|substr=1}" alt=""><span>{$sp_list.name}</span></a></li>
+            </volist>
+        </ul>
+    </div>
+    <div class="doc-r" style="display:block;" id="doc-r">
+    <input type="hidden" id="sp_id" value="{$sp_id}">
+</div>
+<!-- 底部导航 -->
+
+<script type="text/javascript" src="__PUBLIC__/wap/js/jquery-1.10.1.min.js"></script>
+<script>
+    $(function(){
+        var sp_id = $('#sp_id').val();
+        spacial_li(sp_id);
+    });
+    var special_info = new Array();
+
+    function spacial_li(listid){
+        var lid = listid;
+        //alert(lid);
+        if(typeof special_info[lid] === 'undefined'){
+            $.ajax({
+                url: "__CONTROLLER__/special_info",
+                data: {'id':lid},
+                success : function(data){
+                    var str = '<ul>';
+                    $.each(data, function(index,value){
+                        str += "<li><a href='{:U('sp/"+value.sp_link+"')}'><img src='"+value.sp_img.substring(1)+"'></a></li>";
+                    });
+                    str += "</ul>";
+                    $('#doc-r').html(str);
+                    special_info[lid] = str;
+                },
+            });
+        }else{
+            $('#doc-r').html(special_info[lid]);
+        }
+
+    }
+</script>

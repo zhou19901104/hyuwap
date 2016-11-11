@@ -1,0 +1,1880 @@
+[ 2016-10-14T08:43:21+08:00 ] 121.42.0.14 /admin/images/menu-current-arrow.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-10-14T08:43:23+08:00 ] 121.42.0.14 /admin/image/menu_h4.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-10-14T08:44:22+08:00 ] 121.42.0.14 /admin/templates/images/filestate.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-10-14T08:44:30+08:00 ] 121.42.0.14 /admin/images/comment_alert.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-10-14T14:54:56+08:00 ] 61.50.106.246 /Admin/Login/Index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016603s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016603s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000976s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000976s ]
+
+[ 2016-10-14T14:54:57+08:00 ] 61.50.106.246 /Admin/Login/captcha/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-10-14T14:55:03+08:00 ] 61.50.106.246 /Admin/Login/checkLogin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018556s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018556s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-10-14T14:55:10+08:00 ] 61.50.106.246 /Admin/Login/checkLogin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `sd_users` [ RunTime:0.0039s ]
+SQL: SELECT `uid`,`role_id`,`username`,`password`,`status`,`remark` FROM `sd_users` WHERE ( username='administrator' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `uid`,`role_id`,`username` FROM `sd_users` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [2] fopen(C:\www\ThinkPHP\Library\Org\Net/UTFWry.dat): failed to open stream: No such file or directory C:\www\ThinkPHP\Library\Org\Net\IpLocation.class.php 第 54 行.
+SQL: UPDATE `sd_users` SET `last_login`='1476428110',`last_login_ip`='61.50.106.246' WHERE `uid` = 1 [ RunTime:0.0010s ]
+
+[ 2016-10-14T14:55:10+08:00 ] 61.50.106.246 /Admin/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+SQL: SELECT `id`,`title`,name
+                       FROM `sd_node`
+                       WHERE( `status` =1 AND `display`=1)
+                       ORDER BY sort DESC [ RunTime:0.0098s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: sub_menu_html C:\www\wap\Application\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 96 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008790s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008790s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000976s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000976s ]
+
+[ 2016-10-14T14:55:11+08:00 ] 61.50.106.246 /Admin/Index/main
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant gd_info - assumed 'gd_info' C:\www\wap\Application\Admin\Controller\IndexController.class.php 第 161 行.
+NOTIC: [8] Undefined index: SERVER_ADDR C:\www\wap\Application\Admin\Controller\IndexController.class.php 第 168 行.
+NOTIC: [8] Use of undefined constant WEB_ROOT - assumed 'WEB_ROOT' C:\www\wap\Application\Admin\Controller\IndexController.class.php 第 171 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: ikphp C:\www\wap\Application\Runtime\Cache\Admin\b0f0b709690a72033d17719e8059053c.php 第 5 行.
+NOTIC: [8] Undefined variable: caches C:\www\wap\Application\Runtime\Cache\Admin\b0f0b709690a72033d17719e8059053c.php 第 36 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009766s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009766s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000977s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000977s ]
+
+[ 2016-10-14T14:55:11+08:00 ] 61.50.106.246 /Admin/Index/left/id/85
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000977s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000976s ]
+SQL: SHOW COLUMNS FROM `sd_node` [ RunTime:0.0049s ]
+SQL: SELECT `id`,`data`,`title`
+                FROM `sd_node`
+                WHERE ( `status` =1 AND `display`=2 AND `pid`=85)
+                ORDER BY sort DESC [ RunTime:0.0010s ]
+SQL: SELECT `title` FROM `sd_node` WHERE `id` = 85 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `id`,`data`,`title`
+                FROM `sd_node`
+                WHERE ( `status` =1 AND `display`=2 AND `pid`=86)
+                ORDER BY sort DESC [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant title - assumed 'title' C:\www\wap\Application\Admin\Controller\IndexController.class.php 第 74 行.
+NOTIC: [8] Use of undefined constant title - assumed 'title' C:\www\wap\Application\Admin\Controller\IndexController.class.php 第 87 行.
+NOTIC: [8] Use of undefined constant title - assumed 'title' C:\www\wap\Application\Admin\Controller\IndexController.class.php 第 87 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014649s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014649s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-10-14T14:55:13+08:00 ] 61.50.106.246 /Admin/Index/left/id/85?id=151
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000976s ]
+SQL: SHOW COLUMNS FROM `sd_node` [ RunTime:0.0020s ]
+SQL: SELECT `id`,`data`,`title`
+                FROM `sd_node`
+                WHERE ( `status` =1 AND `display`=2 AND `pid`=151)
+                ORDER BY sort DESC [ RunTime:0.0010s ]
+SQL: SELECT `title` FROM `sd_node` WHERE `id` = 151 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `id`,`data`,`title`
+                FROM `sd_node`
+                WHERE ( `status` =1 AND `display`=2 AND `pid`=152)
+                ORDER BY sort DESC [ RunTime:0.0010s ]
+NOTIC: [8] Use of undefined constant title - assumed 'title' C:\www\wap\Application\Admin\Controller\IndexController.class.php 第 74 行.
+NOTIC: [8] Use of undefined constant title - assumed 'title' C:\www\wap\Application\Admin\Controller\IndexController.class.php 第 87 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004883s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004883s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-10-14T14:55:13+08:00 ] 61.50.106.246 /Admin/Index/index?s=/Admin/User/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `sd_users` [ RunTime:0.0029s ]
+SQL: SELECT u.uid,u.role_id,u.username,u.status,r.id,r.name FROM sd_users u INNER JOIN sd_role as r on u.uid=r.id  WHERE ( 2>1 )  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000976s ]
+NOTIC: [8] Undefined variable: roles C:\www\wap\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 38 行.
+NOTIC: [8] Use of undefined constant hlbs - assumed 'hlbs' C:\www\wap\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 55 行.
+NOTIC: [8] Undefined variable: page C:\www\wap\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 75 行.
+NOTIC: [8] Undefined variable: pageUrl C:\www\wap\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 79 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010743s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010743s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-10-14T14:55:15+08:00 ] 61.50.106.246 /Admin/Index/left/id/85?id=340
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `sd_node` [ RunTime:0.0029s ]
+SQL: SELECT `id`,`data`,`title`
+                FROM `sd_node`
+                WHERE ( `status` =1 AND `display`=2 AND `pid`=340)
+                ORDER BY sort DESC [ RunTime:0.0010s ]
+SQL: SELECT `title` FROM `sd_node` WHERE `id` = 340 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `id`,`data`,`title`
+                FROM `sd_node`
+                WHERE ( `status` =1 AND `display`=2 AND `pid`=341)
+                ORDER BY sort DESC [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant title - assumed 'title' C:\www\wap\Application\Admin\Controller\IndexController.class.php 第 74 行.
+NOTIC: [8] Use of undefined constant title - assumed 'title' C:\www\wap\Application\Admin\Controller\IndexController.class.php 第 87 行.
+SQL: SELECT `id`,`data`,`title`
+                FROM `sd_node`
+                WHERE ( `status` =1 AND `display`=2 AND `pid`=367)
+                ORDER BY sort DESC [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant title - assumed 'title' C:\www\wap\Application\Admin\Controller\IndexController.class.php 第 74 行.
+NOTIC: [8] Use of undefined constant title - assumed 'title' C:\www\wap\Application\Admin\Controller\IndexController.class.php 第 87 行.
+SQL: SELECT `id`,`data`,`title`
+                FROM `sd_node`
+                WHERE ( `status` =1 AND `display`=2 AND `pid`=361)
+                ORDER BY sort DESC [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant title - assumed 'title' C:\www\wap\Application\Admin\Controller\IndexController.class.php 第 74 行.
+NOTIC: [8] Use of undefined constant title - assumed 'title' C:\www\wap\Application\Admin\Controller\IndexController.class.php 第 87 行.
+NOTIC: [8] Use of undefined constant title - assumed 'title' C:\www\wap\Application\Admin\Controller\IndexController.class.php 第 87 行.
+SQL: SELECT `id`,`data`,`title`
+                FROM `sd_node`
+                WHERE ( `status` =1 AND `display`=2 AND `pid`=363)
+                ORDER BY sort DESC [ RunTime:0.0010s ]
+NOTIC: [8] Use of undefined constant title - assumed 'title' C:\www\wap\Application\Admin\Controller\IndexController.class.php 第 74 行.
+NOTIC: [8] Use of undefined constant title - assumed 'title' C:\www\wap\Application\Admin\Controller\IndexController.class.php 第 87 行.
+NOTIC: [8] Use of undefined constant title - assumed 'title' C:\www\wap\Application\Admin\Controller\IndexController.class.php 第 87 行.
+SQL: SELECT `id`,`data`,`title`
+                FROM `sd_node`
+                WHERE ( `status` =1 AND `display`=2 AND `pid`=369)
+                ORDER BY sort DESC [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant title - assumed 'title' C:\www\wap\Application\Admin\Controller\IndexController.class.php 第 74 行.
+NOTIC: [8] Use of undefined constant title - assumed 'title' C:\www\wap\Application\Admin\Controller\IndexController.class.php 第 87 行.
+SQL: SELECT `id`,`data`,`title`
+                FROM `sd_node`
+                WHERE ( `status` =1 AND `display`=2 AND `pid`=371)
+                ORDER BY sort DESC [ RunTime:0.0010s ]
+NOTIC: [8] Use of undefined constant title - assumed 'title' C:\www\wap\Application\Admin\Controller\IndexController.class.php 第 74 行.
+NOTIC: [8] Use of undefined constant title - assumed 'title' C:\www\wap\Application\Admin\Controller\IndexController.class.php 第 87 行.
+NOTIC: [8] Use of undefined constant title - assumed 'title' C:\www\wap\Application\Admin\Controller\IndexController.class.php 第 87 行.
+SQL: SELECT `id`,`data`,`title`
+                FROM `sd_node`
+                WHERE ( `status` =1 AND `display`=2 AND `pid`=377)
+                ORDER BY sort DESC [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant title - assumed 'title' C:\www\wap\Application\Admin\Controller\IndexController.class.php 第 74 行.
+NOTIC: [8] Use of undefined constant title - assumed 'title' C:\www\wap\Application\Admin\Controller\IndexController.class.php 第 87 行.
+SQL: SELECT `id`,`data`,`title`
+                FROM `sd_node`
+                WHERE ( `status` =1 AND `display`=2 AND `pid`=378)
+                ORDER BY sort DESC [ RunTime:0.0010s ]
+NOTIC: [8] Use of undefined constant title - assumed 'title' C:\www\wap\Application\Admin\Controller\IndexController.class.php 第 74 行.
+NOTIC: [8] Use of undefined constant title - assumed 'title' C:\www\wap\Application\Admin\Controller\IndexController.class.php 第 87 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004883s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004883s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000977s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000977s ]
+
+[ 2016-10-14T14:55:15+08:00 ] 61.50.106.246 /Admin/Index/index?s=/Admin/Setting/banner_list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `sd_banner` [ RunTime:0.0029s ]
+SQL: SELECT `id`,`sort`,`category`,`th_img_url` FROM `sd_banner` ORDER BY sort desc  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007813s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007813s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000976s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000976s ]
+
+[ 2016-10-14T14:55:17+08:00 ] 61.50.106.246 /Admin/Index/index?s=Admin/Doctor/doctor_list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+SQL: SHOW COLUMNS FROM `sd_doctor` [ RunTime:0.0029s ]
+SQL: SELECT d.*,c.id as claid,c.class_name FROM sd_doctor d LEFT JOIN sd_doctor_class as c on d.cid = c.id   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008789s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008789s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000977s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-10-14T14:55:20+08:00 ] 61.50.106.246 /Admin/Doctor/doctor_edit/id/30
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+NOTIC: [2048] Declaration of Admin\Model\DoctorModel::_before_delete() should be compatible with Think\Model::_before_delete($options) C:\www\wap\Application\Admin\Model\DoctorModel.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `sd_doctor` [ RunTime:0.0039s ]
+SQL: SELECT d.*,c.id as claid,c.class_name FROM sd_doctor d INNER JOIN sd_doctor_class as c on d.cid=c.id  WHERE d.id = '30' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sd_doctor_class` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `sd_doctor_class`  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: related C:\www\wap\Application\Runtime\Cache\Admin\af032a5952c42d422c3632c1699ec81a.php 第 95 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007813s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007813s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-10-14T14:56:52+08:00 ] 61.50.106.246 /Admin/Doctor/doctor_edit/id/34
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+NOTIC: [2048] Declaration of Admin\Model\DoctorModel::_before_delete() should be compatible with Think\Model::_before_delete($options) C:\www\wap\Application\Admin\Model\DoctorModel.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `sd_doctor` [ RunTime:0.0029s ]
+SQL: SELECT d.*,c.id as claid,c.class_name FROM sd_doctor d INNER JOIN sd_doctor_class as c on d.cid=c.id  WHERE d.id = '34' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sd_doctor_class` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `sd_doctor_class`  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: related C:\www\wap\Application\Runtime\Cache\Admin\af032a5952c42d422c3632c1699ec81a.php 第 95 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007813s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007813s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-10-14T14:57:15+08:00 ] 61.50.106.246 /Admin/Doctor/doctor_edit/id/30
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000976s ]
+NOTIC: [2048] Declaration of Admin\Model\DoctorModel::_before_delete() should be compatible with Think\Model::_before_delete($options) C:\www\wap\Application\Admin\Model\DoctorModel.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `sd_doctor` [ RunTime:0.0039s ]
+SQL: SELECT d.*,c.id as claid,c.class_name FROM sd_doctor d INNER JOIN sd_doctor_class as c on d.cid=c.id  WHERE d.id = '30' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sd_doctor_class` [ RunTime:0.0029s ]
+SQL: SELECT * FROM `sd_doctor_class`  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: related C:\www\wap\Application\Runtime\Cache\Admin\af032a5952c42d422c3632c1699ec81a.php 第 95 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008790s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008790s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000976s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-10-14T14:57:57+08:00 ] 61.50.106.246 /Admin/Doctor/doctor_add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000976s ]
+NOTIC: [2048] Declaration of Admin\Model\DoctorModel::_before_delete() should be compatible with Think\Model::_before_delete($options) C:\www\wap\Application\Admin\Model\DoctorModel.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `sd_doctor` [ RunTime:0.0039s ]
+SQL: SHOW COLUMNS FROM `sd_doctor_class` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `sd_doctor_class`  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000976s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007813s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007813s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000976s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000976s ]
+
+[ 2016-10-14T15:42:00+08:00 ] 173.230.142.213 /Admin/Doctor/doctor_add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000976s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+NOTIC: [2048] Declaration of Admin\Model\DoctorModel::_before_delete() should be compatible with Think\Model::_before_delete($options) C:\www\wap\Application\Admin\Model\DoctorModel.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `sd_doctor` [ RunTime:0.0020s ]
+NOTIC: [8] Undefined index: validate C:\www\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto C:\www\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given C:\www\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+SQL: INSERT INTO `sd_doctor` (`name`,`zhicheng`,`cid`,`index_zhu`,`jieshao`,`message`,`sort`,`img_url`,`th_img_url`) VALUES ('朱昊','北京焕誉医疗美容手术中心主任','15','<p style=\"text-align: center;\">　　<strong><span style=\"color: rgb(73, 68, 41);\">朱昊 &nbsp;手术中心主任</span></strong></p><hr/><p><span style=\"color: rgb(73, 68, 41);\">中国无痕五官精雕专家<br/></span></p><p><span style=\"color: rgb(73, 68, 41);\">北京焕誉首席全眼综合整形专家</span></p><p><span style=\"color: rgb(73, 68, 41);\">中国医师协会整形与美容分会会员</span></p><p><span style=\"color: rgb(73, 68, 41);\">韩整形外科学会眼部整形研究会会员</span></p><hr/><p>中国整形外科新生代专家，毕业于大连医科大学，曾在北京中日友好医院等三甲医院整形外科进修。从医10余年，多次作为访问学者赴韩国、马来西亚、澳大利亚等国学习交流并受邀与国外多名专家共同完成眼部手术，具有较高的专业水平和丰富的临床经验。他深得亚洲整形精细唯美之技术精髓，注重根据求美者自身个性与心理需求制定最为优化的整形方案，手术操作以精准化、个性化、微创化和神韵化见长，尤其对于眼部综合整形具有独到见解，深得行业内外高度赞同和认可，被广大爱美人士美誉为“美瞳大师”。</p><hr/><p><strong><span style=\"color: rgb(73, 68, 41);\">擅长项目</span></strong><br/></p><p>面部五官精雕、全眼综合整形、自体脂肪移植、分层吸脂塑形</p><p><br/></p>','中国整形外科新生代专家，毕业于大连医科大学，曾在北京中日友好医院等三甲医院整形外科进修。','躬耕医技 苛求细节','0','./Public/Uploads/doctor/2016-10-14/58008c48177cc.jpg','./Public/Uploads/doctor/2016-10-14/th_58008c48177cc.jpg') [ RunTime:0.0068s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015625s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015625s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000977s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000977s ]
+
+[ 2016-10-14T15:42:06+08:00 ] 173.230.142.213 /Admin/Doctor/doctor_list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+SQL: SHOW COLUMNS FROM `sd_doctor` [ RunTime:0.0020s ]
+SQL: SELECT d.*,c.id as claid,c.class_name FROM sd_doctor d LEFT JOIN sd_doctor_class as c on d.cid = c.id   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006837s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006837s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000976s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-10-14T15:49:19+08:00 ] 61.50.106.246 /Admin/Doctor/doctor_edit/id/36
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000976s ]
+NOTIC: [2048] Declaration of Admin\Model\DoctorModel::_before_delete() should be compatible with Think\Model::_before_delete($options) C:\www\wap\Application\Admin\Model\DoctorModel.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `sd_doctor` [ RunTime:0.0029s ]
+SQL: SELECT d.*,c.id as claid,c.class_name FROM sd_doctor d INNER JOIN sd_doctor_class as c on d.cid=c.id  WHERE d.id = '36' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sd_doctor_class` [ RunTime:0.0029s ]
+SQL: SELECT * FROM `sd_doctor_class`  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: related C:\www\wap\Application\Runtime\Cache\Admin\af032a5952c42d422c3632c1699ec81a.php 第 95 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008789s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008789s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000977s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000976s ]
+
+[ 2016-10-14T15:49:44+08:00 ] 61.50.106.246 /Admin/Doctor/doctor_edit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+NOTIC: [2048] Declaration of Admin\Model\DoctorModel::_before_delete() should be compatible with Think\Model::_before_delete($options) C:\www\wap\Application\Admin\Model\DoctorModel.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `sd_doctor` [ RunTime:0.0039s ]
+NOTIC: [8] Undefined index: validate C:\www\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto C:\www\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: SELECT `img_url`,`th_img_url`,`id` FROM `sd_doctor` WHERE `id` = 36 LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given C:\www\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+SQL: UPDATE `sd_doctor` SET `name`='朱昊',`zhicheng`='北京焕誉医疗美容手术中心主任',`cid`='15',`index_zhu`='<p style=\"text-align: center;\">　　<strong><span style=\"color: rgb(73, 68, 41);\">朱昊 &nbsp;手术中心主任</span></strong></p><hr/><p><span style=\"color: rgb(73, 68, 41);\">中国无痕五官精雕专家<br/></span></p><p><span style=\"color: rgb(73, 68, 41);\">北京焕誉首席全眼综合整形专家</span></p><p><span style=\"color: rgb(73, 68, 41);\">中国医师协会整形与美容分会会员</span></p><p><span style=\"color: rgb(73, 68, 41);\">韩整形外科学会眼部整形研究会会员</span></p><hr/><p>中国整形外科新生代专家，毕业于大连医科大学，曾在北京中日友好医院等三甲医院整形外科进修。从医10余年，多次作为访问学者赴韩国、马来西亚、澳大利亚等国学习交流并受邀与国外多名专家共同完成眼部手术，具有较高的专业水平和丰富的临床经验。他深得亚洲整形精细唯美之技术精髓，注重根据求美者自身个性与心理需求制定最为优化的整形方案，手术操作以精准化、个性化、微创化和神韵化见长，尤其对于眼部综合整形具有独到见解，深得行业内外高度赞同和认可，被广大爱美人士美誉为“美瞳大师”。</p><hr/><p><strong><span style=\"color: rgb(73, 68, 41);\">擅长项目</span></strong><br/></p><p>面部五官精雕、全眼综合整形、自体脂肪移植、分层吸脂塑形</p><p><br/></p>',`jieshao`='中国整形外科新生代专家，毕业于大连医科大学，曾在北京中日友好医院等三甲医院整形外科进修。',`message`='躬耕医技 苛求细节',`sort`='0',`img_url`='./Public/Uploads/doctor/2016-10-14/58008e189f360.jpg',`th_img_url`='./Public/Uploads/doctor/2016-10-14/th_58008e189f360.jpg' WHERE `id` = 36 [ RunTime:0.0068s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005859s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005859s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000977s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-10-14T15:49:46+08:00 ] 61.50.106.246 /Admin/Doctor/doctor_list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000976s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+SQL: SHOW COLUMNS FROM `sd_doctor` [ RunTime:0.0029s ]
+SQL: SELECT d.*,c.id as claid,c.class_name FROM sd_doctor d LEFT JOIN sd_doctor_class as c on d.cid = c.id   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006836s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006836s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000977s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-10-14T15:49:50+08:00 ] 61.50.106.246 /Admin/Doctor/doctor_add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000977s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000976s ]
+NOTIC: [2048] Declaration of Admin\Model\DoctorModel::_before_delete() should be compatible with Think\Model::_before_delete($options) C:\www\wap\Application\Admin\Model\DoctorModel.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `sd_doctor` [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `sd_doctor_class` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `sd_doctor_class`  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006836s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006836s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000977s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-10-14T15:51:20+08:00 ] 61.50.106.246 /Admin/Doctor/doctor_add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2048] Declaration of Admin\Model\DoctorModel::_before_delete() should be compatible with Think\Model::_before_delete($options) C:\www\wap\Application\Admin\Model\DoctorModel.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `sd_doctor` [ RunTime:0.0029s ]
+NOTIC: [8] Undefined index: validate C:\www\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto C:\www\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given C:\www\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+SQL: INSERT INTO `sd_doctor` (`name`,`zhicheng`,`cid`,`index_zhu`,`jieshao`,`message`,`sort`,`img_url`,`th_img_url`) VALUES ('周亮','微整形注射医生','16','<p style=\"text-align: center;\"><strong><span style=\"color: rgb(73, 68, 41);\">周亮 微整形注射医生</span></strong></p><hr/><p><span style=\"color: rgb(147, 137, 83);\">北京焕誉医疗美容美学设计师</span><br/></p><hr/><p>从业微整形十余年，对面部立体美学有深层认识及独到的见解，并能灵活将美学设计理念和求美者实际需求完美结合，根据个人特点迅速准确制定改善方法，定制专属个人的由内而外的塑形方案。能准确把握国际流行趋势，满足不同层次客人的需求。<br/></p><hr/><p><strong><span style=\"color: rgb(73, 68, 41);\">擅长项目</span></strong><br/></p><p>玻尿酸立体提拉术、面部微整形整体设计、玻尿酸面型T+V立体微雕注射、面部侧提拉注射(针对面部松驰下垂)、面部线雕提升、注射面部塑形</p><p><br/></p>','从业微整形十余年，对面部立体美学有深层认识及独到的见解，','每个人都有一组属于自己的美丽密码','0','./Public/Uploads/doctor/2016-10-14/58008e78acbf6.jpg','./Public/Uploads/doctor/2016-10-14/th_58008e78acbf6.jpg') [ RunTime:0.0137s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000977s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004883s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004883s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000976s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-10-14T15:51:22+08:00 ] 61.50.106.246 /Admin/Doctor/doctor_list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `sd_doctor` [ RunTime:0.0029s ]
+SQL: SELECT d.*,c.id as claid,c.class_name FROM sd_doctor d LEFT JOIN sd_doctor_class as c on d.cid = c.id   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006836s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006836s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000977s ]
+
+[ 2016-10-14T15:52:59+08:00 ] 61.50.106.246 /Admin/Doctor/doctor_edit/id/36
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000976s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2048] Declaration of Admin\Model\DoctorModel::_before_delete() should be compatible with Think\Model::_before_delete($options) C:\www\wap\Application\Admin\Model\DoctorModel.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `sd_doctor` [ RunTime:0.0039s ]
+SQL: SELECT d.*,c.id as claid,c.class_name FROM sd_doctor d INNER JOIN sd_doctor_class as c on d.cid=c.id  WHERE d.id = '36' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sd_doctor_class` [ RunTime:0.0029s ]
+SQL: SELECT * FROM `sd_doctor_class`  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: related C:\www\wap\Application\Runtime\Cache\Admin\af032a5952c42d422c3632c1699ec81a.php 第 95 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008789s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008789s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000977s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000977s ]
+
+[ 2016-10-14T15:53:22+08:00 ] 61.50.106.246 /Admin/Doctor/doctor_edit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000976s ]
+NOTIC: [2048] Declaration of Admin\Model\DoctorModel::_before_delete() should be compatible with Think\Model::_before_delete($options) C:\www\wap\Application\Admin\Model\DoctorModel.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `sd_doctor` [ RunTime:0.0029s ]
+NOTIC: [8] Undefined index: validate C:\www\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto C:\www\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: SELECT `img_url`,`th_img_url`,`id` FROM `sd_doctor` WHERE `id` = 36 LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given C:\www\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+SQL: UPDATE `sd_doctor` SET `name`='朱昊',`zhicheng`='北京焕誉医疗美容手术中心主任',`cid`='15',`index_zhu`='<p style=\"text-align: center;\">　　<strong><span style=\"color: rgb(73, 68, 41);\">朱昊 &nbsp;手术中心主任</span></strong></p><hr/><p><span style=\"color: rgb(73, 68, 41);\">中国无痕五官精雕专家<br/></span></p><p><span style=\"color: rgb(73, 68, 41);\">北京焕誉首席全眼综合整形专家</span></p><p><span style=\"color: rgb(73, 68, 41);\">中国医师协会整形与美容分会会员</span></p><p><span style=\"color: rgb(73, 68, 41);\">韩整形外科学会眼部整形研究会会员</span></p><hr/><p>中国整形外科新生代专家，毕业于大连医科大学，曾在北京中日友好医院等三甲医院整形外科进修。从医10余年，多次作为访问学者赴韩国、马来西亚、澳大利亚等国学习交流并受邀与国外多名专家共同完成眼部手术，具有较高的专业水平和丰富的临床经验。他深得亚洲整形精细唯美之技术精髓，注重根据求美者自身个性与心理需求制定最为优化的整形方案，手术操作以精准化、个性化、微创化和神韵化见长，尤其对于眼部综合整形具有独到见解，深得行业内外高度赞同和认可，被广大爱美人士美誉为“美瞳大师”。</p><hr/><p><strong><span style=\"color: rgb(73, 68, 41);\">擅长项目</span></strong><br/></p><p>面部五官精雕、全眼综合整形、自体脂肪移植、分层吸脂塑形</p><p><br/></p>',`jieshao`='中国整形外科新生代专家，毕业于大连医科大学，曾在北京中日友好医院等三甲医院整形外科进修。',`message`='躬耕医技 苛求细节',`sort`='0',`img_url`='./Public/Uploads/doctor/2016-10-14/58008ef2597cf.jpg',`th_img_url`='./Public/Uploads/doctor/2016-10-14/th_58008ef2597cf.jpg' WHERE `id` = 36 [ RunTime:0.0059s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005860s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005860s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000976s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-10-14T15:53:23+08:00 ] 61.50.106.246 /Admin/Doctor/doctor_list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+SQL: SHOW COLUMNS FROM `sd_doctor` [ RunTime:0.0029s ]
+SQL: SELECT d.*,c.id as claid,c.class_name FROM sd_doctor d LEFT JOIN sd_doctor_class as c on d.cid = c.id   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007813s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007813s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000976s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000976s ]
+
+[ 2016-10-14T15:53:27+08:00 ] 61.50.106.246 /Admin/Doctor/doctor_edit/id/37
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000976s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2048] Declaration of Admin\Model\DoctorModel::_before_delete() should be compatible with Think\Model::_before_delete($options) C:\www\wap\Application\Admin\Model\DoctorModel.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `sd_doctor` [ RunTime:0.0029s ]
+SQL: SELECT d.*,c.id as claid,c.class_name FROM sd_doctor d INNER JOIN sd_doctor_class as c on d.cid=c.id  WHERE d.id = '37' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sd_doctor_class` [ RunTime:0.0029s ]
+SQL: SELECT * FROM `sd_doctor_class`  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: related C:\www\wap\Application\Runtime\Cache\Admin\af032a5952c42d422c3632c1699ec81a.php 第 95 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008789s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008789s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000977s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000977s ]
+
+[ 2016-10-14T15:53:44+08:00 ] 61.50.106.246 /Admin/Doctor/doctor_edit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2048] Declaration of Admin\Model\DoctorModel::_before_delete() should be compatible with Think\Model::_before_delete($options) C:\www\wap\Application\Admin\Model\DoctorModel.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `sd_doctor` [ RunTime:0.0029s ]
+NOTIC: [8] Undefined index: validate C:\www\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto C:\www\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: SELECT `img_url`,`th_img_url`,`id` FROM `sd_doctor` WHERE `id` = 37 LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given C:\www\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+SQL: UPDATE `sd_doctor` SET `name`='周亮',`zhicheng`='微整形注射医生',`cid`='16',`index_zhu`='<p style=\"text-align: center;\"><strong><span style=\"color: rgb(73, 68, 41);\">周亮 微整形注射医生</span></strong></p><hr/><p><span style=\"color: rgb(147, 137, 83);\">北京焕誉医疗美容美学设计师</span><br/></p><hr/><p>从业微整形十余年，对面部立体美学有深层认识及独到的见解，并能灵活将美学设计理念和求美者实际需求完美结合，根据个人特点迅速准确制定改善方法，定制专属个人的由内而外的塑形方案。能准确把握国际流行趋势，满足不同层次客人的需求。<br/></p><hr/><p><strong><span style=\"color: rgb(73, 68, 41);\">擅长项目</span></strong><br/></p><p>玻尿酸立体提拉术、面部微整形整体设计、玻尿酸面型T+V立体微雕注射、面部侧提拉注射(针对面部松驰下垂)、面部线雕提升、注射面部塑形</p><p><br/></p>',`jieshao`='从业微整形十余年，对面部立体美学有深层认识及独到的见解，',`message`='每个人都有一组属于自己的美丽密码',`sort`='0',`img_url`='./Public/Uploads/doctor/2016-10-14/58008f0878eda.jpg',`th_img_url`='./Public/Uploads/doctor/2016-10-14/th_58008f0878eda.jpg' WHERE `id` = 37 [ RunTime:0.0078s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005860s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005860s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000976s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-10-14T15:53:45+08:00 ] 61.50.106.246 /Admin/Doctor/doctor_list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+SQL: SHOW COLUMNS FROM `sd_doctor` [ RunTime:0.0029s ]
+SQL: SELECT d.*,c.id as claid,c.class_name FROM sd_doctor d LEFT JOIN sd_doctor_class as c on d.cid = c.id   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007813s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007813s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000976s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000976s ]
+
+[ 2016-10-14T16:18:34+08:00 ] 61.50.106.246 /Admin/Login/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000976s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005860s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006836s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000977s ]
+
+[ 2016-10-14T16:18:35+08:00 ] 61.50.106.246 /Admin/Login/captcha/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000977s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000977s ]
+
+[ 2016-10-14T16:18:38+08:00 ] 61.50.106.246 /Admin/Login/captcha/&0.8136125072646099
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-10-14T16:18:40+08:00 ] 61.50.106.246 /Admin/Login/captcha/&0.8136125072646099&0.3616785214216278
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-10-14T16:18:43+08:00 ] 61.50.106.246 /Admin/Login/checkLogin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004883s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005860s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-10-14T16:18:48+08:00 ] 61.50.106.246 /Admin/Login/captcha/&0.8202838265059069
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-10-14T16:18:53+08:00 ] 61.50.106.246 /Admin/Login/checkLogin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+SQL: SHOW COLUMNS FROM `sd_users` [ RunTime:0.0029s ]
+SQL: SELECT `uid`,`role_id`,`username`,`password`,`status`,`remark` FROM `sd_users` WHERE ( username='administrator' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `uid`,`role_id`,`username` FROM `sd_users` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [2] fopen(C:\www\ThinkPHP\Library\Org\Net/UTFWry.dat): failed to open stream: No such file or directory C:\www\ThinkPHP\Library\Org\Net\IpLocation.class.php 第 54 行.
+SQL: UPDATE `sd_users` SET `last_login`='1476433133',`last_login_ip`='61.50.106.246' WHERE `uid` = 1 [ RunTime:0.0000s ]
+
+[ 2016-10-14T16:18:53+08:00 ] 61.50.106.246 /Admin/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SELECT `id`,`title`,name
+                       FROM `sd_node`
+                       WHERE( `status` =1 AND `display`=1)
+                       ORDER BY sort DESC [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: sub_menu_html C:\www\wap\Application\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 96 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010742s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010742s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000977s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000977s ]
+
+[ 2016-10-14T16:18:53+08:00 ] 61.50.106.246 /Admin/Index/main
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+NOTIC: [8] Use of undefined constant gd_info - assumed 'gd_info' C:\www\wap\Application\Admin\Controller\IndexController.class.php 第 161 行.
+NOTIC: [8] Undefined index: SERVER_ADDR C:\www\wap\Application\Admin\Controller\IndexController.class.php 第 168 行.
+NOTIC: [8] Use of undefined constant WEB_ROOT - assumed 'WEB_ROOT' C:\www\wap\Application\Admin\Controller\IndexController.class.php 第 171 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: ikphp C:\www\wap\Application\Runtime\Cache\Admin\b0f0b709690a72033d17719e8059053c.php 第 5 行.
+NOTIC: [8] Undefined variable: caches C:\www\wap\Application\Runtime\Cache\Admin\b0f0b709690a72033d17719e8059053c.php 第 36 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007812s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007812s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000977s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-10-14T16:18:53+08:00 ] 61.50.106.246 /Admin/Index/left/id/85
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000977s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000976s ]
+SQL: SHOW COLUMNS FROM `sd_node` [ RunTime:0.0029s ]
+SQL: SELECT `id`,`data`,`title`
+                FROM `sd_node`
+                WHERE ( `status` =1 AND `display`=2 AND `pid`=85)
+                ORDER BY sort DESC [ RunTime:0.0010s ]
+SQL: SELECT `title` FROM `sd_node` WHERE `id` = 85 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `id`,`data`,`title`
+                FROM `sd_node`
+                WHERE ( `status` =1 AND `display`=2 AND `pid`=86)
+                ORDER BY sort DESC [ RunTime:0.0010s ]
+NOTIC: [8] Use of undefined constant title - assumed 'title' C:\www\wap\Application\Admin\Controller\IndexController.class.php 第 74 行.
+NOTIC: [8] Use of undefined constant title - assumed 'title' C:\www\wap\Application\Admin\Controller\IndexController.class.php 第 87 行.
+NOTIC: [8] Use of undefined constant title - assumed 'title' C:\www\wap\Application\Admin\Controller\IndexController.class.php 第 87 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004883s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004883s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000977s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000977s ]
+
+[ 2016-10-14T16:18:56+08:00 ] 61.50.106.246 /Admin/Index/left/id/85?id=340
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `sd_node` [ RunTime:0.0039s ]
+SQL: SELECT `id`,`data`,`title`
+                FROM `sd_node`
+                WHERE ( `status` =1 AND `display`=2 AND `pid`=340)
+                ORDER BY sort DESC [ RunTime:0.0010s ]
+SQL: SELECT `title` FROM `sd_node` WHERE `id` = 340 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `id`,`data`,`title`
+                FROM `sd_node`
+                WHERE ( `status` =1 AND `display`=2 AND `pid`=341)
+                ORDER BY sort DESC [ RunTime:0.0010s ]
+NOTIC: [8] Use of undefined constant title - assumed 'title' C:\www\wap\Application\Admin\Controller\IndexController.class.php 第 74 行.
+NOTIC: [8] Use of undefined constant title - assumed 'title' C:\www\wap\Application\Admin\Controller\IndexController.class.php 第 87 行.
+SQL: SELECT `id`,`data`,`title`
+                FROM `sd_node`
+                WHERE ( `status` =1 AND `display`=2 AND `pid`=367)
+                ORDER BY sort DESC [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant title - assumed 'title' C:\www\wap\Application\Admin\Controller\IndexController.class.php 第 74 行.
+NOTIC: [8] Use of undefined constant title - assumed 'title' C:\www\wap\Application\Admin\Controller\IndexController.class.php 第 87 行.
+SQL: SELECT `id`,`data`,`title`
+                FROM `sd_node`
+                WHERE ( `status` =1 AND `display`=2 AND `pid`=361)
+                ORDER BY sort DESC [ RunTime:0.0010s ]
+NOTIC: [8] Use of undefined constant title - assumed 'title' C:\www\wap\Application\Admin\Controller\IndexController.class.php 第 74 行.
+NOTIC: [8] Use of undefined constant title - assumed 'title' C:\www\wap\Application\Admin\Controller\IndexController.class.php 第 87 行.
+NOTIC: [8] Use of undefined constant title - assumed 'title' C:\www\wap\Application\Admin\Controller\IndexController.class.php 第 87 行.
+SQL: SELECT `id`,`data`,`title`
+                FROM `sd_node`
+                WHERE ( `status` =1 AND `display`=2 AND `pid`=363)
+                ORDER BY sort DESC [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant title - assumed 'title' C:\www\wap\Application\Admin\Controller\IndexController.class.php 第 74 行.
+NOTIC: [8] Use of undefined constant title - assumed 'title' C:\www\wap\Application\Admin\Controller\IndexController.class.php 第 87 行.
+NOTIC: [8] Use of undefined constant title - assumed 'title' C:\www\wap\Application\Admin\Controller\IndexController.class.php 第 87 行.
+SQL: SELECT `id`,`data`,`title`
+                FROM `sd_node`
+                WHERE ( `status` =1 AND `display`=2 AND `pid`=369)
+                ORDER BY sort DESC [ RunTime:0.0010s ]
+NOTIC: [8] Use of undefined constant title - assumed 'title' C:\www\wap\Application\Admin\Controller\IndexController.class.php 第 74 行.
+NOTIC: [8] Use of undefined constant title - assumed 'title' C:\www\wap\Application\Admin\Controller\IndexController.class.php 第 87 行.
+SQL: SELECT `id`,`data`,`title`
+                FROM `sd_node`
+                WHERE ( `status` =1 AND `display`=2 AND `pid`=371)
+                ORDER BY sort DESC [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant title - assumed 'title' C:\www\wap\Application\Admin\Controller\IndexController.class.php 第 74 行.
+NOTIC: [8] Use of undefined constant title - assumed 'title' C:\www\wap\Application\Admin\Controller\IndexController.class.php 第 87 行.
+NOTIC: [8] Use of undefined constant title - assumed 'title' C:\www\wap\Application\Admin\Controller\IndexController.class.php 第 87 行.
+SQL: SELECT `id`,`data`,`title`
+                FROM `sd_node`
+                WHERE ( `status` =1 AND `display`=2 AND `pid`=377)
+                ORDER BY sort DESC [ RunTime:0.0010s ]
+NOTIC: [8] Use of undefined constant title - assumed 'title' C:\www\wap\Application\Admin\Controller\IndexController.class.php 第 74 行.
+NOTIC: [8] Use of undefined constant title - assumed 'title' C:\www\wap\Application\Admin\Controller\IndexController.class.php 第 87 行.
+SQL: SELECT `id`,`data`,`title`
+                FROM `sd_node`
+                WHERE ( `status` =1 AND `display`=2 AND `pid`=378)
+                ORDER BY sort DESC [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant title - assumed 'title' C:\www\wap\Application\Admin\Controller\IndexController.class.php 第 74 行.
+NOTIC: [8] Use of undefined constant title - assumed 'title' C:\www\wap\Application\Admin\Controller\IndexController.class.php 第 87 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000977s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004883s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004883s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000976s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-10-14T16:18:56+08:00 ] 61.50.106.246 /Admin/Index/index?s=/Admin/Setting/banner_list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000976s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+SQL: SHOW COLUMNS FROM `sd_banner` [ RunTime:0.0039s ]
+SQL: SELECT `id`,`sort`,`category`,`th_img_url` FROM `sd_banner` ORDER BY sort desc  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007813s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007813s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000976s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-10-14T16:18:57+08:00 ] 61.50.106.246 /Admin/Index/index?s=Admin/Doctor/doctor_dept
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `sd_doctor_class` [ RunTime:0.0029s ]
+SQL: SELECT * FROM `sd_doctor_class`  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000976s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006836s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006836s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000976s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000976s ]
+
+[ 2016-10-14T16:18:57+08:00 ] 61.50.106.246 /Admin/Index/index?s=Admin/Doctor/doctor_list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000977s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+SQL: SHOW COLUMNS FROM `sd_doctor` [ RunTime:0.0020s ]
+SQL: SELECT d.*,c.id as claid,c.class_name FROM sd_doctor d LEFT JOIN sd_doctor_class as c on d.cid = c.id   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006837s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006837s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000976s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-10-14T16:19:00+08:00 ] 61.50.106.246 /Admin/Doctor/doctor_edit/id/37
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000977s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000976s ]
+NOTIC: [2048] Declaration of Admin\Model\DoctorModel::_before_delete() should be compatible with Think\Model::_before_delete($options) C:\www\wap\Application\Admin\Model\DoctorModel.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `sd_doctor` [ RunTime:0.0029s ]
+SQL: SELECT d.*,c.id as claid,c.class_name FROM sd_doctor d INNER JOIN sd_doctor_class as c on d.cid=c.id  WHERE d.id = '37' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sd_doctor_class` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `sd_doctor_class`  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: related C:\www\wap\Application\Runtime\Cache\Admin\af032a5952c42d422c3632c1699ec81a.php 第 95 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007813s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007813s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000976s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-10-14T16:19:14+08:00 ] 61.50.106.246 /Admin/Doctor/doctor_edit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000976s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+NOTIC: [2048] Declaration of Admin\Model\DoctorModel::_before_delete() should be compatible with Think\Model::_before_delete($options) C:\www\wap\Application\Admin\Model\DoctorModel.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `sd_doctor` [ RunTime:0.0039s ]
+NOTIC: [8] Undefined index: validate C:\www\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto C:\www\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: SELECT `img_url`,`th_img_url`,`id` FROM `sd_doctor` WHERE `id` = 37 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `sd_doctor` SET `name`='周亮',`zhicheng`='微整形注射医生',`cid`='16',`index_zhu`='<p style=\"text-align: center; line-height: 2em;\"><strong><span style=\"color: rgb(73, 68, 41);\">周亮 微整形注射医生</span></strong></p><hr/><p style=\"line-height: 2em;\"><span style=\"color: rgb(147, 137, 83);\">北京焕誉医疗美容美学设计师</span><br/></p><hr/><p style=\"line-height: 2em;\">从业微整形十余年，对面部立体美学有深层认识及独到的见解，并能灵活将美学设计理念和求美者实际需求完美结合，根据个人特点迅速准确制定改善方法，定制专属个人的由内而外的塑形方案。能准确把握国际流行趋势，满足不同层次客人的需求。<br/></p><hr/><p style=\"line-height: 2em;\"><strong><span style=\"color: rgb(73, 68, 41);\">擅长项目</span></strong><br/></p><p style=\"line-height: 2em;\">玻尿酸立体提拉术、面部微整形整体设计、玻尿酸面型T+V立体微雕注射、面部侧提拉注射(针对面部松驰下垂)、面部线雕提升、注射面部塑形</p><p><br/></p>',`jieshao`='从业微整形十余年，对面部立体美学有深层认识及独到的见解，',`message`='每个人都有一组属于自己的美丽密码',`sort`='0' WHERE `id` = 37 [ RunTime:0.0078s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005860s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005860s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000976s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000976s ]
+
+[ 2016-10-14T16:19:15+08:00 ] 61.50.106.246 /Admin/Doctor/doctor_list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000977s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000976s ]
+SQL: SHOW COLUMNS FROM `sd_doctor` [ RunTime:0.0029s ]
+SQL: SELECT d.*,c.id as claid,c.class_name FROM sd_doctor d LEFT JOIN sd_doctor_class as c on d.cid = c.id   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007813s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007813s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000976s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-10-14T16:19:19+08:00 ] 61.50.106.246 /Admin/Doctor/doctor_edit/id/36
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2048] Declaration of Admin\Model\DoctorModel::_before_delete() should be compatible with Think\Model::_before_delete($options) C:\www\wap\Application\Admin\Model\DoctorModel.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `sd_doctor` [ RunTime:0.0039s ]
+SQL: SELECT d.*,c.id as claid,c.class_name FROM sd_doctor d INNER JOIN sd_doctor_class as c on d.cid=c.id  WHERE d.id = '36' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sd_doctor_class` [ RunTime:0.0029s ]
+SQL: SELECT * FROM `sd_doctor_class`  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: related C:\www\wap\Application\Runtime\Cache\Admin\af032a5952c42d422c3632c1699ec81a.php 第 95 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007813s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007813s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000976s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-10-14T16:19:34+08:00 ] 61.50.106.246 /Admin/Doctor/doctor_edit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000976s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2048] Declaration of Admin\Model\DoctorModel::_before_delete() should be compatible with Think\Model::_before_delete($options) C:\www\wap\Application\Admin\Model\DoctorModel.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `sd_doctor` [ RunTime:0.0039s ]
+NOTIC: [8] Undefined index: validate C:\www\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto C:\www\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: SELECT `img_url`,`th_img_url`,`id` FROM `sd_doctor` WHERE `id` = 36 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `sd_doctor` SET `name`='朱昊',`zhicheng`='北京焕誉医疗美容手术中心主任',`cid`='15',`index_zhu`='<p style=\"text-align: center; line-height: 2em;\">　　<strong><span style=\"color: rgb(73, 68, 41);\">朱昊 &nbsp;手术中心主任</span></strong></p><hr/><p style=\"line-height: 2em;\"><span style=\"color: rgb(73, 68, 41);\">中国无痕五官精雕专家<br/></span></p><p style=\"line-height: 2em;\"><span style=\"color: rgb(73, 68, 41);\">北京焕誉首席全眼综合整形专家</span></p><p style=\"line-height: 2em;\"><span style=\"color: rgb(73, 68, 41);\">中国医师协会整形与美容分会会员</span></p><p style=\"line-height: 2em;\"><span style=\"color: rgb(73, 68, 41);\">韩整形外科学会眼部整形研究会会员</span></p><hr/><p style=\"line-height: 2em;\">中国整形外科新生代专家，毕业于大连医科大学，曾在北京中日友好医院等三甲医院整形外科进修。从医10余年，多次作为访问学者赴韩国、马来西亚、澳大利亚等国学习交流并受邀与国外多名专家共同完成眼部手术，具有较高的专业水平和丰富的临床经验。他深得亚洲整形精细唯美之技术精髓，注重根据求美者自身个性与心理需求制定最为优化的整形方案，手术操作以精准化、个性化、微创化和神韵化见长，尤其对于眼部综合整形具有独到见解，深得行业内外高度赞同和认可，被广大爱美人士美誉为“美瞳大师”。</p><hr/><p style=\"line-height: 2em;\"><strong><span style=\"color: rgb(73, 68, 41);\">擅长项目</span></strong><br/></p><p style=\"line-height: 2em;\">面部五官精雕、全眼综合整形、自体脂肪移植、分层吸脂塑形</p>',`jieshao`='中国整形外科新生代专家，毕业于大连医科大学，曾在北京中日友好医院等三甲医院整形外科进修。',`message`='躬耕医技 苛求细节',`sort`='0' WHERE `id` = 36 [ RunTime:0.0088s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004883s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004883s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000976s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-10-14T16:19:35+08:00 ] 61.50.106.246 /Admin/Doctor/doctor_list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000976s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `sd_doctor` [ RunTime:0.0039s ]
+SQL: SELECT d.*,c.id as claid,c.class_name FROM sd_doctor d LEFT JOIN sd_doctor_class as c on d.cid = c.id   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007813s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007813s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000977s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000977s ]
+
+[ 2016-10-14T16:20:06+08:00 ] 101.226.51.230 /Admin/Login/captcha/&0.8136125072646099&0.3616785214216278
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000976s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000977s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000977s ]
+
+[ 2016-10-14T16:21:39+08:00 ] 180.153.206.24 /Admin/Login/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000976s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005859s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006836s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000977s ]
+
+[ 2016-10-14T16:21:44+08:00 ] 180.153.214.190 /Admin/Login/captcha
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000977s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-10-14T16:21:45+08:00 ] 101.226.89.116 /Admin/Login/captcha/&0.8136125072646099
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000976s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000976s ]
+
+[ 2016-10-14T16:21:45+08:00 ] 101.226.33.227 /Admin/Login/captcha/&0.8136125072646099&0.3616785214216278
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000976s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000976s ]
+
+[ 2016-10-14T16:21:47+08:00 ] 101.226.68.197 /Admin/Login/captcha/&0.8136125072646099&0.3616785214216278
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000976s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000976s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000976s ]
+
+[ 2016-10-14T16:21:49+08:00 ] 180.153.206.22 /Admin/Login/captcha/&0.8136125072646099&0.3616785214216278
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000977s ]
+
+[ 2016-10-14T16:21:54+08:00 ] 101.226.33.217 /Admin/Login/captcha/&0.8202838265059069
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000977s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000977s ]
+
+[ 2016-10-14T16:22:00+08:00 ] 117.185.27.114 /Admin/Doctor/doctor_edit/id/37
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000976s ]
+
+[ 2016-10-14T16:22:01+08:00 ] 180.153.211.172 /Admin/Index/index?s=/Admin/Setting/banner_list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000977s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-10-14T16:22:01+08:00 ] 180.153.211.190 /Admin/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-10-14T16:22:01+08:00 ] 101.226.33.205 /Admin/Index/index?s=Admin/Doctor/doctor_list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+
+[ 2016-10-14T16:22:01+08:00 ] 101.226.33.205 /Admin/Index/main
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-10-14T16:22:03+08:00 ] 180.153.214.199 /Admin/Index/index?s=Admin/Doctor/doctor_dept
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000976s ]
+
+[ 2016-10-14T16:22:05+08:00 ] 180.163.2.119 /Admin/Index/left/id/85?id=340
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000976s ]
+
+[ 2016-10-14T16:22:20+08:00 ] 101.226.89.123 /Admin/Doctor/doctor_list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+
+[ 2016-10-14T16:22:25+08:00 ] 180.153.81.212 /Admin/Doctor/doctor_edit/id/36
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+
+[ 2016-10-14T16:24:53+08:00 ] 101.226.65.102 /Admin/Login/captcha/&0.8136125072646099
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000976s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-10-14T16:24:53+08:00 ] 101.226.33.224 /Admin/Login/captcha
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000976s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000976s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000976s ]
+
+[ 2016-10-14T16:25:00+08:00 ] 101.226.61.207 /Admin/Login/captcha/&0.8202838265059069
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000977s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000977s ]
+
+[ 2016-10-14T16:25:10+08:00 ] 101.226.33.208 /Admin/Index/index?s=Admin/Doctor/doctor_dept
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000976s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+
+[ 2016-10-14T16:25:11+08:00 ] 61.151.226.202 /Admin/Index/index?s=Admin/Doctor/doctor_list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-10-14T16:25:11+08:00 ] 101.226.33.216 /Admin/Doctor/doctor_edit/id/37
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000977s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000976s ]
+
+[ 2016-10-14T17:05:26+08:00 ] 61.50.106.246 /Admin/Login/Index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000976s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015625s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015625s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000977s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000977s ]
+
+[ 2016-10-14T17:05:26+08:00 ] 61.50.106.246 /Admin/Login/captcha/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000976s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-10-14T17:05:42+08:00 ] 61.50.106.246 /Admin/Login/checkLogin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+SQL: SHOW COLUMNS FROM `sd_users` [ RunTime:0.0029s ]
+SQL: SELECT `uid`,`role_id`,`username`,`password`,`status`,`remark` FROM `sd_users` WHERE ( username='administrator' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `uid`,`role_id`,`username` FROM `sd_users` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [2] fopen(C:\www\ThinkPHP\Library\Org\Net/UTFWry.dat): failed to open stream: No such file or directory C:\www\ThinkPHP\Library\Org\Net\IpLocation.class.php 第 54 行.
+SQL: UPDATE `sd_users` SET `last_login`='1476435942',`last_login_ip`='61.50.106.246' WHERE `uid` = 1 [ RunTime:0.0000s ]
+
+[ 2016-10-14T17:05:42+08:00 ] 61.50.106.246 /Admin/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000977s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+SQL: SELECT `id`,`title`,name
+                       FROM `sd_node`
+                       WHERE( `status` =1 AND `display`=1)
+                       ORDER BY sort DESC [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: sub_menu_html C:\www\wap\Application\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 96 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007813s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007813s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000977s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000977s ]
+
+[ 2016-10-14T17:05:42+08:00 ] 61.50.106.246 /Admin/Index/main
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000976s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+NOTIC: [8] Use of undefined constant gd_info - assumed 'gd_info' C:\www\wap\Application\Admin\Controller\IndexController.class.php 第 161 行.
+NOTIC: [8] Undefined index: SERVER_ADDR C:\www\wap\Application\Admin\Controller\IndexController.class.php 第 168 行.
+NOTIC: [8] Use of undefined constant WEB_ROOT - assumed 'WEB_ROOT' C:\www\wap\Application\Admin\Controller\IndexController.class.php 第 171 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: ikphp C:\www\wap\Application\Runtime\Cache\Admin\b0f0b709690a72033d17719e8059053c.php 第 5 行.
+NOTIC: [8] Undefined variable: caches C:\www\wap\Application\Runtime\Cache\Admin\b0f0b709690a72033d17719e8059053c.php 第 36 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007813s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007813s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-10-14T17:05:42+08:00 ] 61.50.106.246 /Admin/Index/left/id/85
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `sd_node` [ RunTime:0.0039s ]
+SQL: SELECT `id`,`data`,`title`
+                FROM `sd_node`
+                WHERE ( `status` =1 AND `display`=2 AND `pid`=85)
+                ORDER BY sort DESC [ RunTime:0.0000s ]
+SQL: SELECT `title` FROM `sd_node` WHERE `id` = 85 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `id`,`data`,`title`
+                FROM `sd_node`
+                WHERE ( `status` =1 AND `display`=2 AND `pid`=86)
+                ORDER BY sort DESC [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant title - assumed 'title' C:\www\wap\Application\Admin\Controller\IndexController.class.php 第 74 行.
+NOTIC: [8] Use of undefined constant title - assumed 'title' C:\www\wap\Application\Admin\Controller\IndexController.class.php 第 87 行.
+NOTIC: [8] Use of undefined constant title - assumed 'title' C:\www\wap\Application\Admin\Controller\IndexController.class.php 第 87 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004883s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004883s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000976s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-10-14T17:05:44+08:00 ] 61.50.106.246 /Admin/Index/left/id/85?id=151
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000977s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000976s ]
+SQL: SHOW COLUMNS FROM `sd_node` [ RunTime:0.0029s ]
+SQL: SELECT `id`,`data`,`title`
+                FROM `sd_node`
+                WHERE ( `status` =1 AND `display`=2 AND `pid`=151)
+                ORDER BY sort DESC [ RunTime:0.0010s ]
+SQL: SELECT `title` FROM `sd_node` WHERE `id` = 151 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `id`,`data`,`title`
+                FROM `sd_node`
+                WHERE ( `status` =1 AND `display`=2 AND `pid`=152)
+                ORDER BY sort DESC [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant title - assumed 'title' C:\www\wap\Application\Admin\Controller\IndexController.class.php 第 74 行.
+NOTIC: [8] Use of undefined constant title - assumed 'title' C:\www\wap\Application\Admin\Controller\IndexController.class.php 第 87 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003907s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004883s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000977s ]
+
+[ 2016-10-14T17:05:44+08:00 ] 61.50.106.246 /Admin/Index/index?s=/Admin/User/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+SQL: SHOW COLUMNS FROM `sd_users` [ RunTime:0.0039s ]
+SQL: SELECT u.uid,u.role_id,u.username,u.status,r.id,r.name FROM sd_users u INNER JOIN sd_role as r on u.uid=r.id  WHERE ( 2>1 )  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: roles C:\www\wap\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 38 行.
+NOTIC: [8] Use of undefined constant hlbs - assumed 'hlbs' C:\www\wap\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 55 行.
+NOTIC: [8] Undefined variable: page C:\www\wap\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 75 行.
+NOTIC: [8] Undefined variable: pageUrl C:\www\wap\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 79 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010743s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010743s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000976s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-10-14T17:05:45+08:00 ] 61.50.106.246 /Admin/Index/left/id/85?id=340
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000977s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `sd_node` [ RunTime:0.0029s ]
+SQL: SELECT `id`,`data`,`title`
+                FROM `sd_node`
+                WHERE ( `status` =1 AND `display`=2 AND `pid`=340)
+                ORDER BY sort DESC [ RunTime:0.0000s ]
+SQL: SELECT `title` FROM `sd_node` WHERE `id` = 340 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `id`,`data`,`title`
+                FROM `sd_node`
+                WHERE ( `status` =1 AND `display`=2 AND `pid`=341)
+                ORDER BY sort DESC [ RunTime:0.0049s ]
+NOTIC: [8] Use of undefined constant title - assumed 'title' C:\www\wap\Application\Admin\Controller\IndexController.class.php 第 74 行.
+NOTIC: [8] Use of undefined constant title - assumed 'title' C:\www\wap\Application\Admin\Controller\IndexController.class.php 第 87 行.
+SQL: SELECT `id`,`data`,`title`
+                FROM `sd_node`
+                WHERE ( `status` =1 AND `display`=2 AND `pid`=367)
+                ORDER BY sort DESC [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant title - assumed 'title' C:\www\wap\Application\Admin\Controller\IndexController.class.php 第 74 行.
+NOTIC: [8] Use of undefined constant title - assumed 'title' C:\www\wap\Application\Admin\Controller\IndexController.class.php 第 87 行.
+SQL: SELECT `id`,`data`,`title`
+                FROM `sd_node`
+                WHERE ( `status` =1 AND `display`=2 AND `pid`=361)
+                ORDER BY sort DESC [ RunTime:0.0010s ]
+NOTIC: [8] Use of undefined constant title - assumed 'title' C:\www\wap\Application\Admin\Controller\IndexController.class.php 第 74 行.
+NOTIC: [8] Use of undefined constant title - assumed 'title' C:\www\wap\Application\Admin\Controller\IndexController.class.php 第 87 行.
+NOTIC: [8] Use of undefined constant title - assumed 'title' C:\www\wap\Application\Admin\Controller\IndexController.class.php 第 87 行.
+SQL: SELECT `id`,`data`,`title`
+                FROM `sd_node`
+                WHERE ( `status` =1 AND `display`=2 AND `pid`=363)
+                ORDER BY sort DESC [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant title - assumed 'title' C:\www\wap\Application\Admin\Controller\IndexController.class.php 第 74 行.
+NOTIC: [8] Use of undefined constant title - assumed 'title' C:\www\wap\Application\Admin\Controller\IndexController.class.php 第 87 行.
+NOTIC: [8] Use of undefined constant title - assumed 'title' C:\www\wap\Application\Admin\Controller\IndexController.class.php 第 87 行.
+SQL: SELECT `id`,`data`,`title`
+                FROM `sd_node`
+                WHERE ( `status` =1 AND `display`=2 AND `pid`=369)
+                ORDER BY sort DESC [ RunTime:0.0010s ]
+NOTIC: [8] Use of undefined constant title - assumed 'title' C:\www\wap\Application\Admin\Controller\IndexController.class.php 第 74 行.
+NOTIC: [8] Use of undefined constant title - assumed 'title' C:\www\wap\Application\Admin\Controller\IndexController.class.php 第 87 行.
+SQL: SELECT `id`,`data`,`title`
+                FROM `sd_node`
+                WHERE ( `status` =1 AND `display`=2 AND `pid`=371)
+                ORDER BY sort DESC [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant title - assumed 'title' C:\www\wap\Application\Admin\Controller\IndexController.class.php 第 74 行.
+NOTIC: [8] Use of undefined constant title - assumed 'title' C:\www\wap\Application\Admin\Controller\IndexController.class.php 第 87 行.
+NOTIC: [8] Use of undefined constant title - assumed 'title' C:\www\wap\Application\Admin\Controller\IndexController.class.php 第 87 行.
+SQL: SELECT `id`,`data`,`title`
+                FROM `sd_node`
+                WHERE ( `status` =1 AND `display`=2 AND `pid`=377)
+                ORDER BY sort DESC [ RunTime:0.0010s ]
+NOTIC: [8] Use of undefined constant title - assumed 'title' C:\www\wap\Application\Admin\Controller\IndexController.class.php 第 74 行.
+NOTIC: [8] Use of undefined constant title - assumed 'title' C:\www\wap\Application\Admin\Controller\IndexController.class.php 第 87 行.
+SQL: SELECT `id`,`data`,`title`
+                FROM `sd_node`
+                WHERE ( `status` =1 AND `display`=2 AND `pid`=378)
+                ORDER BY sort DESC [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant title - assumed 'title' C:\www\wap\Application\Admin\Controller\IndexController.class.php 第 74 行.
+NOTIC: [8] Use of undefined constant title - assumed 'title' C:\www\wap\Application\Admin\Controller\IndexController.class.php 第 87 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004883s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004883s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000976s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000976s ]
+
+[ 2016-10-14T17:05:45+08:00 ] 61.50.106.246 /Admin/Index/index?s=/Admin/Setting/banner_list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000976s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+SQL: SHOW COLUMNS FROM `sd_banner` [ RunTime:0.0078s ]
+SQL: SELECT `id`,`sort`,`category`,`th_img_url` FROM `sd_banner` ORDER BY sort desc  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009766s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009766s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000976s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-10-14T17:05:47+08:00 ] 61.50.106.246 /Admin/Index/index?s=Admin/Doctor/doctor_list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000977s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `sd_doctor` [ RunTime:0.0049s ]
+SQL: SELECT d.*,c.id as claid,c.class_name FROM sd_doctor d LEFT JOIN sd_doctor_class as c on d.cid = c.id   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006836s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006836s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000977s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-10-14T17:05:51+08:00 ] 61.50.106.246 /Admin/Doctor/doctor_edit/id/37
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000977s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000977s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000976s ]
+NOTIC: [2048] Declaration of Admin\Model\DoctorModel::_before_delete() should be compatible with Think\Model::_before_delete($options) C:\www\wap\Application\Admin\Model\DoctorModel.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `sd_doctor` [ RunTime:0.0029s ]
+SQL: SELECT d.*,c.id as claid,c.class_name FROM sd_doctor d INNER JOIN sd_doctor_class as c on d.cid=c.id  WHERE d.id = '37' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sd_doctor_class` [ RunTime:0.0029s ]
+SQL: SELECT * FROM `sd_doctor_class`  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000977s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000977s ]
+NOTIC: [8] Undefined index: related C:\www\wap\Application\Runtime\Cache\Admin\af032a5952c42d422c3632c1699ec81a.php 第 95 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008789s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008789s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000977s ]
+
+[ 2016-10-14T17:06:02+08:00 ] 61.50.106.246 /Admin/Doctor/doctor_edit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+NOTIC: [2048] Declaration of Admin\Model\DoctorModel::_before_delete() should be compatible with Think\Model::_before_delete($options) C:\www\wap\Application\Admin\Model\DoctorModel.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `sd_doctor` [ RunTime:0.0039s ]
+NOTIC: [8] Undefined index: validate C:\www\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto C:\www\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: SELECT `img_url`,`th_img_url`,`id` FROM `sd_doctor` WHERE `id` = 37 LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given C:\www\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+SQL: UPDATE `sd_doctor` SET `name`='周亮',`zhicheng`='微整形注射医生',`cid`='16',`index_zhu`='<p style=\"text-align: center; line-height: 2em;\"><strong><span style=\"color: rgb(73, 68, 41);\">周亮 微整形注射医生</span></strong></p><hr/><p style=\"line-height: 2em;\"><span style=\"color: rgb(147, 137, 83);\">北京焕誉医疗美容美学设计师</span><br/></p><hr/><p style=\"line-height: 2em;\">从业微整形十余年，对面部立体美学有深层认识及独到的见解，并能灵活将美学设计理念和求美者实际需求完美结合，根据个人特点迅速准确制定改善方法，定制专属个人的由内而外的塑形方案。能准确把握国际流行趋势，满足不同层次客人的需求。<br/></p><hr/><p style=\"line-height: 2em;\"><strong><span style=\"color: rgb(73, 68, 41);\">擅长项目</span></strong><br/></p><p style=\"line-height: 2em;\">玻尿酸立体提拉术、面部微整形整体设计、玻尿酸面型T+V立体微雕注射、面部侧提拉注射(针对面部松驰下垂)、面部线雕提升、注射面部塑形</p><p><br/></p>',`jieshao`='从业微整形十余年，对面部立体美学有深层认识及独到的见解，',`message`='每个人都有一组属于自己的美丽密码',`sort`='0',`img_url`='./Public/Uploads/doctor/2016-10-14/58009ffa9c5a0.jpg',`th_img_url`='./Public/Uploads/doctor/2016-10-14/th_58009ffa9c5a0.jpg' WHERE `id` = 37 [ RunTime:0.0098s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006836s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006836s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000977s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000977s ]
+
+[ 2016-10-14T17:06:04+08:00 ] 61.50.106.246 /Admin/Doctor/doctor_list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000977s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `sd_doctor` [ RunTime:0.0039s ]
+SQL: SELECT d.*,c.id as claid,c.class_name FROM sd_doctor d LEFT JOIN sd_doctor_class as c on d.cid = c.id   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007813s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007813s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000976s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-10-14T20:17:19+08:00 ] 121.42.0.19 /admin/images/menu-current-arrow.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-10-14T20:17:20+08:00 ] 121.42.0.19 /admin/image/menu_h4.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-10-14T20:18:20+08:00 ] 121.42.0.19 /Admin/images/install_lines.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+

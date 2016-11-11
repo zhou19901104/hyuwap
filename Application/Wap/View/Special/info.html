@@ -1,0 +1,52 @@
+<layout name="layout"/>
+<style>
+	.content-box  p {
+		text-indent: 0em;
+		line-height: 24px;
+		margin-bottom: 10px;
+		font-size: 1.1em;
+	}
+	.content-box  .content-wrap a {
+    color: #4a4a4a;
+    display: block;
+        text-decoration: underline;
+}
+</style>
+
+<!-- banner -->
+		<!--<p class="probanner"><img src="__PUBLIC__/wap/images/banner1.jpg" alt=""></p>-->
+<!-- 主页展示 -->
+<div class="mainnav">
+	<ul class="nav-list">
+		<li><a href="/"><img src="{:C('IMG_URL')}/shouye.gif" alt=""></a></li>
+		<li><a href="{:U('Wap/Wap/company')}"><img src="{:C('IMG_URL')}/guanyu.gif" alt=""></a></li>
+		<li><a href="{:U('Wap/Wap/project_list')}"><img src="{:C('IMG_URL')}/xiangmu.gif" alt=""></a></li>
+		<li><a href="{:U('Wap/Wap/case_list')}"><img src="{:C('IMG_URL')}/anli.gif" alt=""></a></li>
+		<li><a href="{:U('Wap/Wap/doctor_list')}"><img src="{:C('IMG_URL')}/yisheng.gif" alt=""></a></li>
+	</ul>
+</div>
+<!-- 面包屑 -->
+<div class="bread"><a href="/">首页</a>><a href="">项目详情</a></div>
+<!--文章内容页 -->
+	<div class="content-box">
+			<div class="content-wrap">
+				{$info.content}
+			</div>
+			<h3>医生推荐</h3>
+		</div>
+<!--<div class="docimg">{$info.content}</div>-->
+<!-- 底部导航 -->
+
+<div class="docimg">
+<div style="padding:0 5% 10px 5%;"><a href="{:U('Wap/Wap/doc_content',array('id' =>30))}"><img  src="{:C('IMG_URL')}/wangzheng.jpg"></a></div>
+<div style="padding:0 5% 10px 5%;"><a href="{:U('Wap/Wap/doc_content',array('id' =>33))}"><img src="{:C('IMG_URL')}/linjian02.jpg"></a></div>
+<div style="padding:0 5% 10px 5%;"><a href="{:U('Wap/Wap/doc_content',array('id' =>34))}"><img src="{:C('IMG_URL')}/wanglina04.jpg"></a></div>
+</div>
+	<p class="hotline"><a href="tel:4007667000"><img src="__PUBLIC__/wap/images/phone.jpg" alt=""></a></p>
+<!--焕誉二维码 -->
+		<p class="hotline"><img src="__PUBLIC__/wap/images/minlogo.jpg" alt=""></p>
+
+		<p class="ad"><a><img src="__PUBLIC__/wap/images/ad.jpg" alt=""></a></p>
+
+
+<script type="text/javascript" src="__PUBLIC__/wap/js/jquery-1.10.1.min.js"></script>

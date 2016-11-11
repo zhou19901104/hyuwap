@@ -1,0 +1,221 @@
+@charset "UTF-8";
+body{
+    background: #e7e9ea;
+}
+.container{
+    min-width: 300px;
+    max-width: 640px;
+    margin: 0 auto;
+    /*position: relative;*/
+}
+
+/*header样式*/
+.container .header{
+    max-width: 640px;
+    width: 100%;
+    background:rgba(0,0,0,1);
+    z-index:1000;
+}
+.container .header .header-box ul li{
+    display: block;
+    float: left;
+}
+.container .header .header-box ul li img{
+    width: 100%;
+}
+.container .header .header-box ul li:first-child{
+    width: 15%;
+}
+.container .header .header-box ul li:nth-child(2){
+    width: 70%;
+}
+
+.container .header .header-box ul li:last-child{
+    width: 15%;
+    margin-top: 5px;
+}
+.container .header .header-box ul li a{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.container .header .header-box ul li:last-child img{
+    width: 85%;
+}
+
+/*导航部分*/
+.main-nav .nav-colnum{
+    display: block;
+    overflow: hidden;
+    background-color: #fff;
+}
+
+.main-nav .nav-colnum ul li{
+    width: 20%;
+    float: left;
+    display: block;
+    text-align: center;
+    position: relative;
+}
+.main-nav .nav-colnum ul li img.nav-shuxian{
+    position: absolute;
+    right: 0;
+    top: -25%;
+}
+.main-nav .nav-colnum ul li a{
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+/*地图*/
+.container-map{
+    margin-top: 5px;
+}
+
+
+/*来院路线*/
+.menthod-wrap{
+    background-color: #fff;
+}
+.menthod-wrap .map-go{
+    padding:3px 0 3px 3px;
+    font:400 16px/16px "微软雅黑";
+}
+.menthod-wrap .route-map li {
+    display: block;
+    width: 25%;
+    float: left;
+    height: 30px;
+    text-align: center;
+    color: #bc8b49;
+    line-height: 30px;
+    font-size:16px;
+    border:1px solid #bc8b49;
+}
+.menthod-wrap .route-map li.show{
+    background: rgba(0,0,0,0.2);
+}
+
+.menthod-wrap .cont-map li{
+    display: none;
+}
+.menthod-wrap .cont-map li p {
+    font:400 16px/23px "微软雅黑";
+    padding: 3px;
+}
+.menthod-wrap .cont-map li.active {
+    display: block;
+}
+
+/*footer部分*/
+.container .footer{
+    max-width: 640px;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    background: rgba(0,0,0,0.85);
+    left: auto;
+}
+.container .footer .footer-list{
+    overflow: hidden;
+}
+.container .footer .footer-list ul li{
+    display: block;
+    text-align: center;
+    width: 20%;
+    float: left;
+}
+.container .footer .footer-list ul li a{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.container .footer .footer-list ul li a p{
+    color: #fff;
+    font:200 14px/14px "微软雅黑";
+}
+.container .footer .footer-list ul li img{
+    width: 70%;
+}
+
+/*医院联系方式*/
+.container .content-code{
+    background-color: #0c0c0c;
+    display: block;
+    border-top:2px solid #e6c88a;
+    position: relative;
+}
+.container .content-code .code-left{
+    width: 65%;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateX(-5%) translateY(-50%);
+    -moz-transform: translateX(-5%) translateY(-50%);
+    -ms-transform: translateX(-5%) translateY(-50%);
+    transform: translateX(-5%) translateY(-50%);
+}
+
+.container .content-code .code-left p{
+    padding-top: 10px;
+    margin-left:10%;
+    font: 400 14px/14px "微软雅黑";
+}
+.container .content-code .code-left hr{
+    margin-top: 6px;
+    margin-left:10%;
+}
+
+.container .content-code .code-left .icon-1{
+    font: 600 18px/18px "微软雅黑";
+}
+.container .content-code .code-left .icon-2 i{
+    color: #e6c88a;
+}
+.container .content-code .code-left .icon-3{
+    font: 400 12px/12px "微软雅黑";
+    color: #858585;
+}
+.container .content-code .code-right{
+    width: 35%;
+}
+
+.container .content-code .code-right img{
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

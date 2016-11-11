@@ -1,0 +1,174 @@
+[ 2016-08-31T16:39:50+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.052003s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.017001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.018001s ]
+ERR: 无法加载控制器:Index
+
+[ 2016-08-31T16:39:50+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.052003s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.017001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.018001s ]
+ERR: 无法加载控制器:Index
+
+[ 2016-08-31T16:47:36+08:00 ] 127.0.0.1 /index.php/Wap
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-08-31T16:52:08+08:00 ] 127.0.0.1 /index.php/Wap
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-08-31T16:53:05+08:00 ] 127.0.0.1 /index.php/Wap
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-08-31T16:53:10+08:00 ] 127.0.0.1 /index.php/Wap
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-08-31T16:53:58+08:00 ] 127.0.0.1 /index.php/Wap
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-08-31T16:54:12+08:00 ] 127.0.0.1 /index.php/Wap/Index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-08-31T16:56:18+08:00 ] 127.0.0.1 /index.php/Home/Wap/Index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-08-31T16:56:22+08:00 ] 127.0.0.1 /index.php/Home/Wap/Index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-08-31T16:56:36+08:00 ] 127.0.0.1 /index.php/Wap/Wap/Index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-08-31T16:57:19+08:00 ] 127.0.0.1 /index.php/Wap/Wap/Index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `sd_class` [ RunTime:0.0700s ]
+SQL: SELECT * FROM `sd_class` WHERE ( pid = 0 ) ORDER BY sort DESC  [ RunTime:0.0050s ]
+ERR: 1146:La table 'huanyu.sd_nav' n'existe pas
+ [ SQL语句 ] : SHOW COLUMNS FROM `sd_nav`
+ERR: 1146:La table 'huanyu.sd_nav' n'existe pas
+ [ SQL语句 ] : SHOW COLUMNS FROM `sd_nav`
+
+[ 2016-08-31T16:57:52+08:00 ] 127.0.0.1 /index.php/Wap/Wap/Index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `sd_class` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `sd_class` WHERE ( pid = 0 ) ORDER BY sort DESC  [ RunTime:0.0000s ]
+ERR: 1146:La table 'huanyu.sd_nav' n'existe pas
+ [ SQL语句 ] : SHOW COLUMNS FROM `sd_nav`
+ERR: 1146:La table 'huanyu.sd_nav' n'existe pas
+ [ SQL语句 ] : SHOW COLUMNS FROM `sd_nav`
+
+[ 2016-08-31T16:57:54+08:00 ] 127.0.0.1 /index.php/Wap/Wap/Index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `sd_class` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `sd_class` WHERE ( pid = 0 ) ORDER BY sort DESC  [ RunTime:0.0000s ]
+ERR: 1146:La table 'huanyu.sd_nav' n'existe pas
+ [ SQL语句 ] : SHOW COLUMNS FROM `sd_nav`
+ERR: 1146:La table 'huanyu.sd_nav' n'existe pas
+ [ SQL语句 ] : SHOW COLUMNS FROM `sd_nav`
+
+[ 2016-08-31T16:59:42+08:00 ] 127.0.0.1 /index.php/Wap/Wap/Index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `sd_class` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `sd_class` WHERE ( pid = 0 ) ORDER BY sort DESC  [ RunTime:0.0000s ]
+ERR: 1146:La table 'huanyu.sd_nav' n'existe pas
+ [ SQL语句 ] : SHOW COLUMNS FROM `sd_nav`
+ERR: 1146:La table 'huanyu.sd_nav' n'existe pas
+ [ SQL语句 ] : SHOW COLUMNS FROM `sd_nav`
+
+[ 2016-08-31T16:59:43+08:00 ] 127.0.0.1 /index.php/Wap/Wap/Index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `sd_class` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `sd_class` WHERE ( pid = 0 ) ORDER BY sort DESC  [ RunTime:0.0010s ]
+ERR: 1146:La table 'huanyu.sd_nav' n'existe pas
+ [ SQL语句 ] : SHOW COLUMNS FROM `sd_nav`
+ERR: 1146:La table 'huanyu.sd_nav' n'existe pas
+ [ SQL语句 ] : SHOW COLUMNS FROM `sd_nav`
+
+[ 2016-08-31T16:59:44+08:00 ] 127.0.0.1 /index.php/Wap/Wap/Index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `sd_class` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `sd_class` WHERE ( pid = 0 ) ORDER BY sort DESC  [ RunTime:0.0000s ]
+ERR: 1146:La table 'huanyu.sd_nav' n'existe pas
+ [ SQL语句 ] : SHOW COLUMNS FROM `sd_nav`
+ERR: 1146:La table 'huanyu.sd_nav' n'existe pas
+ [ SQL语句 ] : SHOW COLUMNS FROM `sd_nav`
+

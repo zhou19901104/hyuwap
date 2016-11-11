@@ -1,0 +1,105 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>后台用户管理-{$Think.config.cms_name}</title>
+    <include file="Public/head"/>
+
+</head>
+
+<body>
+<div class="midder">
+    <form action="{:U('/Admin/Case/case_edit')}" method="post" name="form" id="myform" enctype="multipart/form-data">
+        <table cellpadding="0" cellspacing="0">
+            <tr>
+                <td colspan="9" class="table_title">
+                    修改案例
+                </td>
+            </tr>
+
+            <tr class="tr rt">
+                <td width="100">姓名：</td>
+                <td colspan="3" class="lt">
+                    <input type="text" name="name" style="width:200px" value="{$info.name}">
+                </td>
+            </tr>
+
+            <tr class="tr rt">
+                <td width="100">感言:</td>
+                <td colspan="3" class="lt">
+
+                    <textarea name='jianyan' rows='3' cols='50'>{$info.jianyan}</textarea>
+                </td>
+            </tr>
+
+            <tr class="tr rt">
+                <td width="100">效果图：</td>
+                <td colspan="3" class="lt">
+                    <input type="file" name="img_url" size="28" value='浏览...'/>
+                    <notempty name="info.img_url">
+                        <img src="{:C('SITE_URL')}/{$info.img_url}"/>
+                    </notempty>
+                </td>
+            </tr>
+
+            <tr class="tr rt">
+                <td width="100">列表图：</td>
+                <td colspan="3" class="lt">
+                    <input type="file" name="list_url" size="28" value='浏览...'/>
+                    <notempty name="info.list_url">
+                        <img src="{:C('SITE_URL')}/{$info.list_url}"/>
+                    </notempty>
+                </td>
+            </tr>
+
+            <tr class="tr rt">
+                <td width="100">推荐小图片：</td>
+                <td colspan="3" class="lt">
+                    <input type="file" name="min_url" size="28" value='浏览...'/>
+                    <notempty name="info.min_url">
+                        <img src="{:C('SITE_URL')}/{$info.min_url}"/>
+                    </notempty>
+                </td>
+            </tr>
+
+            <!--				<tr class="tr rt">
+                                <td width="100">推荐:</td>
+                                <td colspan="3" class="lt">
+                                    <if condition="$info['related'] eq 1">
+                                        <input type="checkbox" name="related" value="1" checked>
+                                    <else />
+                                        <input type="checkbox" name="related" value="1">
+                                    </if>
+                                </td>
+                            </tr>-->
+            <tr class="tr rt">
+                <td width="100">治疗过程:</td>
+                <td colspan="3" class="lt">
+                    <textarea id='ue_content' name='content' style="width:800px;height:250px;">{$info.course}</textarea>
+                </td>
+            </tr>
+
+            <tr class="tr rt">
+                <td width="100">排序:</td>
+                <td colspan="3" class="lt">
+                    <input type="text" name="sort" id="sort" style="width:200px;" value="{$info.sort}">
+                    <input type="hidden" name="id" value="{$info.id}">
+                </td>
+            </tr>
+            <tr class="tr lt">
+                <td colspan="4">
+
+                    <input class="bginput" type="submit" name="submit" value="修 改">
+                    &nbsp;
+                    <input class="bginput" type="button" onclick="javascript:history.back(-1);" value="返 回"></td>
+            </tr>
+        </table>
+    </form>
+</div>
+<script type="text/javascript">
+
+    var ue = UE.getEditor('ue_content');
+
+</script>
+</body>
+</html>

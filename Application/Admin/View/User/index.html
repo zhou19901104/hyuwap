@@ -1,0 +1,77 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<title>后台用户管理-{$Think.config.cms_name}</title>
+	<include file="Public:head" />
+	<style>td{ height:22px; line-height:22px}</style>
+</head>
+<body>
+	<div class="midder">
+
+<table  cellpadding="0" cellspacing="0">
+<tr>
+            <td colspan="6" class="table_title">
+               员工管理  <span class="fr">
+                    <a href="{:U('/Admin/User/add')}">添加员工</a>
+                </span>
+            </td>
+</tr>
+<tr>
+    <td colspan="0">
+
+        <select name='role' class="roleid">
+            <option value='-1' rel="?s=/User/index/">权限列表</option>
+            <option value='-1' rel="?s=/User/index/">全部权限</option>
+            <volist name='roles' id='rcv'>
+                <option value='{$rcv.id}' rel="{$url['roleid'][$rcv['id']]}" <eq name="rcv.id" value="$fi['roleid']">selected</eq>>{$rcv.name}</option>
+            </volist>
+        </select>
+    </td>
+    <td>
+        <form action="{:U('/Admin/User/index')}" method='POST'>
+            用户名：<input type='text' size='20' name='ming' />
+            <input type='submit' name='ssubmit' value='确认' />
+        </form>
+    </td>
+</tr>
+            <tr class="Toolbar_inbox ct">
+                <td align='center'>用户编号</td>
+                <td align='center'>用户账号</td>
+                <td align='center'>用户权限</td>
+                <td align='center'>状态</td>
+                <td align='center'>管理操作</td>
+            </tr>
+        <volist name="list" id="vo">
+            <if condition='$vo["username"] eq hlbs'>
+            <else />
+            <tr class='<eq name="mod" value="1">od<else/>ol</eq>'>
+                <td align='center'>{$vo.uuid}</td>
+                <td align='center'>{$vo.username}</td>
+
+                <td align='center'>{$vo.name}</td>
+                <td align='center'>
+
+                <if condition='$vo.ustatus eq 1'>
+                <font color="red">√</font>
+                <else />
+                <font color="blue">×</font>
+                </if> 
+
+                </td>
+                <td align='center'>
+                    <a href="{:U('/Admin/User/edit/',array('id'=>$vo['uid']))}">修改</a>
+                    | <eq name="vo.username" value="$Think.config.SPECIAL_USER"><font color="#cccccc">删除</font><else/><a href="javascript:void(0)" onclick="return confirmurl('{:U('/Admin/User/del/',array('id'=>$vo['uid']))}','确定删除该用户吗?')">删除</a></eq>
+                </td>
+            </tr>
+            </if>
+        </volist>
+        <tr class="tr">
+          <td colspan="6" class="pages">
+            {$page}
+          </td>
+        </tr>
+</table>
+<div class="pagebar">{$pageUrl}</div>
+</div>
+</body>
+	</html>

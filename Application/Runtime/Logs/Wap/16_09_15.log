@@ -1,0 +1,165 @@
+[ 2016-09-15T20:06:18+08:00 ] 121.42.0.84 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `sd_class` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_class` WHERE ( pid = 0 ) ORDER BY sort DESC  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sd_nav` [ RunTime:0.0000s ]
+SQL: SELECT `th_img_url`,`sort`,`id`,`link` FROM `sd_nav` ORDER BY sort ASC  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sd_banner` [ RunTime:0.0000s ]
+SQL: SELECT `id`,`th_img_url`,`bg_img_url`,`sort`,`category` FROM `sd_banner` WHERE `category` = 1 ORDER BY sort desc  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sd_spcontent` [ RunTime:0.0000s ]
+SQL: SELECT `sp_img`,`sp_link`,`sp_show`,`sp_sort` FROM `sd_spcontent` WHERE `sp_show` = 1 ORDER BY sp_sort DESC  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031251s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031251s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-09-15T20:06:19+08:00 ] 121.42.0.84 /install/images/default/top1_r.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-09-15T20:06:21+08:00 ] 121.42.0.84 /upload/200812/20081230023106860.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-09-15T20:06:21+08:00 ] 121.42.0.84 /Images/Mlogin/Bitmap02.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-09-15T20:06:22+08:00 ] 121.42.0.84 /images/list_bg.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.015625s ]
+
+[ 2016-09-15T20:06:22+08:00 ] 121.42.0.84 /theme/theme/default/images/bg_bnt_user_base_over.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-09-15T20:06:22+08:00 ] 121.42.0.84 /lib/images/vtip_arrow.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-09-15T20:06:23+08:00 ] 121.42.0.84 /dede/img/button_bg1.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-09-15T20:06:23+08:00 ] 121.42.0.84 /plus/img/topsearch_submit.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-09-15T20:07:21+08:00 ] 121.42.0.84 /content/templates/default/images/weibe_button.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-09-15T20:07:23+08:00 ] 121.42.0.84 /job/templates/met/css/style.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `sd_class` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_class` WHERE ( pid = 0 ) ORDER BY sort DESC  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sd_nav` [ RunTime:0.0000s ]
+SQL: SELECT `th_img_url`,`sort`,`id`,`link` FROM `sd_nav` ORDER BY sort ASC  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: data C:\www\wap\Application\Runtime\Cache\Wap\063fa89705023fd0be3f8e26caf1bc34.php 第 7 行.
+NOTIC: [8] Undefined index: nav_img_url C:\www\wap\Application\Runtime\Cache\Wap\063fa89705023fd0be3f8e26caf1bc34.php 第 38 行.
+NOTIC: [8] Undefined index: nav_img_url C:\www\wap\Application\Runtime\Cache\Wap\063fa89705023fd0be3f8e26caf1bc34.php 第 38 行.
+NOTIC: [8] Undefined index: nav_img_url C:\www\wap\Application\Runtime\Cache\Wap\063fa89705023fd0be3f8e26caf1bc34.php 第 38 行.
+NOTIC: [8] Undefined index: nav_img_url C:\www\wap\Application\Runtime\Cache\Wap\063fa89705023fd0be3f8e26caf1bc34.php 第 38 行.
+NOTIC: [8] Undefined index: nav_img_url C:\www\wap\Application\Runtime\Cache\Wap\063fa89705023fd0be3f8e26caf1bc34.php 第 38 行.
+NOTIC: [8] Undefined index: nav_img_url C:\www\wap\Application\Runtime\Cache\Wap\063fa89705023fd0be3f8e26caf1bc34.php 第 38 行.
+NOTIC: [8] Undefined index: nav_img_url C:\www\wap\Application\Runtime\Cache\Wap\063fa89705023fd0be3f8e26caf1bc34.php 第 38 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015625s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015625s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-09-15T20:07:24+08:00 ] 121.42.0.84 /wap/templates/met/images/listico.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-09-15T20:07:28+08:00 ] 121.42.0.84 /images/admina/logo.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-09-15T20:07:29+08:00 ] 121.42.0.84 /images/admina/sitmap0.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-09-15T20:07:29+08:00 ] 121.42.0.84 /app/Tpl/fanwe/images/fancybox_loading.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-09-15T20:07:34+08:00 ] 121.42.0.84 /d/js/acmsd/close_o.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-09-15T20:07:34+08:00 ] 121.42.0.84 /images/showsp/areabg.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-09-15T20:07:34+08:00 ] 121.42.0.84 /SiteServer/Pic/Company/login.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-09-15T20:08:30+08:00 ] 121.42.0.84 /images/admin/logo.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-09-15T20:08:30+08:00 ] 121.42.0.84 /images/admin/sprites.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-09-15T20:08:30+08:00 ] 121.42.0.84 /ACT_inc/ItemBg.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-09-15T20:08:33+08:00 ] 121.42.0.84 /images/act_1.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-09-15T20:08:33+08:00 ] 121.42.0.84 /images/reg.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
