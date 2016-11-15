@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="renderer" content="webkit|ie-comp|ie-stand">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1.0,maximum-scale=1.0,member-scalable=no" />
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1.0,maximum-scale=1.0" />
     <meta http-equiv="Cache-Control" content="no-siteapp" />
     <!--[if lt IE 9]>
     <script type="text/javascript" src="/Public/Admin/lib/html5.js"></script>
@@ -23,7 +23,7 @@
 </head>
 <body>
 <div class="pd-20">
-    <form action="/Admin/Category/article_category_edit" method="post" class="form form-horizontal" id="form-category-add">
+    <form action="/Admin/Category/article_category_edit" method="post" class="form form-horizontal" id="form-category-add" enctype="multipart/form-data">
         <div id="tab-category" class="HuiTab">
             <div class="tabBar cl"><span>基本设置</span><!--<span>模版设置</span><span>SEO</span>--></div>
             <div class="tabCon">
@@ -50,6 +50,28 @@
                     </div>
                     <div class="col-3"> </div>
                 </div>
+
+
+                 <div class="row cl">
+                    <label class="form-label col-3">缩略图：</label>
+                    <div class="formControls col-9">
+                        <div class="uploader-thum-container">
+                            <input type="file" name="img_url" value="<?php echo ($data["img_url"]); ?>" id="exampleInputImg">
+                            <?php if($data["level"] == 1): if(!empty($data["img_url"])): ?><div class="form-group" id="div_user_logo">
+                                        <img src="<?php echo C('SITE_URL'); echo (substr($data["img_url"],1)); ?>" class="img-rect" id="img_user_logo" style="width: 98px;height: 53px;">
+                                    </div><?php endif; ?>
+
+                                <?php elseif($data["level"] == 2): ?>
+
+                                <?php if(!empty($data["img_url"])): ?><div class="form-group" id="div_small_logo">
+                                        <img src="<?php echo C('SITE_URL'); echo (substr($data["img_url"],1)); ?>" class="img-rect" id="img_small_logo" style="width: 98px;height: 53px;">
+                                    </div><?php endif; endif; ?>
+
+                        </div>
+                    </div>
+                </div>
+
+
                 <div class="row cl">
                     <label class="form-label col-3">别名：</label>
                     <div class="formControls col-6">
@@ -88,6 +110,7 @@
 <script type="text/javascript" src="/Public/Admin/lib/layer/1.9.3/layer.js"></script>
 <script type="text/javascript" src="/Public/Admin/js/H-ui.js"></script>
 <script type="text/javascript" src="/Public/Admin/js/H-ui.admin.js"></script>
+<script type="text/javascript" src="/Public/Admin/js/uploadPreview.js"></script>
 <script type="text/javascript">
 
     /**
@@ -95,11 +118,11 @@
      * @param obj Select对象
      * @constructor
      */
- /*   function SetSubID(obj)
+    function SetSubID(obj)
     {
         var level = document.getElementById('cate-level');
-        level.value = obj.options[obj.selectedIndex].getAttribute('level');
-    }*/
+        level.value = parseInt(obj.options[obj.selectedIndex].getAttribute('level')) + 1;
+    }
 
     $(function(){
         $('.skin-minimal input').iCheck({
@@ -118,6 +141,8 @@
             }
         });
         $.Huitab("#tab-category .tabBar span","#tab-category .tabCon","current","click","0");
+        new uploadPreview({ UpBtn: "exampleInputImg", DivShow: "div_user_logo", ImgShow: "img_user_logo" });
+        new uploadPreview({ UpBtn: "exampleInputImg", DivShow: "div_small_logo", ImgShow: "img_small_logo" });
     });
 </script>
 </body>

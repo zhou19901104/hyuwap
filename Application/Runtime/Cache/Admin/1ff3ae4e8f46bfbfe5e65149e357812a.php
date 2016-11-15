@@ -11,9 +11,7 @@
     <link href="/Public/Admin/css/H-ui.admin.css" rel="stylesheet" type="text/css" />
     <link href="/Public/Admin/lib/icheck/icheck.css" rel="stylesheet" type="text/css" />
     <link href="/Public/Admin/lib/Hui-iconfont/1.0.1/iconfont.css" rel="stylesheet" type="text/css" />
-
     <!--  <link href="/Public/Admin/lib/webuploader/0.1.5/webuploader.css" rel="stylesheet" type="text/css" />-->
-
     <title>新增专题</title>
 </head>
 <body>
@@ -88,7 +86,7 @@
                     <input type="file" name="img_url" value="浏览..." id="exampleInputImg">
 
                     <?php if(!empty($data["img_url"])): ?><div class="form-group" id="div_user_logo">
-                            <img src="<?php echo C('SITE_URL'); echo (substr($data["img_url"],1)); ?>" class="img-rect" id="img_user_logo" style="width: 380px;height: 284px;">
+                            <img src="<?php echo C('SITE_URL'); echo (substr($data["img_url"],1)); ?>" class="img-rect" id="img_user_logo" style="width: 342px;height: 192px;">
                         </div><?php endif; ?>
 
                 </div>

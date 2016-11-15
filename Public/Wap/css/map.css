@@ -108,7 +108,6 @@ body{
 .menthod-wrap .cont-map li.active {
     display: block;
 }
-
 /*footer部分*/
 .container .footer{
     max-width: 640px;
@@ -141,13 +140,14 @@ body{
 }
 
 /*医院联系方式*/
-.container .content-code{
+.content-code{
     background-color: #0c0c0c;
     display: block;
     border-top:2px solid #e6c88a;
     position: relative;
+
 }
-.container .content-code .code-left{
+.content-code .code-left{
     width: 65%;
     color: #fff;
     position: absolute;
@@ -158,31 +158,30 @@ body{
     transform: translateX(-5%) translateY(-50%);
 }
 
-.container .content-code .code-left p{
-    padding-top: 10px;
-    margin-left:10%;
+.content-code .code-left p{
+    margin:5px 0 5px 10%;
     font: 400 14px/14px "微软雅黑";
 }
-.container .content-code .code-left hr{
+.content-code .code-left hr{
     margin-top: 6px;
     margin-left:10%;
 }
 
-.container .content-code .code-left .icon-1{
+.content-code .code-left .icon-1{
     font: 600 18px/18px "微软雅黑";
 }
-.container .content-code .code-left .icon-2 i{
+.content-code .code-left .icon-2 i{
     color: #e6c88a;
 }
-.container .content-code .code-left .icon-3{
+.content-code .code-left .icon-3{
     font: 400 12px/12px "微软雅黑";
     color: #858585;
 }
-.container .content-code .code-right{
+.content-code .code-right{
     width: 35%;
 }
 
-.container .content-code .code-right img{
+.content-code .code-right img{
     width: 100%;
 }
 

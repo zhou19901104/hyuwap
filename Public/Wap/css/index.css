@@ -47,6 +47,36 @@ body{
 .main-banner .banner-img img{
     width: 100%;
 }
+.main-banner{
+    position: relative;
+    overflow: hidden;
+}
+.main-banner .banner-img ul li{
+    position: absolute;
+    left: 0;
+    top: 0;
+    overflow: hidden;
+}
+.main-banner .banner-radius{
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    text-align: center;
+}
+.main-banner .banner-radius ul li{
+    display: block;
+    float: left;
+    width: 8px;
+    height: 8px;
+    border-radius: 4px;
+    border:1px solid #ccc;
+    text-align: center;
+}
+.main-banner .banner-radius ul li.show{
+    background-color: #ccc;
+}
+
+
 
 /*导航部分*/
 .main-nav .nav-colnum{
@@ -148,6 +178,10 @@ body{
     width: 100%;
 }
 
+.main .main-content .item-list ul{
+    margin-bottom:5%;
+    overflow: hidden;
+}
 
 .main .main-content .item-list ul li{
     display: block;
@@ -155,7 +189,7 @@ body{
     float: left;
     text-align: center;
     overflow: hidden;
-    padding:5% 0 5% 0;
+    padding-top: 5%;
     white-space:nowrap;
     text-overflow:ellipsis;
 }
@@ -175,6 +209,7 @@ body{
     display: block;
     border-top:2px solid #e6c88a;
     position: relative;
+
 }
 .main .main-content .content-code .code-left{
     width: 65%;
@@ -188,8 +223,7 @@ body{
 }
 
 .main .main-content .content-code .code-left p{
-    padding-top: 10px;
-    margin-left:10%;
+    margin:5px 0 5px 10%;
     font: 400 14px/14px "微软雅黑";
 }
 .main .main-content .content-code .code-left hr{

@@ -12,5 +12,13 @@ namespace Admin\Controller;
 class SystemController extends CommonController
 {
 
+    /**
+     * 系统缓存管理
+     */
+    public function system_cache()
+    {
+        $this->display();
+    }
+
 
 }

@@ -131,7 +131,7 @@ class ContentController extends CommonController
         $id = I('get.id');
         $content = D('Content');
 
-        if($content->delete($id)){
+        if($content->where(array('id' => $id))->delete()){
             $data = [
                 'message' => '删除成功',
                 'member' => 1

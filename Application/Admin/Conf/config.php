@@ -8,17 +8,20 @@ return array(
 
     'USER_AUTH_KEY' => 'authId',  // 用户认证SESSION标记
 
-    'ADMIN_AUTH_KEY' => 'administrator', //session里有这个管理员不需要认证
+    'ADMIN_AUTH_KEY' => 'administrator', //session里有这个管理员不需要认证,最高权限
 
     'ADMINISTRATOR' => 'admin',
 
-    'USER_AUTH_MODEL' => 'Users',  // 默认验证数据表模型
+    'USER_AUTH_MODEL' => 'User',  // 默认验证数据表模型 Rbac::authenticate
 
     'AUTH_PWD_ENCODER' => 'md5',  // 用户认证密码加密方式
 
     'USER_AUTH_GATEWAY' => '/Admin/Login/Index', // 默认认证网关
     'NOT_AUTH_MODULE' => 'Login', // 默认无需认证模块
     'NOT_AUTH_ACTION' => 'index', // 默认无需认证操作
+
+
+
 
     //'REQUIRE_AUTH_MODULE'=>'', // 默认需要认证模块
     //'REQUIRE_AUTH_ACTION'=>'', // 默认需要认证操作
@@ -38,7 +41,7 @@ return array(
 
     'SHOW_PAGE_TRACE' => false,
 
-    'SPECIAL_USER' => 'administrator',
+    'SPECIAL_USER' => 'huanyuyiliao',
 
 
 

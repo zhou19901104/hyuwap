@@ -34,11 +34,32 @@ class ContentModel extends Model
      */
     protected function _before_delete($data, $options)
     {
-        $info = D('Content')->field('img_url,id')->find($data['where']['id']);
-        @unlink($info['img_url']);
+        $info = D('Content')->field('content,id')->find($data['where']['id']);
 
+        $arr = $this->xm_metch('/<img src="(.*)"/isU', $info['content']);
+
+        for($i=0, $len = count($arr); $i < $len; $i++){
+            @unlink('.'.$arr[$i]);
+        }
     }
 
+    /**
+     * @param $parame 匹配规则
+     * @param $str 匹配字符串
+     * @return bool
+     */
+    public function xm_metch($parame, $str)
+    {
+        //匹配所有字段
+        $arr = [];
+
+        if(preg_match_all($parame, $str, $arr)){
+
+            return $arr[1];
+        }else{
+            return false;
+        }
+    }
 
 
 }

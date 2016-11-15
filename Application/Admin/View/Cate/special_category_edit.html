@@ -23,7 +23,7 @@
 </head>
 <body>
 <div class="pd-20">
-    <form action="__CONTROLLER__/article_category_edit" method="post" class="form form-horizontal" id="form-category-add">
+    <form action="__CONTROLLER__/special_category_edit" method="post" class="form form-horizontal" id="form-category-add" enctype="multipart/form-data">
         <div id="tab-category" class="HuiTab">
             <div class="tabBar cl"><span>基本设置</span><!--<span>模版设置</span><span>SEO</span>--></div>
             <div class="tabCon">
@@ -59,6 +59,21 @@
                     </div>
                     <div class="col-3"> </div>
                 </div>
+
+                <div class="row cl">
+                    <label class="form-label col-3">缩略图：</label>
+                    <div class="formControls col-9">
+                        <div class="uploader-thum-container">
+                            <input type="file" name="img_url" value="浏览..." id="exampleInputImg">
+                            <notempty name="data.img_url">
+                            <div class="form-group" id="div_user_logo">
+                                <img src="{$data.img_url|substr=###,1}" class="img-rect" id="img_user_logo" style="width: 320px;height: 192px;">
+                            </div>
+                            </notempty>
+                        </div>
+                    </div>
+                </div>
+
                 <div class="row cl">
                     <label class="form-label col-3">排序：</label>
                     <div class="formControls col-6">
@@ -90,6 +105,7 @@
 <script type="text/javascript" src="__PUBLIC__/Admin/lib/layer/1.9.3/layer.js"></script>
 <script type="text/javascript" src="__PUBLIC__/Admin/js/H-ui.js"></script>
 <script type="text/javascript" src="__PUBLIC__/Admin/js/H-ui.admin.js"></script>
+<script type="text/javascript" src="__PUBLIC__/Admin/js/uploadPreview.js"></script>
 <script type="text/javascript">
 
     /**
@@ -120,6 +136,7 @@
             }
         });
         $.Huitab("#tab-category .tabBar span","#tab-category .tabCon","current","click","0");
+        new uploadPreview({ UpBtn: "exampleInputImg", DivShow: "div_user_logo", ImgShow: "img_user_logo" });
     });
 </script>
 </body>

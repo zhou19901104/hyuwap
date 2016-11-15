@@ -16,7 +16,7 @@
 </head>
 <body>
 <div class="pd-20">
-    <form action="/Admin/Category/article_category_add" method="post" class="form form-horizontal" id="form-category-add">
+    <form action="/Admin/Category/article_category_add" method="post" class="form form-horizontal" id="form-category-add" enctype="multipart/form-data">
         <div id="tab-category" class="HuiTab">
             <div class="tabBar cl"><span>基本设置</span><!--<span>模版设置</span><span>SEO</span>--></div>
             <div class="tabCon">
@@ -41,6 +41,19 @@
                     </div>
                     <div class="col-3"> </div>
                 </div>
+
+                <div class="row cl">
+                    <label class="form-label col-2">缩略图：</label>
+                        <div class="formControls col-10">
+                        <div class="uploader-thum-container">
+                        <input type="file" name="img_url" value="浏览..." id="exampleInputImg">
+                            <div class="form-group" id="div_user_logo">
+                            <img  class="img-rect" id="img_user_logo" style="width: 340px;height: 192px;">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
                 <div class="row cl">
                     <label class="form-label col-3">别名：</label>
                     <div class="formControls col-6">
@@ -58,7 +71,7 @@
                 <div class="row cl">
                     <label class="form-label col-3">等级：</label>
                     <div class="formControls col-6">
-                        <input type="text" class="input-text" value="1" id="cate-level" name="level" disabled>
+                        <input type="text" class="input-text" value="1" id="cate-level" name="level">
                     </div>
                     <div class="col-3"> </div>
                 </div>
@@ -77,6 +90,8 @@
 <script type="text/javascript" src="/Public/Admin/lib/jquery/1.9.1/jquery.min.js"></script>
 <script type="text/javascript" src="/Public/Admin/lib/icheck/jquery.icheck.min.js"></script>
 <script type="text/javascript" src="/Public/Admin/lib/Validform/5.3.2/Validform.min.js"></script>
+
+<script type="text/javascript" src="/Public/Admin/js/uploadPreview.js"></script>
 <script type="text/javascript" src="/Public/Admin/lib/layer/1.9.3/layer.js"></script>
 <script type="text/javascript" src="/Public/Admin/js/H-ui.js"></script>
 <script type="text/javascript" src="/Public/Admin/js/H-ui.admin.js"></script>
@@ -109,7 +124,10 @@
                 parent.layer.close(index);
             }
         });
+
         $.Huitab("#tab-category .tabBar span","#tab-category .tabCon","current","click","0");
+
+        new uploadPreview({ UpBtn: "exampleInputImg", DivShow: "div_user_logo", ImgShow: "img_user_logo" });
     });
 </script>
 </body>

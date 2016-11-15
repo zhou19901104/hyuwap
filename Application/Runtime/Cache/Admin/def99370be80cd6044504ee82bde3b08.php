@@ -21,7 +21,7 @@
         <input type="text" name="" placeholder="栏目名称、id" style="width:250px" class="input-text">
         <button name="" id="" class="btn btn-success" type="submit"><i class="Hui-iconfont">&#xe665;</i> 搜索</button>
     </div>
-    <div class="cl pd-5 bg-1 bk-gray mt-20"> <span class="l"><a href="javascript:;" onclick="datadel()" class="btn btn-danger radius"><i class="Hui-iconfont">&#xe6e2;</i> 批量删除</a> <a class="btn btn-primary radius" onclick="article_category_add('添加分类','article_category_add')" href="javascript:;"><i class="Hui-iconfont">&#xe600;</i> 添加分类</a></span> <span class="r">共有数据：<strong><?php echo ($count); ?></strong> 条</span> </div>
+    <div class="cl pd-5 bg-1 bk-gray mt-20"> <span class="l"><a href="javascript:;" onclick="datadel()" class="btn btn-danger radius"><i class="Hui-iconfont">&#xe6e2;</i> 批量删除</a> <a class="btn btn-primary radius" onclick="article_category_add('添加分类','article_category_add',900,600)" href="javascript:;"><i class="Hui-iconfont">&#xe600;</i> 添加分类</a></span> <span class="r">共有数据：<strong><?php echo ($count); ?></strong> 条</span> </div>
     <div class="mt-20">
         <table class="table table-border table-bordered table-hover table-bg table-sort">
             <thead>
@@ -35,17 +35,15 @@
             </tr>
             </thead>
             <tbody>
+
             <?php if(is_array($cateData)): foreach($cateData as $key=>$val): ?><tr class="text-c">
                     <td><input type="checkbox" name="" value=""></td>
                     <td><?php echo ($val["id"]); ?></td>
-
                     <td><?php echo ($val["level"]); ?></td>
                     <td class="text-l"><?php echo ($val["level"]); ?>级栏目</td>
                     <td class="text-l" <?php if($val['level'] == 1): ?>style="color: red;" <?php elseif($val['level'] == 2): ?>style="color: blue;"<?php endif; ?> >|<?php echo (str_repeat('--',$val["level"])); echo ($val["cate_name"]); ?></td>
-                    <td class="f-14"><a title="编辑" href="javascript:;" onclick="article_category_edit('栏目编辑','article_category_edit','<?php echo ($val["id"]); ?>','700','480')" style="text-decoration:none"><i class="Hui-iconfont">&#xe6df;</i></a> <a title="删除" href="javascript:;" onclick="article_category_del(this,'<?php echo ($val["id"]); ?>')" class="ml-5" style="text-decoration:none"><i class="Hui-iconfont">&#xe6e2;</i></a></td>
+                    <td class="f-14"><a title="编辑" href="javascript:;" onclick="article_category_edit('栏目编辑','article_category_edit','<?php echo ($val["id"]); ?>','900','600')" style="text-decoration:none"><i class="Hui-iconfont">&#xe6df;</i></a> <a title="删除" href="javascript:;" onclick="article_category_del(this,'<?php echo ($val["id"]); ?>')" class="ml-5" style="text-decoration:none"><i class="Hui-iconfont">&#xe6e2;</i></a></td>
                 </tr><?php endforeach; endif; ?>
-
-
       <!--      <tr class="text-c">
                 <td><input type="checkbox" name="" value=""></td>
                 <td>2</td>
@@ -98,6 +96,7 @@
                 type : 'get',
                 dataType : 'json',
                 success : function (data) {
+                    //console.log(data);
                     layer.msg(data.message,{icon: data.member,time:1000});
                     if(data.member == 1){
                         $(obj).parents("tr").remove();

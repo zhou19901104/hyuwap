@@ -30,6 +30,11 @@
             <div class="banner-img">
                 <ul>
                     <li><a href=""><img src="<?php echo C('IMG_URL');?>/banner-1.jpg" alt=""></a></li>
+                    <li><a href="zt/16"><img src="<?php echo C('IMG_URL');?>/banner-2.jpg" alt=""></a></li>
+                </ul>
+            </div>
+            <div class="banner-radius">
+                <ul>
                 </ul>
             </div>
         </div>
@@ -37,9 +42,9 @@
         <div class="main-nav">
             <div class="nav-colnum">
                 <ul>
-                    <li><a href="<?php echo U('Web/index');?>"><img src="<?php echo C('IMG_URL');?>/nav-1.png" alt=""><img class="nav-shuxian" src="<?php echo C('IMG_URL');?>/nav-shuxian.png"><p>首页</p></a></li>
+                    <li><a href="<?php echo C('SITE_URL');?>"><img src="<?php echo C('IMG_URL');?>/nav-1.png" alt=""><img class="nav-shuxian" src="<?php echo C('IMG_URL');?>/nav-shuxian.png"><p>首页</p></a></li>
                     <li><a href="<?php echo U('Web/company');?>"><img src="<?php echo C('IMG_URL');?>/nav-2.png" alt=""><img class="nav-shuxian" src="<?php echo C('IMG_URL');?>/nav-shuxian.png"><p>品牌</p></a></li>
-                    <li><a href="#item-list"><img src="<?php echo C('IMG_URL');?>/nav-3.png" alt=""><img class="nav-shuxian" src="<?php echo C('IMG_URL');?>/nav-shuxian.png"><p>项目</p></a></li>
+                    <li><a href="<?php echo C('SITE_URL');?>/#item-list"><img src="<?php echo C('IMG_URL');?>/nav-3.png" alt=""><img class="nav-shuxian" src="<?php echo C('IMG_URL');?>/nav-shuxian.png"><p>项目</p></a></li>
                     <li><a href="<?php echo U('Web/anli');?>"><img src="<?php echo C('IMG_URL');?>/nav-4.png" alt=""><img class="nav-shuxian" src="<?php echo C('IMG_URL');?>/nav-shuxian.png"><p>案例</p></a></li>
                     <li><a href="<?php echo U('Web/doctor');?>"><img src="<?php echo C('IMG_URL');?>/nav-5.png" alt=""><p>医生</p></a></li>
                 </ul>
@@ -69,7 +74,7 @@
                 </div>
                 <div class="active-right">
                     <ul>
-                        <li><a href=""><img src="<?php echo C('IMG_URL');?>/active-2.jpg" alt=""></a></li>
+                        <li><a href="<?php echo C('SITE_URL');?>/zt/29"><img src="<?php echo C('IMG_URL');?>/active-2.jpg" alt=""></a></li>
                         <li><a href=""><img src="<?php echo C('IMG_URL');?>/active-3.jpg" alt=""></a></li>
                     </ul>
                 </div>
@@ -88,15 +93,17 @@
 
             <!--项目模块-->
             <div class="item-list clearfix" id="item-list">
-                <ul>
-                    <li><a href="Web/xm"><img src="<?php echo C('IMG_URL');?>/item-1.png" alt=""><p>眼部整形</p></a></li>
-                    <li><a href=""><img src="<?php echo C('IMG_URL');?>/item-2.png" alt=""><p>鼻部整形</p></a></li>
-                    <li><a href=""><img src="<?php echo C('IMG_URL');?>/item-3.png" alt=""><p>自体脂肪填充</p></a></li>
-                    <li><a href=""><img src="<?php echo C('IMG_URL');?>/item-4.png" alt=""><p>胸部整形</p></a></li>
-                    <li><a href=""><img src="<?php echo C('IMG_URL');?>/item-5.png" alt=""><p>形体雕塑</p></a></li>
-                    <li><a href=""><img src="<?php echo C('IMG_URL');?>/item-6.png" alt=""><p>私密整形</p></a></li>
-                    <li><a href=""><img src="<?php echo C('IMG_URL');?>/item-7.png" alt=""><p>无创美容</p></a></li>
-                    <li><a href=""><img src="<?php echo C('IMG_URL');?>/item-8.png" alt=""><p>皮肤美容</p></a></li>
+                <ul class="clearfix">
+
+                 <!--   <li><a href="wz/267"><img src="<?php echo C('IMG_URL');?>/item-1.png" alt=""><p>眼部整形</p></a></li>
+                    <li><a href="<?php echo U('Web/xm', array('id' => 162));?>"><img src="<?php echo C('IMG_URL');?>/item-2.png" alt=""><p>鼻部整形</p></a></li>
+                    <li><a href="<?php echo U('Web/xm', array('id' => 153));?>"><img src="<?php echo C('IMG_URL');?>/item-3.png" alt=""><p>脂肪填充</p></a></li>
+                    <li><a href="<?php echo U('Web/xm', array('id' => 161));?>"><img src="<?php echo C('IMG_URL');?>/item-4.png" alt=""><p>抗衰老</p></a></li>
+                    <li><a href="<?php echo U('Web/xm', array('id' => 161));?>"><img src="<?php echo C('IMG_URL');?>/item-5.png" alt=""><p>形体雕塑</p></a></li>
+                    <li><a href="<?php echo U('Web/xm', array('id' => 161));?>"><img src="<?php echo C('IMG_URL');?>/item-6.png" alt=""><p>注射美容</p></a></li>
+                    <li><a href="<?php echo U('Web/xm', array('id' => 161));?>"><img src="<?php echo C('IMG_URL');?>/item-7.png" alt=""><p>光电美肤</p></a></li>
+                    <li><a href="<?php echo U('Web/xm', array('id' => 161));?>"><img src="<?php echo C('IMG_URL');?>/item-8.png" alt=""><p>医学纹绣</p></a></li>-->
+                    <?php if(is_array($cateData)): foreach($cateData as $k=>$val): ?><li><a href="<?php echo C('SITE_URL');?>/xm/<?php echo ($val["id"]); ?>"><img src="<?php echo C('IMG_URL');?>/item-<?php echo ($k+1); ?>.png" alt=""><p><?php echo ($val["cate_name"]); ?></p></a></li><?php endforeach; endif; ?>
                 </ul>
             </div>
 
@@ -115,16 +122,13 @@
                 </div>
             </div>
         </div>
-
-
     </div>
-
 
     <!--footer部分-->
     <footer class="footer clearfix">
         <div class="footer-list">
             <ul>
-                <li><a href="<?php echo U('Web/index');?>"><img src="<?php echo C('IMG_URL');?>/foot-1.png"><p>焕誉首页</p></a></li>
+                <li><a href="<?php echo C('SITE_URL');?>"><img src="<?php echo C('IMG_URL');?>/foot-1.png"><p>焕誉首页</p></a></li>
                 <li><a href="tel:010-5729-0660"><img src="<?php echo C('IMG_URL');?>/foot-2.png"><p>拨打电话</p></a></li>
                 <li><a href="<?php echo C('SHANG_WU_TONG');?>"><img src="<?php echo C('IMG_URL');?>/fqmx.png"></a></li>
                 <li><a href="<?php echo C('SHANG_WU_TONG');?>"><img src="<?php echo C('IMG_URL');?>/foot-3.png"><p>在线客服</p></a></li>
@@ -132,8 +136,6 @@
             </ul>
         </div>
     </footer>
-
-
 </div>
 
 </body>

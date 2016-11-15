@@ -8,6 +8,7 @@
 
 namespace Admin\Controller;
 
+use Think\Upload;
 
 class CateController extends CommonController
 {
@@ -22,7 +23,6 @@ class CateController extends CommonController
         $count = $cate->count();
 
         $cateData = getTree($cate->field('id,pid,cate_name')->select());
-
         $this->assign('cateData', $cateData);
         $this->assign('count', $count);
 
@@ -38,17 +38,25 @@ class CateController extends CommonController
         $cate = D('Cate');
         if(IS_POST){
 
-            if($data = $cate->create()){
+            $data = I('post.');
 
+                 if($_FILES['img_url']['name'] != ''){
+
+                    $config = array(
+                        'colnum' => 'img_url',
+                        'path' => 'cate'
+                    );
+                    $this->up_image($data, $config);
+                }
+
+            //dump($data);die();
                 if($cate->add($data)){
+
                     $this->success('添加成功！', U('Admin/Cate/special_category'));
                 }else{
                     $this->error('添加失败！', U('Admin/Cate/special_category_add'));
                 }
 
-            }else{
-                $this->error($cate->getError());
-            }
         }else{
 
             $cateData = getTree($cate->field('id,pid,cate_name')->select());
@@ -65,7 +73,19 @@ class CateController extends CommonController
         $cate = D('Cate');
         if(IS_POST){
 
-            if($data = $cate->create()){
+                $data = I('post.');
+
+                $info = $cate->field('id,img_url')->where(array('id' => $data['id']))->find();
+
+                if($_FILES['img_url']['name'] != ''){
+
+                    $config = array(
+                        'colnum' => 'img_url',
+                        'path' => 'cate'
+                    );
+                    $this->up_image($data, $config);
+                    @unlink($info['img_url']);
+                }
 
                 if($cate->save($data)){
                     $this->success('修改成功！', U('Admin/Cate/special_category'));
@@ -73,13 +93,11 @@ class CateController extends CommonController
                     $this->error('修改失败！', U('Admin/Cate/special_category_edit'));
                 }
 
-            }else{
-                $this->error($cate->getError());
-            }
+
         }else{
 
             $id = I('get.id');
-            $data = $cate->field('id,pid,cate_name,sort,level')->find($id);
+            $data = $cate->field('id,pid,cate_name,sort,level,img_url')->find($id);
             $cateData = getTree($cate->field('id,pid,cate_name')->select());
 
             $this->assign('cateData', $cateData);
@@ -124,5 +142,35 @@ class CateController extends CommonController
         }
 
     }
+
+    /**
+     * @param $data   接收的数据;
+     * @param $width  缩略图的宽度;
+     * @param $height 缩略图的高度;
+     * @param $path  图片上传的子路径;
+     */
+    private function up_image(&$data, $config)
+    {
+        $path = isset($config['path']) ? $config['path'] : 'comm';
+        $colnum = isset($config['colnum']) ? $config['colnum'] : 'img_url';
+
+        //判断上传的附件没有问题才进行处理
+        if ($_FILES[$colnum]['error'] === 0) {
+            $cfg = array(
+                'rootPath' => './Public/Uploads/' . $path . '/'  //保存根路径
+            );
+            $upload = new Upload($cfg);
+
+            $info = $upload->uploadOne($_FILES[$colnum]);
+            //附件上传后的信息保存在数据库中
+            if ($info) {
+                $img_url = $upload->rootPath . $info['savepath'] . $info['savename'];
+            }
+
+            $data[$colnum] = $img_url;
+        }
+
+    }
+
 
 }

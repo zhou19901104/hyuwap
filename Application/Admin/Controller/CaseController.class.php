@@ -17,12 +17,10 @@ class CaseController extends CommonController
      */
     public function case_list()
     {
-        echo 1;die();
-        $list = D('Case')
-                ->field('id,sort,jianyan,name')
-                ->order('sort DESC')
-                ->select();
-        $this->assign('list', $list);
+
+        $case = D('Case');
+        $data = $case->field('id,name,img_url,active,sort')->select();
+        $this->assign('data', $data);
         $this->display();
     }
 
@@ -33,11 +31,10 @@ class CaseController extends CommonController
     {
         $case = D('Case');
         if (IS_POST) {
-            $data = $case->create();
+
+            $data = I('post.');
             //判断是否有图片上
-
             if ($_FILES['img_url']['name'] != '') {
-
                 $config = array(
                     'colnum' => 'img_url',
                     'path' => 'case',
@@ -45,34 +42,26 @@ class CaseController extends CommonController
                 $this->up_image($data, $config);
             }
 
-            if($_FILES['list_url']['name'] != ''){
-                $config = array(
-                    'width' => 380,
-                    'height' => 260,
-                    'path' => 'case',
-                    'colnum' => 'list_url'
-                );
-                $this->up_image($data, $config);
-            }
-            if($_FILES['min_url']['name'] != ''){
-                $config = array(
-                    'width' => 60,
-                    'height' => 60,
-                    'path' => 'case',
-                    'colnum' => 'min_url'
-                );
-                $this->up_image($data, $config);
-            }
             //dump($data);die();
-            if ($case->add($data)) {
-                $this->success('添加成功!', U('Admin/Case/case_list'));
-            } else {
-                $this->error('添加失败!');
+            if ($newId = $case->add($data)) {
+                $casecon = D('Casecon');
+                $dataMsg = [
+                    'content' => html_entity_decode($data['content']),
+                    'ca_id' => $newId
+                ];
+                if($casecon->add($dataMsg)){
+                    $this->success('添加成功!', U('Admin/Case/case_list'));
+                }
+                exit();
             }
 
+            $this->error('添加失败!', U('Admin/Case/case_list'));
+
         } else {
+
             $this->display();
         }
+
     }
 
     public function case_edit()
@@ -81,8 +70,10 @@ class CaseController extends CommonController
 
         if (IS_POST) {
 
-            $data = $case->create();
-            $info = $case->field('id,img_url,list_url,min_url')->find($data['id']);
+            $casecon = D('Casecon');
+            $data = I('post.');
+
+            $info = $case->field('id,img_url')->find($data['id']);
 
             if ($_FILES['img_url']['name'] != '') {
                 $config = array(
@@ -92,40 +83,83 @@ class CaseController extends CommonController
                 $this->up_image($data, $config);
                 @unlink($info['img_url']);
             }
-            if($_FILES['list_url']['name'] != ''){
-                $config = array(
-                    'width' => 380,
-                    'height' => 260,
-                    'path' => 'case',
-                    'colnum' => 'list_url'
-                );
-                $this->up_image($data, $config);
-                @unlink($info['list_url']);
-            }
-            if($_FILES['min_url']['name'] != ''){
-                $config = array(
-                    'width' => 60,
-                    'height' => 60,
-                    'path' => 'case',
-                    'colnum' => 'min_url'
-                );
-                $this->up_image($data, $config);
-                @unlink($info['min_url']);
-            }
 
-            $re = $case->save($data);
-            if ($re) {
+            $dataMsg = [
+                'content' => html_entity_decode($data['content']),
+                'ca_id' => $data['id']
+            ];
+
+            if ($case->save($data) || $casecon->where(array('ca_id' => $data['id']))->save($dataMsg)) {
+
                 $this->success('修改成功!', U('Admin/Case/case_list'));
             } else {
                 $this->error('修改失败!');
             }
+
         } else {
+
             $id = I('get.id');
-            $info = $case->where(array('id' => $id))->find();
-            $this->assign('info', $info);
+            $data = $case
+                ->alias('s')
+                ->field('s.id,s.name,s.sort,s.img_url,c.ca_id,c.content')
+                ->join('__CASECON__ c on s.id=c.ca_id')
+                ->where('s.id='.$id)
+                ->find();
+            $this->assign('data', $data);
             $this->display();
+
         }
     }
+
+
+    /**
+     * 案例上架
+     */
+    public function article_start()
+    {
+        $id = I('get.id');
+        $content = D('Case');
+
+        if($content->where(array('id'=> $id))->setField('active', 1)){
+            $data = [
+                'message' => '上架成功',
+                'member' => 1
+            ];
+            echo json_encode($data);
+
+        }else{
+            $data = [
+                'message' => '上架失败',
+                'member' => 2
+            ];
+            echo json_encode($data);
+        }
+    }
+    /**
+     * 案例下架
+     */
+
+    public function article_stop()
+    {
+        $id = I('get.id');
+        $content = D('Case');
+
+        if($content->where(array('id'=> $id))->setField('active', 0)){
+            $data = [
+                'message' => '下架成功',
+                'member' => 1
+            ];
+            echo json_encode($data);
+
+        }else{
+            $data = [
+                'message' => '下架失败',
+                'member' => 2
+            ];
+            echo json_encode($data);
+        }
+    }
+
 
     /**
      * 删除案例
@@ -133,14 +167,29 @@ class CaseController extends CommonController
     public function case_del()
     {
         $id = I('get.id');
+        $case = D('Case');
+        $info = $case->field('id,img_url')->where(array('id' => $id))->find();
 
-        $re = D('case')->where(array('id' => $id))->delete();
-        if ($re) {
-            $this->success('删除成功!', U('Admin/Case/case_list'));
+        if ($case->where(array('id' => $id))->delete()) {
+
+            @unlink($info['img_url']);
+
+            $data = [
+                'message' => '删除成功',
+                'member' => 1
+            ];
+            echo json_encode($data);
+
         } else {
-            $this->error('删除失败!');
+
+            $data = [
+                'message' => '删除失败',
+                'member' => 2
+            ];
+            echo json_encode($data);
         }
     }
+
 
     /**
      * @param $data   接收的数据;
@@ -150,11 +199,9 @@ class CaseController extends CommonController
      */
     private function up_image(&$data, $config)
     {
-//        $width = isset($config['width']) ? $config['width'] : 200;
-//        $height = isset($config['height']) ? $config['height'] : 200;
         $path = isset($config['path']) ? $config['path'] : 'comm';
-//        $type = isset($config['type']) ? $config['type'] : 6;
         $colnum = isset($config['colnum']) ? $config['colnum'] : 'img_url';
+
         //判断上传的附件没有问题才进行处理
         if ($_FILES[$colnum]['error'] === 0) {
             $cfg = array(
@@ -166,8 +213,9 @@ class CaseController extends CommonController
             //附件上传后的信息保存在数据库中
             if ($info) {
                 $img_url = $upload->rootPath . $info['savepath'] . $info['savename'];
-                $data[$colnum] = $img_url;
             }
+
+            $data[$colnum] = $img_url;
         }
 
     }
@@ -203,7 +251,6 @@ class CaseController extends CommonController
                 $data['min_url'] = $min_url;
 
             }
-
 
     }
 

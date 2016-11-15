@@ -6,26 +6,22 @@
 namespace Admin\Controller;
 
 use Think\Verify;
-
+use Org\Util\Rbac;
+use Org\Net\IpLocation;
 
 class LoginController extends CommonController
 {
-
+    /**
+     * 后台首页
+     */
     public function index()
     {
         $this->display();
     }
-	/*
-	* 空操作
-	* 前台模块操作指定错误时调用
-	*/
-    public function _empty()
-    {
-    	$this->display(C('ERROR_PAGE'));
-    	exit;
-    }
 
-    //加载验证码
+    /**
+     * 加载验证码
+     */
     public function verify ()
     {
        $cfg = array(
@@ -41,90 +37,84 @@ class LoginController extends CommonController
        $verify->entry();
     }
 
-    //登陆验证
+    /**
+     * 登陆验证
+     */
      public function checklogin()
      {
         $data = I('post.');
 
-         if($data['username'] =='' || $data['password']== ''){
+         if($data['username'] == '' || $data['password'] == ''){
              $this->error('用户名或者密码不能为空');
              exit;
          }
 
-
         $verify = new Verify();
-
-
         if (!$verify->check($data['verify'])) $this->error('验证码错误');
 
         $user = D('User');
 
-
-
         if($user->checklogin($data['username'], md5($data['password']))){
 
-           $this->redirect('/Admin/Index/index');
+            $map = [];
+            $map['username'] = $data['username'];
+            $map['status'] = 1;
+            //账户登录信息
+            $authInfo = Rbac::authenticate($map);
 
-        }else{
-           $this->error($user->getError());
-        }
+            if(false == $authInfo){
+                $this->error('帐号不存在或已禁用！');
+                exit();
+            }else{
 
+                //已经登录成功
+                session(C('USER_AUTH_KEY'), $authInfo['uid']);  //用户认证 session 标记
+                session('uid', $authInfo['uid']);               //用户ID
+                session('username', $authInfo['username']);     //用户名
+                session('roleid', $authInfo['role_id']);        //角色ID
 
+                if($authInfo['username'] == C('SPECIAL_USER')) {
+                    session(C('ADMIN_AUTH_KEY'), true);
+                }
 
-//        $username = $this->_post('username');
-//        $password =  $this->_post('password');
-//        $verify   = $this->_post('verify');
-//        //生成认证条件
-//        $map            =   array();
-//        // 支持使用绑定帐号登录
-//        $map['username'] = $username;
-//        $map['status']        = 1;
-//        if(session('verify') != md5($verify)) {
-//            $this->error('验证码错误！');
-//        }
-//        import('ORG.Util.RBAC');
-//        $authInfo = RBAC::authenticate($map);
-//        //使用用户名、密码和状态的方式进行认证
-//        if(false == $authInfo) {
-//            $this->error('帐号不存在或已禁用！');
-//        }else {
-//            if($authInfo['password'] != md5($password) ) {
-//                $this->error('密码错误！');
-//            }
-//            session(C('USER_AUTH_KEY'), $authInfo['uid']);
-//            session('userid',$authInfo['uid']);  //用户ID
-//            session('username',$authInfo['username']);   //用户名
-//            session('roleid',$authInfo['role_id']);    //角色ID
-//            if($authInfo['username']==C('SPECIAL_USER')) {
-//                session(C('ADMIN_AUTH_KEY'), true);
-//            }
-//           echo '你好';
-//            //保存登录信息
-//            $User   =   M(C('USER_AUTH_MODEL'));
-//            $ip     =   get_client_ip();
-//            $data = array();
+            }
+
+            $userModel = M(C('USER_AUTH_MODEL'));
+
+            //$ip = get_client_ip();
+
+            $userData = [];
+
 //            if($ip){    //如果获取到客户端IP，则获取其物理位置
-//                import('ORG.Net.IpLocation');// 导入IpLocation类
-//                $Ip = new IpLocation(); // 实例化类
-//                //$ip = '103.246.246.3';
-//                $location = $Ip->getlocation($ip); // 获取某个IP地址所在的位置
-//                $data['last_location'] = '';
-//                if($location['country'] && $location['country']!='CZ88.NET') $data['last_location'].=$location['country'];
-//                if($location['area'] && $location['area']!='CZ88.NET') $data['last_location'].=' '.$location['area'];
+//                $Ip = new IpLocation();
+//
+//                $location = $Ip->getlocation($ip); //获取这个IP的地址
+//
+//                $userData['last_location'] = '';
+//
+//                if($location['country'] && $location['country'] != 'CZ88.NET') $data['last_location'] .= $location['country'];
+//                if($location['area'] && $location['area'] != 'CZ88.NET') $data['last_location'] .= ' '.$location['area'];
 //
 //            }
-//
-//            $data['uid'] =   $authInfo['uid'];
-//            $data['last_login']    =   time();
-//            $data['last_login_ip']  =   get_client_ip();
-//            $User->save($data);
-          
-               // 缓存访问权限
-               //$list =  RBAC::saveAccessList();
-               // var_dump($list);
-               //       die();
+            $authInfo['last_num']++;
 
+            $userData['uid'] = $authInfo['uid'];
+            $userData['login_time'] = time();
+            $userData['login_ip'] = get_client_ip();
+            $userData['last_num'] = $authInfo['last_num'];
 
+            $userModel->save($userData);
+
+            // 缓存访问权限
+            $list =  Rbac::saveAccessList();
+            //var_dump($list);
+            //die();
+            $this->assign('list', $list);
+            $this->redirect('/Admin/Index/index');
+        }else{
+            $this->error($user->getError());
+            exit();
+        }
 
     }
 

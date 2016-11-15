@@ -37,9 +37,9 @@
         <div class="main-nav">
             <div class="nav-colnum">
                 <ul>
-                    <li><a href="<?php echo U('Web/index');?>"><img src="<?php echo C('IMG_URL');?>/nav-1.png"><img class="nav-shuxian" src="<?php echo C('IMG_URL');?>/nav-shuxian.png"><p>首页</p></a></li>
+                    <li><a href="<?php echo C('SITE_URL');?>"><img src="<?php echo C('IMG_URL');?>/nav-1.png"><img class="nav-shuxian" src="<?php echo C('IMG_URL');?>/nav-shuxian.png"><p>首页</p></a></li>
                     <li><a href="<?php echo U('Web/company');?>"><img src="<?php echo C('IMG_URL');?>/nav-2.png"><img class="nav-shuxian" src="<?php echo C('IMG_URL');?>/nav-shuxian.png"><p>品牌</p></a></li>
-                    <li><a href="<?php echo U('Web/lists');?>"><img src="<?php echo C('IMG_URL');?>/nav-3.png"><img class="nav-shuxian" src="<?php echo C('IMG_URL');?>/nav-shuxian.png"><p>项目</p></a></li>
+                    <li><a href="<?php echo C('SITE_URL');?>/#item-list"><img src="<?php echo C('IMG_URL');?>/nav-3.png"><img class="nav-shuxian" src="<?php echo C('IMG_URL');?>/nav-shuxian.png"><p>项目</p></a></li>
                     <li><a href="<?php echo U('Web/anli');?>"><img src="<?php echo C('IMG_URL');?>/nav-4.png"><img class="nav-shuxian" src="<?php echo C('IMG_URL');?>/nav-shuxian.png"><p>案例</p></a></li>
                     <li><a href="<?php echo U('Web/doctor');?>"><img src="<?php echo C('IMG_URL');?>/nav-5.png"><p>医生</p></a></li>
                 </ul>
@@ -61,7 +61,7 @@
     <footer class="footer clearfix">
         <div class="footer-list">
             <ul>
-                <li><a href="<?php echo U('Web/index');?>"><img src="<?php echo C('IMG_URL');?>/foot-1.png"><p>焕誉首页</p></a></li>
+                <li><a href="<?php echo C('SITE_URL');?>"><img src="<?php echo C('IMG_URL');?>/foot-1.png"><p>焕誉首页</p></a></li>
                 <li><a href="tel:010-5729-0660"><img src="<?php echo C('IMG_URL');?>/foot-2.png"><p>拨打电话</p></a></li>
                 <li><a href="<?php echo C('SHANG_WU_TONG');?>"><img src="<?php echo C('IMG_URL');?>/fqmx.png"></a></li>
                 <li><a href="<?php echo C('SHANG_WU_TONG');?>"><img src="<?php echo C('IMG_URL');?>/foot-3.png"><p>在线客服</p></a></li>

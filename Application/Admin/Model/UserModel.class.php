@@ -51,7 +51,13 @@ class UserModel extends Model
       return $this->where(array('pid' => $id))->select();
    }
 
-   //完成用户登录
+   /**
+    * 完成用户登录
+    *
+    * @param $username 用户名
+    * @param $password 用户输入密码
+    * @return bool
+    */
    public function checklogin($username, $password)
    {
       //接收传递的用户名和密码
@@ -71,9 +77,6 @@ class UserModel extends Model
 
          //验证密码是否合法
          if ($info['password'] == $password) {
-            //已经登录成功
-            session('username', $username);
-            session('uid', $info['uid']);
             return true;
          }
       }

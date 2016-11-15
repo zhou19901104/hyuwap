@@ -38,8 +38,6 @@
                 <th width="100">名称</th>
                 <th width="100">封面</th>
                 <th width="100">排序</th>
-
-
                 <th width="60">发布状态</th>
                 <th width="100">操作</th>
 
@@ -50,7 +48,7 @@
                     <td><input name="" type="checkbox" value=""></td>
                     <td><?php echo ($val["id"]); ?></td>
                     <td><?php echo ($val["name"]); ?></td>
-                    <td><img src="<?php echo (substr($val["img_url"],1)); ?>"></td>
+                    <td><img src="<?php echo (substr($val["img_url"],1)); ?>" style="width: 128px;height: 77px;"></td>
                     <td><?php echo ($val["sort"]); ?></td>
 
                     <?php if($val['active'] == 1): ?><td class="td-status"><span class="label label-success radius">已发布</span></td>

@@ -42,7 +42,7 @@
                     <td><?php echo ($val["level"]); ?></td>
                     <td class="text-l"><?php echo ($val["level"]); ?>级栏目</td>
                     <td class="text-l" <?php if($val['level'] == 1): ?>style="color: red;" <?php elseif($val['level'] == 2): ?>style="color: blue;"<?php endif; ?> >|<?php echo (str_repeat('--',$val["level"])); echo ($val["cate_name"]); ?></td>
-                    <td class="f-14"><a title="编辑" href="javascript:;" onclick="special_category_edit('栏目编辑','special_category_edit','<?php echo ($val["id"]); ?>','700','480')" style="text-decoration:none"><i class="Hui-iconfont">&#xe6df;</i></a> <a title="删除" href="javascript:;" onclick="special_category_del(this,'<?php echo ($val["id"]); ?>')" class="ml-5" style="text-decoration:none"><i class="Hui-iconfont">&#xe6e2;</i></a></td>
+                    <td class="f-14"><a title="编辑" href="javascript:;" onclick="special_category_edit('栏目编辑','special_category_edit','<?php echo ($val["id"]); ?>','800','780')" style="text-decoration:none"><i class="Hui-iconfont">&#xe6df;</i></a> <a title="删除" href="javascript:;" onclick="special_category_del(this,'<?php echo ($val["id"]); ?>')" class="ml-5" style="text-decoration:none"><i class="Hui-iconfont">&#xe6e2;</i></a></td>
                 </tr><?php endforeach; endif; ?>
 
 

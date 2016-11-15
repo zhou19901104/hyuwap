@@ -1,104 +1,112 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE HTML>
+<html>
 <head>
-    <title>后台用户管理-{$Think.config.cms_name}</title>
-    <include file="Public/head"/>
+    <meta charset="utf-8">
+    <meta name="renderer" content="webkit|ie-comp|ie-stand">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
 
+    <link href="__PUBLIC__/Admin/css/H-ui.min.css" rel="stylesheet" type="text/css" />
+    <link href="__PUBLIC__/Admin/css/H-ui.admin.css" rel="stylesheet" type="text/css" />
+    <link href="__PUBLIC__/Admin/lib/icheck/icheck.css" rel="stylesheet" type="text/css" />
+    <link href="__PUBLIC__/Admin/lib/Hui-iconfont/1.0.1/iconfont.css" rel="stylesheet" type="text/css" />
+    <!--  <link href="__PUBLIC__/Admin/lib/webuploader/0.1.5/webuploader.css" rel="stylesheet" type="text/css" />-->
+    <title>新增专题</title>
 </head>
-
 <body>
-<div class="midder">
-    <form action="{:U('/Admin/Case/case_edit')}" method="post" name="form" id="myform" enctype="multipart/form-data">
-        <table cellpadding="0" cellspacing="0">
-            <tr>
-                <td colspan="9" class="table_title">
-                    修改案例
-                </td>
-            </tr>
+<div class="pd-20">
+    <form action="__CONTROLLER__/case_edit" method="post" class="form form-horizontal" id="form-article-add" enctype="multipart/form-data">
 
-            <tr class="tr rt">
-                <td width="100">姓名：</td>
-                <td colspan="3" class="lt">
-                    <input type="text" name="name" style="width:200px" value="{$info.name}">
-                </td>
-            </tr>
+        <div class="row cl">
+            <label class="form-label col-2"><span class="c-red">*</span>专题标题：</label>
+            <div class="formControls col-10">
+                <input type="text" class="input-text" placeholder="" value="{$data.name}" name="name">
+                <input type="hidden" name="id" value="{$data.id}">
+            </div>
+        </div>
 
-            <tr class="tr rt">
-                <td width="100">感言:</td>
-                <td colspan="3" class="lt">
+        <div class="row cl">
 
-                    <textarea name='jianyan' rows='3' cols='50'>{$info.jianyan}</textarea>
-                </td>
-            </tr>
+            <label class="form-label col-2">排序值：</label>
+            <div class="formControls col-2">
+                <input type="text" class="input-text" value="{$data.sort}" placeholder="" name="sort">
+            </div>
+        </div>
 
-            <tr class="tr rt">
-                <td width="100">效果图：</td>
-                <td colspan="3" class="lt">
-                    <input type="file" name="img_url" size="28" value='浏览...'/>
-                    <notempty name="info.img_url">
-                        <img src="{:C('SITE_URL')}/{$info.img_url}"/>
+        <div class="row cl">
+            <label class="form-label col-2">缩略图：</label>
+            <div class="formControls col-10">
+                <div class="uploader-thum-container">
+                    <input type="file" name="img_url" value="浏览..." id="exampleInputImg">
+
+                    <notempty name="data.img_url">
+                        <div class="form-group" id="div_user_logo">
+                            <img src="{:C('SITE_URL')}{$data.img_url|substr=###,1}" class="img-rect" id="img_user_logo" style="width: 150px;height: 150px;">
+                        </div>
                     </notempty>
-                </td>
-            </tr>
 
-            <tr class="tr rt">
-                <td width="100">列表图：</td>
-                <td colspan="3" class="lt">
-                    <input type="file" name="list_url" size="28" value='浏览...'/>
-                    <notempty name="info.list_url">
-                        <img src="{:C('SITE_URL')}/{$info.list_url}"/>
-                    </notempty>
-                </td>
-            </tr>
+                </div>
+            </div>
+        </div>
 
-            <tr class="tr rt">
-                <td width="100">推荐小图片：</td>
-                <td colspan="3" class="lt">
-                    <input type="file" name="min_url" size="28" value='浏览...'/>
-                    <notempty name="info.min_url">
-                        <img src="{:C('SITE_URL')}/{$info.min_url}"/>
-                    </notempty>
-                </td>
-            </tr>
-
-            <!--				<tr class="tr rt">
-                                <td width="100">推荐:</td>
-                                <td colspan="3" class="lt">
-                                    <if condition="$info['related'] eq 1">
-                                        <input type="checkbox" name="related" value="1" checked>
-                                    <else />
-                                        <input type="checkbox" name="related" value="1">
-                                    </if>
-                                </td>
-                            </tr>-->
-            <tr class="tr rt">
-                <td width="100">治疗过程:</td>
-                <td colspan="3" class="lt">
-                    <textarea id='ue_content' name='content' style="width:800px;height:250px;">{$info.course}</textarea>
-                </td>
-            </tr>
-
-            <tr class="tr rt">
-                <td width="100">排序:</td>
-                <td colspan="3" class="lt">
-                    <input type="text" name="sort" id="sort" style="width:200px;" value="{$info.sort}">
-                    <input type="hidden" name="id" value="{$info.id}">
-                </td>
-            </tr>
-            <tr class="tr lt">
-                <td colspan="4">
-
-                    <input class="bginput" type="submit" name="submit" value="修 改">
-                    &nbsp;
-                    <input class="bginput" type="button" onclick="javascript:history.back(-1);" value="返 回"></td>
-            </tr>
-        </table>
+        <div class="row cl">
+            <label class="form-label col-2">文章内容：</label>
+            <div class="formControls col-10">
+                <!--<script id="editor" type="text/plain" style="width:100%;height:400px;"></script>-->
+                <textarea id="editor" style="width:100%;height:400px;" name="content">{$data.content}</textarea>
+            </div>
+        </div>
+        <div class="row cl">
+            <div class="col-10 col-offset-2">
+                <button onClick="article_save_submit();" class="btn btn-primary radius" type="submit"><i class="Hui-iconfont">&#xe632;</i> 保存并提交审核</button>
+                <button onClick="article_save();" class="btn btn-secondary radius" type="button"><i class="Hui-iconfont">&#xe632;</i> 保存草稿</button>
+                <button onClick="layer_close();" class="btn btn-default radius" type="button">&nbsp;&nbsp;取消&nbsp;&nbsp;</button>
+            </div>
+        </div>
     </form>
 </div>
-<script type="text/javascript">
 
-    var ue = UE.getEditor('ue_content');
+<script type="text/javascript" src="__PUBLIC__/Admin/lib/jquery/1.9.1/jquery.min.js"></script>
+<script type="text/javascript" src="__PUBLIC__/Admin/lib/layer/1.9.3/layer.js"></script>
+<script type="text/javascript" src="__PUBLIC__/Admin/lib/My97DatePicker/WdatePicker.js"></script>
+<script type="text/javascript" src="__PUBLIC__/Admin/lib/icheck/jquery.icheck.min.js"></script>
+
+<script type="text/javascript" src="__PUBLIC__/Admin/js/uploadPreview.js"></script>
+
+<script type="text/javascript" src="__PUBLIC__/Admin/lib/Validform/5.3.2/Validform.min.js"></script>
+<!--<script type="text/javascript" src="__PUBLIC__/Admin/lib/webuploader/0.1.5/webuploader.min.js"></script>-->
+<script type="text/javascript" src="__PUBLIC__/Admin/lib/ueditor/1.4.3/ueditor.config.js"></script>
+<script type="text/javascript" src="__PUBLIC__/Admin/lib/ueditor/1.4.3/ueditor.all.min.js"> </script>
+<script type="text/javascript" src="__PUBLIC__/Admin/lib/ueditor/1.4.3/lang/zh-cn/zh-cn.js"></script>
+<script type="text/javascript" src="__PUBLIC__/Admin/js/H-ui.js"></script>
+<script type="text/javascript" src="__PUBLIC__/Admin/js/H-ui.admin.js"></script>
+<script type="text/javascript">
+    /**
+     * 表单提交
+     */
+    function article_save_submit()
+    {
+        var form = document.getElementById('form-article-add');
+        form.submit();
+    }
+    /**
+     * 文章保存
+     */
+    function article_save()
+    {
+        var form = document.getElementById('form-article-add');
+        form.save();
+    }
+
+    $(function(){
+        //选中图片立即显示
+        new uploadPreview({ UpBtn: "exampleInputImg", DivShow: "div_user_logo", ImgShow: "img_user_logo" });
+
+        var ue = UE.getEditor('editor');
+
+    });
+
 
 </script>
 </body>

@@ -46,7 +46,7 @@ class SpecialController extends CommonController
                 }
             $data['active'] = 1;
 
-            if($newId=  $special->add($data)){
+            if($newId = $special->add($data)){
                 $dataMsg = [
                     'content' => html_entity_decode($data['content']),
                     'sp_id' => $newId
